@@ -1,18 +1,32 @@
 {
   "processed_ids": [
-    "5LZ1TaFmDZA"
+    "5LZ1TaFmDZA",
+    "sZTN3xmKjqA"
   ],
   "processed_videos": [
     {
       "id": "5LZ1TaFmDZA",
       "title": "How the Dead Internet Secretly Influences You",
-      "title_fr": "Comment l'Internet mort vous influence \u00e0 votre insu",
+      "title_fr": "Comment l'Internet mort vous influence à votre insu",
       "upload_date": "20261003",
       "duration": 1250,
       "duration_str": "00:20:50",
-      "md_file": "YT_SoonTechnologie_Transcript/2026-10-03_YT-5LZ1TaFmDZA_Comment l'Internet mort vous influence \u00e0 votre insu_by-gemini-3.8-flash+gemini-3.5-flash-lite.md",
-      "html_file": "YT_SoonTechnologie_Transcript/2026-10-03_YT-5LZ1TaFmDZA_Comment l'Internet mort vous influence \u00e0 votre insu_by-gemini-3.8-flash+gemini-3.5-flash-lite.html",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-10-03_YT-5LZ1TaFmDZA_Comment l'Internet mort vous influence à votre insu_by-gemini-3.8-flash+gemini-3.5-flash-lite.md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-10-03_YT-5LZ1TaFmDZA_Comment l'Internet mort vous influence à votre insu_by-gemini-3.8-flash+gemini-3.5-flash-lite.html",
       "screenshots_count": 26,
+      "audit_score": 100.0,
+      "audit_passed": true
+    },
+    {
+      "id": "sZTN3xmKjqA",
+      "title": "The #deadinternettheory",
+      "title_fr": "The #deadinternettheory",
+      "upload_date": "20261003",
+      "duration": 39,
+      "duration_str": "00:00:39",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-10-03_YT-[sZTN3xmKjqA]_The #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-10-03_YT-[sZTN3xmKjqA]_The #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
     }
@@ -62,10 +76,11 @@
     "suRs4wQFczw",
     "uMWo0IkeSeg",
     "wyKP_IuXx-o",
-    "xlzZu8R3cSU"
+    "xlzZu8R3cSU",
+    "sZTN3xmKjqA"
   ],
   "last_run_timestamp": null,
-  "completed_count": 1,
+  "completed_count": 2,
   "total_catalog_count": 33,
   "status": "ready"
 }
