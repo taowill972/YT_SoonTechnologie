@@ -37,7 +37,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Visionnage de vidéos sur TikTok.
 
-![Un homme regarde un téléphone portable, l'air angoissé. L'écran du téléphone affiche une vidéo TikTok.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000005_seg1.jpg)
+![Un homme regarde un téléphone portable, l'air angoissé. L'écran du téléphone affiche une vidéo TikTok.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000005_seg1.jpg)
 *?? 00:00:05 ? Un homme regarde un téléphone portable, l'air angoissé. L'écran du téléphone affiche une vidéo TikTok.*
 
 ---
@@ -54,10 +54,10 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Navigation et affichage de réactions d'utilisateurs illustrant le débat sur la publicité cachée en ligne.
 
-![Capture d'écran montrant un commentaire sur une plateforme en ligne, avec le texte surligné en jaune : "Undisclosed ads are illegal btw".](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000025_seg2.jpg)
+![Capture d'écran montrant un commentaire sur une plateforme en ligne, avec le texte surligné en jaune : "Undisclosed ads are illegal btw".](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000025_seg2.jpg)
 *?? 00:00:25 ? Capture d'écran montrant un commentaire sur une plateforme en ligne, avec le texte surligné en jaune : "Undisclosed ads are illegal btw".*
 
-![Capture d'écran affichant une liste de publications et de tweets de différents utilisateurs avec leurs pseudonymes et des compteurs d'interactions.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000030_seg2.jpg)
+![Capture d'écran affichant une liste de publications et de tweets de différents utilisateurs avec leurs pseudonymes et des compteurs d'interactions.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000030_seg2.jpg)
 *?? 00:00:30 ? Capture d'écran affichant une liste de publications et de tweets de différents utilisateurs avec leurs pseudonymes et des compteurs d'interactions.*
 
 ---
@@ -74,10 +74,10 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Navigation et présentation visuelle des thématiques du reportage (Internet mort, tactiques marketing et de réputation).
 
-![Capture montrant une grille de vidéos avec un homme âgé portant une casquette et des lunettes, illustrant les sujets abordés à gauche (théorie de l'Internet mort et tactiques marketing).](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000046_seg3.jpg)
+![Capture montrant une grille de vidéos avec un homme âgé portant une casquette et des lunettes, illustrant les sujets abordés à gauche (théorie de l'Internet mort et tactiques marketing).](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000046_seg3.jpg)
 *?? 00:00:46 ? Capture montrant une grille de vidéos avec un homme âgé portant une casquette et des lunettes, illustrant les sujets abordés à gauche (théorie de l'Internet mort et tactiques marketing).*
 
-![Interface numérique sombre affichant un réseau de points connectés en rouge et un panneau de console à droite, avec le plan des sujets incluant les tactiques de réputation en surbrillance.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000052_seg3.jpg)
+![Interface numérique sombre affichant un réseau de points connectés en rouge et un panneau de console à droite, avec le plan des sujets incluant les tactiques de réputation en surbrillance.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000052_seg3.jpg)
 *?? 00:00:52 ? Interface numérique sombre affichant un réseau de points connectés en rouge et un panneau de console à droite, avec le plan des sujets incluant les tactiques de réputation en surbrillance.*
 
 ---
@@ -94,10 +94,10 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Affichage à l'écran du texte fondateur de la théorie de l'Internet mort.
 
-![Capture d'écran d'un forum thématique avec le titre 'DEAD INTERNET THEORY: MOST OF THE INTERNET IS FAKE' sur fond coloré.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000114_seg4.jpg)
+![Capture d'écran d'un forum thématique avec le titre 'DEAD INTERNET THEORY: MOST OF THE INTERNET IS FAKE' sur fond coloré.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000114_seg4.jpg)
 *?? 00:01:14 ? Capture d'écran d'un forum thématique avec le titre 'DEAD INTERNET THEORY: MOST OF THE INTERNET IS FAKE' sur fond coloré.*
 
-![Capture d'écran du message explicatif TLDR détaillant la théorie du Dead Internet concernant le contenu généré par IA.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000119_seg4.jpg)
+![Capture d'écran du message explicatif TLDR détaillant la théorie du Dead Internet concernant le contenu généré par IA.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000119_seg4.jpg)
 *?? 00:01:19 ? Capture d'écran du message explicatif TLDR détaillant la théorie du Dead Internet concernant le contenu généré par IA.*
 
 ---
@@ -114,7 +114,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Affichage d'un texte textuel d'enquête ou de témoignage illustrant le propos sur l'évolution d'Internet.
 
-![Capture d'écran montrant un long texte en anglais sur fond bleu foncé, évoquant l'historique de 4chan et des théories Internet.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000130_seg5.jpg)
+![Capture d'écran montrant un long texte en anglais sur fond bleu foncé, évoquant l'historique de 4chan et des théories Internet.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000130_seg5.jpg)
 *?? 00:01:30 ? Capture d'écran montrant un long texte en anglais sur fond bleu foncé, évoquant l'historique de 4chan et des théories Internet.*
 
 ---
@@ -131,7 +131,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Le jeune homme tape sur le clavier d'un ordinateur ancien dans une salle informatique.
 
-![Un jeune homme portant un casque audio et un maillot de sport, assis devant un vieil ordinateur Apple transparent et tapant sur le clavier.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000206_seg6.jpg)
+![Un jeune homme portant un casque audio et un maillot de sport, assis devant un vieil ordinateur Apple transparent et tapant sur le clavier.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000206_seg6.jpg)
 *?? 00:02:06 ? Un jeune homme portant un casque audio et un maillot de sport, assis devant un vieil ordinateur Apple transparent et tapant sur le clavier.*
 
 ---
@@ -148,7 +148,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Aucune action visible.
 
-![Un écran d'ordinateur affichant une conversation dans un salon de discussion, avec des utilisateurs tels que "Squirrelgirl", "Chousuke" et "Azhi_Dahaka".](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000216_seg7.jpg)
+![Un écran d'ordinateur affichant une conversation dans un salon de discussion, avec des utilisateurs tels que "Squirrelgirl", "Chousuke" et "Azhi_Dahaka".](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000216_seg7.jpg)
 *?? 00:02:16 ? Un écran d'ordinateur affichant une conversation dans un salon de discussion, avec des utilisateurs tels que "Squirrelgirl", "Chousuke" et "Azhi_Dahaka".*
 
 ---
@@ -179,7 +179,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Navigation et affichage d'une publication vidéo sur les réseaux sociaux promouvant un outil (GPTZero).
 
-![Capture d'une interface de réseau social (TikTok) montrant un créateur de contenu avec du texte et des commentaires.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000303_seg9.jpg)
+![Capture d'une interface de réseau social (TikTok) montrant un créateur de contenu avec du texte et des commentaires.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000303_seg9.jpg)
 *?? 00:03:03 ? Capture d'une interface de réseau social (TikTok) montrant un créateur de contenu avec du texte et des commentaires.*
 
 ---
@@ -196,7 +196,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Présentation visuelle d'un exemple de contenu TikTok pendant le commentaire audio.
 
-![Gros plan sur un smartphone montrant une vidéo TikTok, illustrant le sujet des publicités et contenus générés en ligne.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000319_seg10.jpg)
+![Gros plan sur un smartphone montrant une vidéo TikTok, illustrant le sujet des publicités et contenus générés en ligne.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000319_seg10.jpg)
 *?? 00:03:19 ? Gros plan sur un smartphone montrant une vidéo TikTok, illustrant le sujet des publicités et contenus générés en ligne.*
 
 ---
@@ -213,7 +213,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Navigation et présentation du profil TikTok d'un créateur de contenu.
 
-![Capture d'écran du profil TikTok de "emi renee" avec ses différentes vidéos en grille.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000348_seg11.jpg)
+![Capture d'écran du profil TikTok de "emi renee" avec ses différentes vidéos en grille.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000348_seg11.jpg)
 *?? 00:03:48 ? Capture d'écran du profil TikTok de "emi renee" avec ses différentes vidéos en grille.*
 
 ---
@@ -230,7 +230,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : none
 
-![Un homme porte un casque et regarde un écran d'ordinateur qui affiche le logo "soon".](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000359_seg12.jpg)
+![Un homme porte un casque et regarde un écran d'ordinateur qui affiche le logo "soon".](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000359_seg12.jpg)
 *?? 00:03:59 ? Un homme porte un casque et regarde un écran d'ordinateur qui affiche le logo "soon".*
 
 ---
@@ -261,13 +261,13 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Visualisation et gestion d'une ferme de bots et de publications automatisées.
 
-![Un jeune homme inspecte une installation de serveurs et de smartphones connectés en rack.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000440_seg14.jpg)
+![Un jeune homme inspecte une installation de serveurs et de smartphones connectés en rack.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000440_seg14.jpg)
 *?? 00:04:40 ? Un jeune homme inspecte une installation de serveurs et de smartphones connectés en rack.*
 
-![Une vue large d'une immense ferme de téléphones portables alignés sur des étagères métalliques.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000445_seg14.jpg)
+![Une vue large d'une immense ferme de téléphones portables alignés sur des étagères métalliques.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000445_seg14.jpg)
 *?? 00:04:45 ? Une vue large d'une immense ferme de téléphones portables alignés sur des étagères métalliques.*
 
-![Une interface logicielle montrant plusieurs flux vidéo automatisés de comptes de réseaux sociaux.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000449_seg14.jpg)
+![Une interface logicielle montrant plusieurs flux vidéo automatisés de comptes de réseaux sociaux.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000449_seg14.jpg)
 *?? 00:04:49 ? Une interface logicielle montrant plusieurs flux vidéo automatisés de comptes de réseaux sociaux.*
 
 ---
@@ -298,7 +298,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Affichage des différentes options de plans tarifaires d'IA.
 
-![Capture d'écran montrant une page web de tarification de services d'intelligence artificielle (Google AI Plus, Pro, Ultra).](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000552_seg16.jpg)
+![Capture d'écran montrant une page web de tarification de services d'intelligence artificielle (Google AI Plus, Pro, Ultra).](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000552_seg16.jpg)
 *?? 00:05:52 ? Capture d'écran montrant une page web de tarification de services d'intelligence artificielle (Google AI Plus, Pro, Ultra).*
 
 ---
@@ -315,7 +315,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Saisie d'instructions textuelles dans une interface d'intelligence artificielle pour générer une vidéo.
 
-![Interface de type chatbot affichant la question « Where should we start? » et un champ de saisie avec le prompt décrivant la vidéo d'un homme barbu avec un piège à souris futuriste.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000609_seg17.jpg)
+![Interface de type chatbot affichant la question « Where should we start? » et un champ de saisie avec le prompt décrivant la vidéo d'un homme barbu avec un piège à souris futuriste.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000609_seg17.jpg)
 *?? 00:06:09 ? Interface de type chatbot affichant la question « Where should we start? » et un champ de saisie avec le prompt décrivant la vidéo d'un homme barbu avec un piège à souris futuriste.*
 
 ---
@@ -346,7 +346,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Présentation du résultat d'une génération de vidéo avec un persona spécifique pour un piège à souris.
 
-![Un vétéran de l'armée à la retraite tenant un piège à souris dans une cave, avec l'interface de l'application Soon sur les côtés et le texte "Your video is ready!" en haut.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000646_seg19.jpg)
+![Un vétéran de l'armée à la retraite tenant un piège à souris dans une cave, avec l'interface de l'application Soon sur les côtés et le texte "Your video is ready!" en haut.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000646_seg19.jpg)
 *?? 00:06:46 ? Un vétéran de l'armée à la retraite tenant un piège à souris dans une cave, avec l'interface de l'application Soon sur les côtés et le texte "Your video is ready!" en haut.*
 
 ---
@@ -363,10 +363,10 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Présentation du compte TikTok et de la vidéo générée par intelligence artificielle mettant en scène le personnage fictif Steve Bensinger.
 
-![Capture d'écran montrant à gauche l'interface d'un profil TikTok nommé Steve Bensinger avec plusieurs vidéos, et à droite le présentateur en chemise blanche et cravate rouge.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000711_seg20.jpg)
+![Capture d'écran montrant à gauche l'interface d'un profil TikTok nommé Steve Bensinger avec plusieurs vidéos, et à droite le présentateur en chemise blanche et cravate rouge.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000711_seg20.jpg)
 *?? 00:07:11 ? Capture d'écran montrant à gauche l'interface d'un profil TikTok nommé Steve Bensinger avec plusieurs vidéos, et à droite le présentateur en chemise blanche et cravate rouge.*
 
-![Interface d'une application ou d'un outil de génération vidéo par IA affichant le message 'Your video is ready!' avec le personnage généré tenant un piège dans une cuisine.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000716_seg20.jpg)
+![Interface d'une application ou d'un outil de génération vidéo par IA affichant le message 'Your video is ready!' avec le personnage généré tenant un piège dans une cuisine.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000716_seg20.jpg)
 *?? 00:07:16 ? Interface d'une application ou d'un outil de génération vidéo par IA affichant le message 'Your video is ready!' avec le personnage généré tenant un piège dans une cuisine.*
 
 ---
@@ -383,7 +383,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : L'homme parle des réseaux sociaux et du concept de "Dead Internet".
 
-![Plan rapproché d'un homme en chemise blanche et cravate rouge parlant, avec des icônes de réseaux sociaux sur un tableau derrière lui.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000732_seg21.jpg)
+![Plan rapproché d'un homme en chemise blanche et cravate rouge parlant, avec des icônes de réseaux sociaux sur un tableau derrière lui.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000732_seg21.jpg)
 *?? 00:07:32 ? Plan rapproché d'un homme en chemise blanche et cravate rouge parlant, avec des icônes de réseaux sociaux sur un tableau derrière lui.*
 
 ---
@@ -400,10 +400,10 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : L'image montre une illustration des tactiques pour "ruiner une réputation" et le concept de "Dead Internet" avec ses liens avec les réseaux sociaux.
 
-![Une affiche avec le titre "Ruin a reputation" et une image d'un golfeur célébrant une victoire. Des points numérotés à gauche indiquent "What is the Dead Internet?", "Marketing tactics" et "Reputation tactics".](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000750_seg22.jpg)
+![Une affiche avec le titre "Ruin a reputation" et une image d'un golfeur célébrant une victoire. Des points numérotés à gauche indiquent "What is the Dead Internet?", "Marketing tactics" et "Reputation tactics".](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000750_seg22.jpg)
 *?? 00:07:50 ? Une affiche avec le titre "Ruin a reputation" et une image d'un golfeur célébrant une victoire. Des points numérotés à gauche indiquent "What is the Dead Internet?", "Marketing tactics" et "Reputation tactics".*
 
-![Un homme est assis à un bureau devant un ordinateur portable. Derrière lui, un tableau avec le texte "Dead Internet" relié par des fils rouges à plusieurs logos de réseaux sociaux. Un écran d'ordinateur sur le bureau affiche "soon".](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000806_seg22.jpg)
+![Un homme est assis à un bureau devant un ordinateur portable. Derrière lui, un tableau avec le texte "Dead Internet" relié par des fils rouges à plusieurs logos de réseaux sociaux. Un écran d'ordinateur sur le bureau affiche "soon".](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000806_seg22.jpg)
 *?? 00:08:06 ? Un homme est assis à un bureau devant un ordinateur portable. Derrière lui, un tableau avec le texte "Dead Internet" relié par des fils rouges à plusieurs logos de réseaux sociaux. Un écran d'ordinateur sur le bureau affiche "soon".*
 
 ---
@@ -420,7 +420,7 @@ Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à 
 
 **Action / D?monstration** : Analyse d'attaques narratives sur diverses plateformes en ligne.
 
-![Une visualisation d'un réseau complexe avec des nœuds connectés par des lignes, représentant des données ou des interactions. Du texte superposé décrit la plateforme "Blackbird.AI's Constellation Narrative Intelligence Platform" qui protège les organisations des attaques narratives sur les réseaux sociaux, le dark web et l'actualité.](screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000823_seg23.jpg)
+![Une visualisation d'un réseau complexe avec des nœuds connectés par des lignes, représentant des données ou des interactions. Du texte superposé décrit la plateforme "Blackbird.AI's Constellation Narrative Intelligence Platform" qui protège les organisations des attaques narratives sur les réseaux sociaux, le dark web et l'actualité.](../screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000823_seg23.jpg)
 *?? 00:08:23 ? Une visualisation d'un réseau complexe avec des nœuds connectés par des lignes, représentant des données ou des interactions. Du texte superposé décrit la plateforme "Blackbird.AI's Constellation Narrative Intelligence Platform" qui protège les organisations des attaques narratives sur les réseaux sociaux, le dark web et l'actualité.*
 
 ---
