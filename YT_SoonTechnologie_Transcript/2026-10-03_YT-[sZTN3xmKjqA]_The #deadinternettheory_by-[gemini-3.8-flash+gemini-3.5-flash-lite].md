@@ -28,7 +28,7 @@ Dans ce reportage immersif intitul? **The #deadinternettheory**, la cha?ne Soon 
 ### ?? `[00:00:00 - 00:00:20]` | Segment #01
 
 **?? Audio (Transcription Int?grale Mot pour Mot en Fran?ais) :**
-> I just got rejected from Walmart as a cashier. I have a bachelor's degree. I got rejected from Walmart as a cashier. I went to school for four years. I just got rejected from Walmart as a cashier. I have a degree. What the heck? How is it that all these educated young people can't get a low-level job at Walmart? It turns out they're all ads.
+> I just got rejected from Walmart as a cashier. I have a bachelor's degree. I just got rejected from Walmart as a cashier. I went to school for four years. I just got rejected from Walmart as a cashier. I have a degree. What the heck? How is it that all these educated young people can't get a low-level job at Walmart? It turns out they're all ads.
 
 **??? Analyse Visuelle d'?cran (gemini-3.5-flash-lite) :**
 **Interface & Outils** : Pr?sentation ou reportage sans interface informatique partag?e.
@@ -42,7 +42,7 @@ Dans ce reportage immersif intitul? **The #deadinternettheory**, la cha?ne Soon 
 ### ?? `[00:00:20 - 00:00:36]` | Segment #02
 
 **?? Audio (Transcription Int?grale Mot pour Mot en Fran?ais) :**
-> There's a whole genre of marketing that merges the aesthetics of normal-looking young people making seemingly generic content that are actually just product ads. but it does make it hard to distinguish between what's real and what's a paid ad on the internet. Even though they all had the same script, each of them was selling a different product.
+> There's a whole genre of marketing that merges the aesthetics of normal-looking young people making seemingly generic content that are actually just product ads. But it does make it hard to distinguish between what's real and what's a paid ad on the internet. Even though they all had the same script, each of them was selling a different product.
 
 **??? Analyse Visuelle d'?cran (gemini-3.5-flash-lite) :**
 **Interface & Outils** : Pr?sentation ou reportage sans interface informatique partag?e.
