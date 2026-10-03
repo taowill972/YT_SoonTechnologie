@@ -7,7 +7,7 @@
 - Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**
 
 ## ?? Statistiques de l'Automatisation
-- **Vid?os trait?es** : `6 / 33` (`18.2%`)
+- **Vid?os trait?es** : `7 / 33` (`21.2%`)
 - **Mod?le Audio & Synth?se** : `gemini-3.8-flash` (avec Faster-Whisper large-v3-turbo, 100% Verbatim Fran?ais)
 - **Mod?le Vision d'?cran** : `gemini-3.5-flash-lite` (Analyse d'?crans, interfaces & d?monstrations)
 - **Signature de traitement** : `gemini-3.8-flash+gemini-3.5-flash-lite`
@@ -23,6 +23,7 @@
 | 2026-09-05 | [xlzZu8R3cSU](https://www.youtube.com/watch?v=xlzZu8R3cSU) | **How the GTA 6 Leaker Got Rich and Stayed Hidden** | [2026-09-05_YT-[xlzZu8R3cSU]_How the GTA 6 Leaker Got Rich and Stayed Hidden_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-09-05_YT-[xlzZu8R3cSU]_How the GTA 6 Leaker Got Rich and Stayed Hidden_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-09-05_YT-[xlzZu8R3cSU]_How the GTA 6 Leaker Got Rich and Stayed Hidden_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-08-28 | [dXglTsXGOBE](https://www.youtube.com/watch?v=dXglTsXGOBE) | **How to Build a Bot Farm** | [2026-08-28_YT-[dXglTsXGOBE]_How to Build a Bot Farm_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-08-28_YT-[dXglTsXGOBE]_How to Build a Bot Farm_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-08-28_YT-[dXglTsXGOBE]_How to Build a Bot Farm_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-08-25 | [suRs4wQFczw](https://www.youtube.com/watch?v=suRs4wQFczw) | **I Bet on Robot Fights in San Francisco** | [2026-08-25_YT-[suRs4wQFczw]_I Bet on Robot Fights in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-08-25_YT-[suRs4wQFczw]_I Bet on Robot Fights in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-08-25_YT-[suRs4wQFczw]_I Bet on Robot Fights in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
+| 2026-08-17 | [dRbNILhpb8o](https://www.youtube.com/watch?v=dRbNILhpb8o) | **Inside San Francisco’s $250K Tech Competition** | [2026-08-17_YT-[dRbNILhpb8o]_Inside San Francisco’s $250K Tech Competition_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-08-17_YT-[dRbNILhpb8o]_Inside San Francisco’s $250K Tech Competition_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-08-17_YT-[dRbNILhpb8o]_Inside San Francisco’s $250K Tech Competition_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 
 ---
 *G?n?r? automatiquement par l'agent de veille multimodale Antigravity sur VPS Contabo.*
