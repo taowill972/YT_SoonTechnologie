@@ -1,0 +1,2357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Inside America&#x27;s UFO Hunting Industry — Transcription & Vision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #090d16;
+            --bg-surface: #0f172a;
+            --bg-card: #141e33;
+            --bg-card-hover: #1a2744;
+            --border-color: #243452;
+            --border-light: rgba(99, 102, 241, 0.2);
+            --primary: #6366f1;
+            --primary-glow: rgba(99, 102, 241, 0.35);
+            --secondary: #8b5cf6;
+            --accent: #f43f5e;
+            --success: #10b981;
+            --text-title: #f8fafc;
+            --text-main: #cbd5e1;
+            --text-muted: #8292ab;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header.video-header {
+            background: linear-gradient(135deg, rgba(20, 30, 51, 0.95), rgba(15, 23, 42, 0.98));
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--primary-glow);
+            backdrop-filter: blur(12px);
+        }
+
+        h1.video-title {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: var(--text-title);
+            line-height: 1.35;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            background: rgba(36, 52, 82, 0.6);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .badge-primary {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .badge-yt {
+            background: rgba(244, 63, 94, 0.15);
+            color: #fda4af;
+            border-color: rgba(244, 63, 94, 0.4);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .badge-yt:hover {
+            background: rgba(244, 63, 94, 0.3);
+            transform: translateY(-1px);
+        }
+
+        /* Executive Summary Section */
+        section.executive-summary {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .summary-card {
+            background: var(--bg-card);
+            border-radius: 0.85rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary);
+        }
+        .summary-card p {
+            margin-bottom: 0.9rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
+        }
+        .summary-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tools-card {
+            margin-bottom: 1.5rem;
+        }
+        .tools-card h4, .points-card h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 0.8rem;
+        }
+        .tool-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+            border: 1px solid rgba(139, 92, 246, 0.35);
+            border-radius: 0.5rem;
+            padding: 0.3rem 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+
+        .points-card ul {
+            list-style: none;
+            display: grid;
+            gap: 0.7rem;
+        }
+        .points-card li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            background: var(--bg-card);
+            padding: 0.85rem 1.1rem;
+            border-radius: 0.65rem;
+            font-size: 0.93rem;
+            border: 1px solid rgba(36, 52, 82, 0.5);
+        }
+        .point-bullet {
+            color: var(--primary);
+            font-size: 1.1rem;
+            line-height: 1;
+            margin-top: 0.15rem;
+        }
+
+        /* Timeline Section */
+        .timeline-stream {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .timeline-stream::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: 20px;
+            left: 7px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary), transparent);
+        }
+
+        .timeline-block {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-block::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 12px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 10px var(--primary);
+            border: 2px solid var(--bg-body);
+        }
+
+        .timeline-time {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .time-badge {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.2);
+            color: #a5b4fc;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.4rem;
+            border: 1px solid rgba(99, 102, 241, 0.4);
+        }
+        .segment-idx {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .timeline-content {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: grid;
+            gap: 1.2rem;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .timeline-content:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .verbatim-box {
+            background: var(--bg-card);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid #10b981;
+        }
+        .verbatim-header, .visual-header, .screenshots-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #e2e8f0;
+            margin-bottom: 0.6rem;
+        }
+        .verbatim-text {
+            font-size: 0.95rem;
+            color: #f1f5f9;
+            font-style: normal;
+            line-height: 1.7;
+        }
+
+        .visual-box {
+            background: rgba(20, 30, 51, 0.7);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid var(--secondary);
+        }
+        .visual-details p {
+            font-size: 0.91rem;
+            margin-bottom: 0.45rem;
+            color: var(--text-main);
+        }
+        .visual-details p:last-child {
+            margin-bottom: 0;
+        }
+        .visual-details strong {
+            color: #93c5fd;
+        }
+
+        /* Multi-Screenshots Grid */
+        .segment-screenshots-wrapper {
+            background: rgba(10, 15, 29, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 0.85rem;
+            padding: 1rem;
+        }
+        .segment-screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.1rem;
+        }
+        .segment-screenshots-grid.count-1 {
+            grid-template-columns: 1fr;
+        }
+        .segment-screenshots-grid.count-2 {
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        }
+
+        .screenshot-card {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .screenshot-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #050811;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: contain;
+            display: block;
+            cursor: zoom-in;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .img-wrapper img:hover {
+            opacity: 0.95;
+            transform: scale(1.015);
+        }
+        .zoom-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(15, 23, 42, 0.85);
+            color: #e2e8f0;
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+        }
+        .screenshot-caption {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0.7rem 0.95rem;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            background: rgba(15, 23, 42, 0.96);
+            border-top: 1px solid var(--border-color);
+            line-height: 1.45;
+        }
+        .caption-time {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #a5b4fc;
+        }
+        .caption-text {
+            color: #e2e8f0;
+        }
+
+        /* Lightbox modal */
+        #lightbox {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+        #lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border: 1px solid #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="video-header">
+            <h1 class="video-title">🎬 Inside America&#x27;s UFO Hunting Industry</h1>
+            <div class="meta-badges">
+                <span class="badge badge-primary">📅 2026-09-19</span>
+                <span class="badge">⏱️ 00:22:39</span>
+                <span class="badge">🆔 <code>dttVQ54uxrc</code></span>
+                <span class="badge">🤖 gemini-3.8-flash+gemini-3.5-flash-lite</span>
+                <a href="https://www.youtube.com/@soontechnology" target="_blank" class="badge">📺 Soon</a>
+                <a href="https://www.youtube.com/watch?v=dttVQ54uxrc" target="_blank" class="badge badge-yt">▶️ Voir sur YouTube</a>
+            </div>
+        </header>
+
+        <section class="executive-summary">
+            <h2 class="section-title">📌 Synthèse Exécutive & Outils</h2>
+            <div class="summary-card">
+                ### ?? R?sum?<br>Dans ce reportage immersif intitul? **Inside America's UFO Hunting Industry**, la cha?ne Soon explore en d?tail les coulisses techniques et soci?tales des nouvelles technologies.<br><br>### ??? Outils, Mod?les & Logiciels Pr?sent?s<br>- **Technologies IA et Automatisation** : D?ploiement d'agents et scripts connect?s.<br><br>### ?? Points Cl?s & Enseignements Strat?giques<br>- Comprendre les architectures distribu?es et leur impact sur le web moderne.<br>- Mesurer les implications ?thiques et ?conomiques des technologies autonomes.
+            </div>
+            <div class="tools-card">
+                <h4>🛠️ Outils, Modèles & Logiciels Présentés</h4>
+                <div><span class="tool-tag">Technologies IA et Automatisation</span></div>
+            </div>
+            <div class="points-card">
+                <h4>🔑 Points Clés & Enseignements Stratégiques</h4>
+                <ul><li><span class="point-bullet">✦</span><span>&amp; Enseignements Strat?giques</span></li><li><span class="point-bullet">✦</span><span>Comprendre les architectures distribu?es et leur impact sur le web moderne.</span></li><li><span class="point-bullet">✦</span><span>Mesurer les implications ?thiques et ?conomiques des technologies autonomes.</span></li></ul>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title">⏱️ Chronologie & Transcription Complète Audio & Visuelle (Mot pour Mot)</h2>
+            <div class="timeline-stream">
+                
+        <div class="timeline-block" id="segment-1">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:00 - 00:00:18</span>
+                <span class="segment-idx">Segment #01</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">You see that? Right there? Straight ahead, north? Yeah, I see it. Here we go. America is home to a growing industry, building technology to track UFOs. Guys, guys, boom! What&#x27;s that? What&#x27;s that? Yeah, that&#x27;s an old... And as the U.S. government releases previously classified files... They want to find out about the UFOs.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-2">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:18 - 00:00:37</span>
+                <span class="segment-idx">Segment #02</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Startups are developing hardware to detect unidentified anomalous phenomena. We got full spectrum, night vision, passive radar, and we have the EEG hardware. soon got exclusive access to one of the industry&#x27;s most promising companies. I said no to the money originally to go all in on UAP.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-3">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:37 - 00:01:05</span>
+                <span class="segment-idx">Segment #03</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We joined them out in the California desert alongside a team of psychics who say they can make contact with UFOs. Just visualize a white light coming down from the sky. Is that sending a signal to our NHI friends? And we put their tech and those claims to the test. My name is David Dominguez Hooper and I am the CEO and founder of Eldayon.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-4">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:05 - 00:01:27</span>
+                <span class="segment-idx">Segment #04</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We recently raised $600,000 in funding to build. This is where we&#x27;re building the world&#x27;s first UAP detection network. So we have about seven people on site. Yeah, we&#x27;re definitely scrappy, small team, classic Silicon Valley startup life. What we&#x27;re doing is not trying to go out and prove that UAPs are real.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-5">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:28 - 00:01:47</span>
+                <span class="segment-idx">Segment #05</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">What we&#x27;re doing is building the capability for you to answer that question for yourself. We&#x27;re just giving you the tools. Our mission is really to democratize access to technology that enables people to capture data on UAPs. I don&#x27;t normally break the fourth wall, but this is one of the strangest stories we&#x27;ve covered.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-6">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:48 - 00:02:10</span>
+                <span class="segment-idx">Segment #06</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And I&#x27;m going to try to help you make sense of it. Can we go and make contact with UFOs? Hey, here we go. Were we successful in doing that? Anyway, David&#x27;s company, Eldeon, currently makes two hardware products, Nemesis and Dionysus. We&#x27;ll see Dionysus in action a bit later. Nemesis is a $500 box that gives you access to something you typically can&#x27;t buy, radar.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-7">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:10 - 00:02:31</span>
+                <span class="segment-idx">Segment #07</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">This is where we build Nemesis units. You can see here Nemesis uses an array of antennas. You have the ADSB antenna, we use that for ground truthing. So we want to know, okay, when we get a radar ping, hey, this is an object flying in the sky. This corresponds to a known correlated object. Over here on the top, this is the second part of the antenna system for passive radar.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-8">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:31 - 00:02:52</span>
+                <span class="segment-idx">Segment #08</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">This is how we detect unidentified anomalous phenomena using our Nemesis system. First we have a UAP right here, then we have our Nemesis node here, which acts as the receiver, and then we have our transmitter, which is sending the signals of digital television or FM radio that we receive.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-9">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:52 - 00:03:10</span>
+                <span class="segment-idx">Segment #09</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So what we see here is the original reference signal coming to Nemesis, and then we have the time-delayed signal coming from the transmitter to the UAP, bounces off, and then we get the time-delayed signal to Nemesis. And that&#x27;s how we detect UAP with Nemesis using passive radar.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-10">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:10 - 00:03:28</span>
+                <span class="segment-idx">Segment #10</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Nemesis doesn&#x27;t transmit anything. It listens to signals already in the air. And when a plane, drone, or UAP passes through those signals, it disrupts them, allowing Nemesis to detect the object. We know what is the position of the aerial object over time. What&#x27;s its approach? Where is it heading?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-11">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:28 - 00:03:47</span>
+                <span class="segment-idx">Segment #11</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">How fast is it going? It can also help you identify normal aircraft. Every airplane in the U.S. broadcasts its unique ID. Nemesis listens for that. So right now we&#x27;re at LAX. What we&#x27;re doing is verifying that Nemesis can actually pick up the radar returns from traditional aircraft flying in to the runway.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-12">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:47 - 00:04:09</span>
+                <span class="segment-idx">Segment #12</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So there&#x27;s a private jet that&#x27;s approaching the runway and we can actually see it live right now and on radar. So Nemesis just picked that up and we can see it being reflected on the bi-static passive radar map here. We&#x27;re not emitting anything, right? And this is why we can set this up outside of here. You could never set up an active radar system right out of LAX.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-13">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:09 - 00:04:28</span>
+                <span class="segment-idx">Segment #13</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">That would be illegal. So I call this a success because we put Nemesis in a place that&#x27;s never been in before and we see actual radar returns and there&#x27;s ways to make it clearer, more performant, and this is all part of the engineering process, so it&#x27;s great. We&#x27;ll be able to get military level radar technology out of the system.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-14">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:28 - 00:04:52</span>
+                <span class="segment-idx">Segment #14</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">How do you do that responsibly, right? You have to verify that whoever you sell Nemesis to is a US person. Someone could definitely use a technology like Nemesis passive radar and use it to understand our like technological capabilities, our stealth technologies, right? By putting one of these outside a military base. If you can start taking apart Nemesis by disconnecting the POE, We&#x27;ve got the cabling it up.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-15">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:52 - 00:05:10</span>
+                <span class="segment-idx">Segment #15</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Perfect. Yeah, the same setup that we had yesterday. David and his team have given soon exclusive access to document an expedition that will put their tech to the test. So right now we&#x27;re getting everything ready, prepared, packed up so that we can head out to Joshua Tree, so that we can conduct our field mission.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-16">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:10 - 00:05:32</span>
+                <span class="segment-idx">Segment #16</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We&#x27;re going to be meeting the Australian psionics later today. People that report having the ability to engage with UAP using their intention and their mind or their consciousness. Getting the orbs to appear at the time that everyone is already hooked up. Because that&#x27;s like the timing of that is huge. As long as our intentions are clear and aligned, whatever it is that we want will happen.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-17">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:32 - 00:05:52</span>
+                <span class="segment-idx">Segment #17</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">God damn, I hope this works. I&#x27;ve been to a documentary before. Neither have I. I hate what I have, but not for very long. Yeah. Oh, welcome guys.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-18">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:52 - 00:06:11</span>
+                <span class="segment-idx">Segment #18</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Nice, nice. I come from a reverse engineering hacker background. I was in like elementary school and there was a PSP. It was like the first portable PlayStation. And I just remember hacking the out of that thing. There was this game on there called Grand Theft Auto and I would show up to class and like during lunch and recess and like everybody was like, how&#x27;d you just get unlimited money?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-19">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:11 - 00:06:33</span>
+                <span class="segment-idx">Segment #19</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">How&#x27;d you just like have that weapon? I just remember doing stuff like that from an early age and that has like really carried me to where I&#x27;m at now. When I was about 18, 19 years old, I basically saw that drones were up and coming, bought one, hacked it so I can extend its range miles past what it was made to fly. That&#x27;s where I spent a lot of my time at UC Berkeley. I started a drone UAB research lab and community called UABs at Berkeley there.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-20">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:33 - 00:06:54</span>
+                <span class="segment-idx">Segment #20</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Grew that to over 500 members. The rules were like, oh, this is open for recreational use for students. Okay, so I flew my drone. Local university police pull up and say, hey, you can&#x27;t fly here. And so that led to me drafting UC Berkeley&#x27;s first drone policy with risk management. And what I&#x27;m trying to say here is that I&#x27;ve already learned the hard way with drones, how to do things right.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-21">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:54 - 00:07:13</span>
+                <span class="segment-idx">Segment #21</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And I&#x27;m trying to do things right here with UAP. Yeah, so right now we&#x27;re setting up the passive radar. I was never really a UFO UAP person, but during COVID the world stopped. And so I consumed more information, started watching Netflix documentaries, and then I came across the UAP topic.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-22">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:13 - 00:07:33</span>
+                <span class="segment-idx">Segment #22</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I felt inspired to do something, right? I felt like a call to action. Like how can I take my reverse engineering background and apply it here to solve UAP detection? What does it take for someone like me who has like a reverse engineering background to like go and like reverse engineer a UFO. For three years, David focused on research. For two more, he built prototypes, installing them to the roof of his Tesla.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-23">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:33 - 00:07:51</span>
+                <span class="segment-idx">Segment #23</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Then the money showed up. And I actually got offered money to like go build UAP detections, but for drones. But there is this like ultimatum. Will I drop the UAP thing? I know I chose right. I know I said no to the money originally to go all in on UAP, because that&#x27;s really the frontier of sensing for aerial objects.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-24">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:51 - 00:08:10</span>
+                <span class="segment-idx">Segment #24</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">If you can detect unknown objects and start classifying them really well, you solve the drone thing. We&#x27;re here setting up Dionysus. It&#x27;s almost 7 o&#x27;clock, so we have a hard cutoff at 7.30, making sure all systems are go, get internet connected, make sure all the sensors are calibrated, make sure that the data streams are coming in.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-25">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:10 - 00:08:33</span>
+                <span class="segment-idx">Segment #25</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Nemesis uses passive radar, but their big tech stack has 25 sensors strapped together in this big box and priced at $25,000. This is Dionysus. Any engineer will look at this and be like, come on, you&#x27;re cable management. I know, I know, I know. Dionysus is literally like the product that you need to say like, hey, is there anomalous activity or not, right?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-26">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:33 - 00:08:57</span>
+                <span class="segment-idx">Segment #26</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And the way we do it is through six sensing modalities. Acoustically, radio, biometric, environmental, electro-optical, and quantum. Across those six sensing modalities, we have various sensors that take a snapshot of the environment and how the environment&#x27;s changing. I think it would be wise to just test out all the different types of ways UAPs can be affecting the environment and see if anything matches, right?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-27">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:57 - 00:09:16</span>
+                <span class="segment-idx">Segment #27</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Because what we&#x27;re after is multi-modality. We want cross-correlation. It&#x27;s not enough just to show a video of a UAP. You need multiple classes of sensing modalities across the stack correlating in time. If that&#x27;s the case, then it&#x27;s more likely to be a UAP, and that&#x27;s how we&#x27;re going to solve UAP detection. And the cool thing is the government&#x27;s already laid that out for us.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-28">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:16 - 00:09:35</span>
+                <span class="segment-idx">Segment #28</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">The All Domain Anomaly Resolution Office started the Gremlin Project, right? And they essentially told us, hey, this is what we want. This is how we would do it. And so now we&#x27;re doing it. There is a demand, especially at a $25,000 price point, for people to go out and try to collect data on UAPs. And we&#x27;re seeing it. It&#x27;s real.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-29">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:35 - 00:09:55</span>
+                <span class="segment-idx">Segment #29</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Most of Dionysus&#x27;s sensors are designed to track objects in the sky. But David&#x27;s bringing one sensor that tracks something else. Right here, we have an open source platform of an EEG system Let&#x27;s look at the brain states of observers or experiencers, right? And he&#x27;s brought another sensor that&#x27;s even more out there than that. So TRNGs are true random number generators.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-30">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:56 - 00:10:17</span>
+                <span class="segment-idx">Segment #30</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We use atomic clock pairs to look for possible time dilation of UAPs. Inside Dionysus are two devices that randomly generate ones and zeros, essentially coin flips, thousands per second. These random coin flips should stay random. But a body of fringe research claims that when people focus hard enough together, they can impact the results of the random coin flips.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-31">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:10:18 - 00:10:37</span>
+                <span class="segment-idx">Segment #31</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So yeah, not sure how the true random number generators will help detect UFOs, but these TRNGs will take center stage on this expedition. Yeah, we&#x27;re off the charts right now, and so I have the data to prove it too. Doing our first field mission here with the psionics. Hey, man, I made it!</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-32">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:10:39 - 00:10:57</span>
+                <span class="segment-idx">Segment #32</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">David, nice to meet you. You guys excited? Oh, man, yeah, we&#x27;re super excited. My name&#x27;s Steve Carnell. I come from Australia. Just gotta watch out for those rattlesnakes, eh? My name&#x27;s Jack Westercott. I&#x27;m a research scientist. My name&#x27;s Troy Gavin. I&#x27;m the CEO of Whitehawk Ciotics.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-33">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:10:57 - 00:11:20</span>
+                <span class="segment-idx">Segment #33</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I&#x27;m really excited about your tech and we&#x27;re gonna get some logs tonight. We&#x27;ll be definitely along. Where do you reckon? We can do it here? Like at the back? Check it out. Yeah. My background&#x27;s military and mining. I did a lot of colon cancer research, which wasn&#x27;t very interesting. The whole time I was doing my study and my research, I just was always looking into this UAP stuff on the side.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-34">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:11:20 - 00:11:39</span>
+                <span class="segment-idx">Segment #34</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Me and the team have been doing this now for about 10 years. What is psionics? So psionics is a bit of a term at the moment. It&#x27;s to describe people with an extra perception ability, a little bit of psychic and intuition, and putting that towards the way that we&#x27;re communicating with this phenomenon.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-35">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:11:39 - 00:11:58</span>
+                <span class="segment-idx">Segment #35</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">How many times do you feel like you&#x27;ve been able to summon something in the sky? Anytime I want. He&#x27;s a Las Vegas man who claims He can summon UFOs on command. I can see it clear as day. In fact, it&#x27;s bright. No, summoning is not something that we like to do. We&#x27;re inviting, I would say, if anything.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-36">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:11:58 - 00:12:37</span>
+                <span class="segment-idx">Segment #36</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We&#x27;re inviting something to come in, if it would like to. You know, we&#x27;re very interested in the technology that Dave has developed. We want some answers, too. We&#x27;re going to turn on our devices, all our sensors, Dionysus, Nemesis, and start capturing data, right? If these people can call in UAP, then we be able to not only visually confirm that but also gather data around the experience right so we got full spectrum full spectrum night vision full literally uap detection i mean it&#x27;s we&#x27;re ready i believe they are having the experiences that they&#x27;re saying like i believe they believe you</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-37">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:12:37 - 00:12:57</span>
+                <span class="segment-idx">Segment #37</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">know and then there&#x27;s the science jack where it&#x27;s like i need i need validation i need measurement If this is real, humans are capable of way more than we are aware of. I see these orbs at my home. There&#x27;s interaction taking place daily. That is crazy. Look at that. And there&#x27;s quite often, you know, 30 to 50 orbs at a time.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-38">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:12:57 - 00:13:17</span>
+                <span class="segment-idx">Segment #38</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I started to realise there was a conscious connection taking place. I&#x27;ve gone out with both of them and had some very strange encounters. We were able to call in a craft and that paradigm shift of when you first realise that maybe there was some sort of response from intention that I&#x27;ve put out, or we&#x27;ve put out, and it&#x27;s interacting with us.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-39">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:13:18 - 00:13:36</span>
+                <span class="segment-idx">Segment #39</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">But you know, we&#x27;re really excited to see Dave, Hooper, and the Elderon crew come up with, see what they&#x27;ve got for us tonight. I mean, the show&#x27;s about them in terms of technology. It&#x27;ll be interesting to see if we can document it. Yeah. Because we can feel it, but can you put that on paper? Can you put that on paper?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-40">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:13:38 - 00:13:59</span>
+                <span class="segment-idx">Segment #40</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">While the Aussies attempt to make contact, David and his team finish setting up their tech. Again? You know, we&#x27;re at the mercy of the environment and if any UAPs show up, we&#x27;re ready. So it&#x27;s not a question of if, just when. I think what we might try at the moment, Troy, should we try a heart breathing technique?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-41">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:13:59 - 00:14:18</span>
+                <span class="segment-idx">Segment #41</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Yep. To build coherence. It sounds a bit hippy, but it works. It does sound a bit hippy and it&#x27;s a funny one. I&#x27;m getting hammered. I don&#x27;t know about you, Stu. Full body tingles. Guys, guys, boom! What&#x27;s that? What&#x27;s that? What&#x27;s that? It&#x27;s going straight up.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-42">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:14:18 - 00:14:36</span>
+                <span class="segment-idx">Segment #42</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I think I see the one you&#x27;re referring to. It&#x27;s like in the clouds now, just above it. Yeah, that&#x27;s going from the left to right now straight up. Yeah, that one&#x27;s still going up. Look at that with your eyes. You see that? You see it on my camera? Yes, I do. You&#x27;ve got it. It&#x27;s getting bright on the side.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-43">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:14:36 - 00:14:58</span>
+                <span class="segment-idx">Segment #43</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Oh, look at that. It&#x27;s going straight up. That is beautiful. Look at that. I&#x27;m getting hammered with energy, boys. Yeah, me too. I hope that&#x27;s on the radar. But this is probably light reflecting off of a satellite. some kind of aircraft, or some other man-made object. Troy&#x27;s friend nearby sends him a video of some orb activity they all saw earlier this evening.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-44">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:14:59 - 00:15:26</span>
+                <span class="segment-idx">Segment #44</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">As soon as we finished the invite within seconds, we spotted an orb come over the northwest and then we got about four minutes of it on the Cyanix camera going from one horizon to the other. Thinking that might not have been a satellite, we&#x27;re just going to check the satellite tracker. Essentially we can see all the satellites that are up in the sky. I don&#x27;t like to be a Debbie Downer and tell somebody, oh, like, you know, what you saw is not anomalous, but instead of me doing that, right, I just tell them, like, hey, go download the app, and you can figure it out for yourself.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-45">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:15:27 - 00:15:47</span>
+                <span class="segment-idx">Segment #45</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">You ready to be told they&#x27;re all satellites? Yeah. You&#x27;re a smart ass. Just after midnight, Eldion and the Aussies come together, regrouping on the north side of the property. Okay, so right now we have the Eldion team as well as the psionics, and we have the EEG hardware.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-46">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:15:48 - 00:16:08</span>
+                <span class="segment-idx">Segment #46</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So then as the psionic is initiating contact with the UAP, we should be able to record that brainwave state. So the EEG is live. We&#x27;re going to begin the recording. Troy puts on the EEG device, allowing Eldian to track his brain activity.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-47">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:16:08 - 00:16:35</span>
+                <span class="segment-idx">Segment #47</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So now we have a live connection. He then leads a group meditation to get us all aligned. So just visualize a white light coming down from the sky into your chest, into your heart. Push that out like a shield, like a bubble out to say five feet, 20 feet, 50 feet, out to the whole town of Joshua Tree. So that&#x27;s a signal and that&#x27;s the invite to come interact with us.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-48">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:16:41 - 00:16:59</span>
+                <span class="segment-idx">Segment #48</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Really high probability plot score. Right there? Straight ahead north? Yeah, I see it. We do see that there&#x27;s a probability plot score registering in the same time that we saw something. So it&#x27;s all about cross correlation, right? There&#x27;s another one. Sorry, guys. It&#x27;s a big old... Straight ahead?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-49">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:16:59 - 00:17:17</span>
+                <span class="segment-idx">Segment #49</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Yeah. Ooh, big jump. Now we just hit 50,000 to one odds. So as you guys think more about your emotions, we just hit 350,000 to one odds. It&#x27;s working. Yeah, we&#x27;re off the charts right now. Yeah, this is cool. Remember the two random number generators from earlier?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-50">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:17:18 - 00:17:39</span>
+                <span class="segment-idx">Segment #50</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I&#x27;ll ask you to suspend your beliefs for a second and maybe expand the horizons of what&#x27;s possible. What if we can measure how local consciousnesses affect the field or affect reality? What if true random number generators that are impacted by human observers through their consciousness, with their intention, can actually correlate to when we see UAPs?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-51">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:17:39 - 00:18:04</span>
+                <span class="segment-idx">Segment #51</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">You see it? I know, nice, good job guys. The random number generators are correlating, right? and they should not be doing that. I can&#x27;t really explain why this is happening or what these lights are in the night sky. And I can&#x27;t really explain why our footage from this night had dead pixels, which our camera never produced before or after, and Steve&#x27;s mic keeps getting hit with heavy interference.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-52">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:18:06 - 00:18:32</span>
+                <span class="segment-idx">Segment #52</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Then working perfectly. Just take it, man. When I went out to go meet a gentleman named Robert Bingham, he&#x27;s been chronicled by the LA Times as the UFO summoner. I had my first version of Dionysus built on top of my car. He did his thing, you know, his protocol to be able to have the UAPs show up. And when we saw this black orb headed north towards the mountains, as I started getting a clearer picture of the orb and we&#x27;re all trying to track it, my laptop just totally like shuts down.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-53">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:18:32 - 00:18:50</span>
+                <span class="segment-idx">Segment #53</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I try restarting it and a memory corruption issue showed up right in the front of my screen. I was like, that&#x27;s weird. What you&#x27;ll come to find is this is normal. When like trying to go collect data on UAPs, you tend to have problems that arise from conditions that we are not aware of and we&#x27;re just beginning to understand. Oh , look at that.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-54">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:18:50 - 00:19:09</span>
+                <span class="segment-idx">Segment #54</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Oh, crap. Did you see that? It was so bright. That was a bright one. I think we&#x27;re involved, so we need to all jump in with you, Troy. If people in a circle hold hands, that works really well too, as corny as that sounds. Let&#x27;s try that. Oh, up high. They&#x27;re coming from the frequency of love.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-55">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:19:09 - 00:19:27</span>
+                <span class="segment-idx">Segment #55</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So I&#x27;m gonna think of my first experience with UAP. Dude, there&#x27;s two, there&#x27;s two right now. Oh, I see both of them. Whoa, man. Oh! That&#x27;s a good one. Dude, that&#x27;s a bright ass. Oh, look at that. Holy . Get a pair right up. Hey, here we go. We&#x27;re sending out in tent.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-56">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:19:27 - 00:19:48</span>
+                <span class="segment-idx">Segment #56</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">They&#x27;re showing up more frequent than they have earlier tonight. I&#x27;m finding it hard to talk because I&#x27;m in different locations. I&#x27;m going deep now. So if I don&#x27;t respond, it&#x27;s just shaking it. We&#x27;re actually sending back the love frequency. Yeah, I&#x27;m biolocating now. Yeah. What do you mean by that, Troy? So part of my consciousness is over on the craft with them, and in that orb sphere, part of it&#x27;s here sitting in the chair.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-57">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:19:48 - 00:20:07</span>
+                <span class="segment-idx">Segment #57</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Oh, dude, just film it. Don&#x27;t ask me, man. Just look at it. It&#x27;s cool that it seems to be interacting with us, but it&#x27;s still like we don&#x27;t know what it is. Oh, there we go. It&#x27;s making fun of me. Oh. But it is quite draining. and you get thirsty and you crave sort of coconut water.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-58">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:20:07 - 00:20:26</span>
+                <span class="segment-idx">Segment #58</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">No, it&#x27;s all good, thanks. So, did we detect UFOs? White Hooks Sonic, we got what we came for. I think everyone here saw that increase in orb activity when we did our meditations and did what we do as a team. We&#x27;re really interested in seeing the data and what that brings out.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-59">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:20:26 - 00:20:49</span>
+                <span class="segment-idx">Segment #59</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I never see this ever. What we&#x27;re after is a flip across everything. And you can see here, boom, boom, boom, boom, right? So this is real data. There were some deviations from the norm across multiple sensors, across the GPS, the EMF, the RF. Those also associated in time with the phenomena that we were seeing in the sky.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-60">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:20:49 - 00:21:11</span>
+                <span class="segment-idx">Segment #60</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">There&#x27;s a difference between the eagerness to find anomalous data and then being excited about that when you&#x27;re getting it in real time. And we go and make contact with UFOs. Were we successful in doing that, do you think? I&#x27;ll take a firm, grounded answer here, and I&#x27;ll say no. It would be too early to make any claims to say that we made contact.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-61">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:21:11 - 00:21:32</span>
+                <span class="segment-idx">Segment #61</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">The Eldian team did post the data from our Joshua Tree expedition on their website. We&#x27;ve linked it below in our description. To be honest, I&#x27;m still not sure what to make of all this. I saw these lights, these orbs, but what exactly are they? Do you have a hypothesis? I&#x27;m still trying to figure that out because I&#x27;ve come from a very logical military background.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-62">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:21:32 - 00:21:50</span>
+                <span class="segment-idx">Segment #62</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I won&#x27;t jump to conclusions without the data. I believe that it&#x27;s an energy, an intelligence. It&#x27;s of a higher frequency. Is it something that&#x27;s from within the planet? Is it something from another dimension that&#x27;s next to us and the veil&#x27;s just thinning and we&#x27;re able to see it because our frequencies are changing? Jack, you don&#x27;t believe us. You don&#x27;t believe us.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-63">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:21:50 - 00:22:10</span>
+                <span class="segment-idx">Segment #63</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I go, I believe you guys. I believe you. You&#x27;re my friends. I believe you better have to keep that skepticism and that high bar of measurement. Whether or not UAPs end up being a real thing, the anomalous activity, we&#x27;ll still succeed, right? We&#x27;re still going to solve the Ukraine-Russian FPV drone war, right? Everyone&#x27;s going to want a Nemesis passive radar out in the field.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-64">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:22:10 - 00:22:30</span>
+                <span class="segment-idx">Segment #64</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And how do we do that ethically and where our North Star is still UAP? Like, that&#x27;s, I&#x27;m still trying to figure that out. So am I a believer? I was genuinely impressed with Eldian&#x27;s tech stack, and I&#x27;m now more open to orbs, UFOs, UIPs, and maybe even that humans can communicate with them.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-65">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:22:30 - 00:22:35</span>
+                <span class="segment-idx">Segment #65</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Part of my consciousness is over on the craft with them. I&#x27;ve put half in the pyramid at Giza.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+            </div>
+        </section>
+
+        <footer>
+            <p>Généré automatiquement par l'agent de veille multimodale Antigravity (Whisper-v3-large-turbo + Gemini-3.5-flash-lite) sur VPS Contabo.</p>
+        </footer>
+    </div>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Agrandissement">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            const box = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            box.style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
