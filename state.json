@@ -6,7 +6,8 @@
     "xlzZu8R3cSU",
     "dXglTsXGOBE",
     "suRs4wQFczw",
-    "dRbNILhpb8o"
+    "dRbNILhpb8o",
+    "sZTN3xmKjqA"
   ],
   "processed_videos": [
     {
@@ -99,6 +100,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "sZTN3xmKjqA",
+      "title": "The #deadinternettheory",
+      "title_fr": "The #deadinternettheory",
+      "upload_date": "20261003",
+      "duration": 39,
+      "duration_str": "00:00:39",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-10-03_YT-[sZTN3xmKjqA]_The #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-10-03_YT-[sZTN3xmKjqA]_The #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -146,10 +160,11 @@
     "suRs4wQFczw",
     "uMWo0IkeSeg",
     "wyKP_IuXx-o",
-    "xlzZu8R3cSU"
+    "xlzZu8R3cSU",
+    "sZTN3xmKjqA"
   ],
   "last_run_timestamp": null,
-  "completed_count": 7,
+  "completed_count": 8,
   "total_catalog_count": 33,
   "status": "ready"
 }
