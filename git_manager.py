@@ -4,6 +4,7 @@ from typing import List, Dict, Any
 
 from config import (
     REPO_DIR,
+    TRANSCRIPTS_DIR,
     CHANNEL_NAME,
     CHANNEL_URL,
     CHANNEL_HANDLE,
@@ -18,6 +19,10 @@ def update_readme_index(processed_videos: List[Dict[str, Any]], total_catalog_co
         f"# ? YT_SoonTechnologie ? Veille & Transcriptions Multimodales",
         "",
         f"> Base de connaissances et transcriptions int?grales mot pour mot en fran?ais (audio via `gemini-3.8-flash` / `whisper-v3-large-turbo`) et descriptions visuelles d'?cran (via `gemini-3.5-flash-lite`) avec captures d'?cran cl?s et fiches interactives HTML de la cha?ne **[{CHANNEL_NAME}]({CHANNEL_URL})** ({CHANNEL_HANDLE}).",
+        "",
+        "## ?? Organisation des Fichiers",
+        "- Tous les rapports `.md` et pages interactives `.html` sont centralis?s dans le dossier d?di? : **`YT_SoonTechnologie_Transcript/`**",
+        "- Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**",
         "",
         "## ?? Statistiques de l'Automatisation",
         f"- **Vid?os trait?es** : `{len(processed_videos)} / {total_catalog_count}` (`{pct:.1f}%`)",

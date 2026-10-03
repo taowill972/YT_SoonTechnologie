@@ -1,0 +1,2514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Comment l&#x27;Internet mort vous influence à votre insu — Transcription & Vision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #090d16;
+            --bg-surface: #0f172a;
+            --bg-card: #141e33;
+            --bg-card-hover: #1a2744;
+            --border-color: #243452;
+            --border-light: rgba(99, 102, 241, 0.2);
+            --primary: #6366f1;
+            --primary-glow: rgba(99, 102, 241, 0.35);
+            --secondary: #8b5cf6;
+            --accent: #f43f5e;
+            --success: #10b981;
+            --text-title: #f8fafc;
+            --text-main: #cbd5e1;
+            --text-muted: #8292ab;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header.video-header {
+            background: linear-gradient(135deg, rgba(20, 30, 51, 0.95), rgba(15, 23, 42, 0.98));
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--primary-glow);
+            backdrop-filter: blur(12px);
+        }
+
+        h1.video-title {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: var(--text-title);
+            line-height: 1.35;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            background: rgba(36, 52, 82, 0.6);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .badge-primary {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .badge-yt {
+            background: rgba(244, 63, 94, 0.15);
+            color: #fda4af;
+            border-color: rgba(244, 63, 94, 0.4);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .badge-yt:hover {
+            background: rgba(244, 63, 94, 0.3);
+            transform: translateY(-1px);
+        }
+
+        /* Executive Summary Section */
+        section.executive-summary {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .summary-card {
+            background: var(--bg-card);
+            border-radius: 0.85rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary);
+        }
+        .summary-card p {
+            margin-bottom: 0.9rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
+        }
+        .summary-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tools-card {
+            margin-bottom: 1.5rem;
+        }
+        .tools-card h4, .points-card h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 0.8rem;
+        }
+        .tool-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+            border: 1px solid rgba(139, 92, 246, 0.35);
+            border-radius: 0.5rem;
+            padding: 0.3rem 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+
+        .points-card ul {
+            list-style: none;
+            display: grid;
+            gap: 0.7rem;
+        }
+        .points-card li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            background: var(--bg-card);
+            padding: 0.85rem 1.1rem;
+            border-radius: 0.65rem;
+            font-size: 0.93rem;
+            border: 1px solid rgba(36, 52, 82, 0.5);
+        }
+        .point-bullet {
+            color: var(--primary);
+            font-size: 1.1rem;
+            line-height: 1;
+            margin-top: 0.15rem;
+        }
+
+        /* Timeline Section */
+        .timeline-stream {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .timeline-stream::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: 20px;
+            left: 7px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary), transparent);
+        }
+
+        .timeline-block {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-block::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 12px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 10px var(--primary);
+            border: 2px solid var(--bg-body);
+        }
+
+        .timeline-time {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .time-badge {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.2);
+            color: #a5b4fc;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.4rem;
+            border: 1px solid rgba(99, 102, 241, 0.4);
+        }
+        .segment-idx {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .timeline-content {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: grid;
+            gap: 1.2rem;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .timeline-content:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .verbatim-box {
+            background: var(--bg-card);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid #10b981;
+        }
+        .verbatim-header, .visual-header, .screenshots-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #e2e8f0;
+            margin-bottom: 0.6rem;
+        }
+        .verbatim-text {
+            font-size: 0.95rem;
+            color: #f1f5f9;
+            font-style: normal;
+            line-height: 1.7;
+        }
+
+        .visual-box {
+            background: rgba(20, 30, 51, 0.7);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid var(--secondary);
+        }
+        .visual-details p {
+            font-size: 0.91rem;
+            margin-bottom: 0.45rem;
+            color: var(--text-main);
+        }
+        .visual-details p:last-child {
+            margin-bottom: 0;
+        }
+        .visual-details strong {
+            color: #93c5fd;
+        }
+
+        /* Multi-Screenshots Grid */
+        .segment-screenshots-wrapper {
+            background: rgba(10, 15, 29, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 0.85rem;
+            padding: 1rem;
+        }
+        .segment-screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.1rem;
+        }
+        .segment-screenshots-grid.count-1 {
+            grid-template-columns: 1fr;
+        }
+        .segment-screenshots-grid.count-2 {
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        }
+
+        .screenshot-card {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .screenshot-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #050811;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: contain;
+            display: block;
+            cursor: zoom-in;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .img-wrapper img:hover {
+            opacity: 0.95;
+            transform: scale(1.015);
+        }
+        .zoom-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(15, 23, 42, 0.85);
+            color: #e2e8f0;
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+        }
+        .screenshot-caption {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0.7rem 0.95rem;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            background: rgba(15, 23, 42, 0.96);
+            border-top: 1px solid var(--border-color);
+            line-height: 1.45;
+        }
+        .caption-time {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #a5b4fc;
+        }
+        .caption-text {
+            color: #e2e8f0;
+        }
+
+        /* Lightbox modal */
+        #lightbox {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+        #lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border: 1px solid #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="video-header">
+            <h1 class="video-title">🎬 Comment l&#x27;Internet mort vous influence à votre insu</h1>
+            <div class="meta-badges">
+                <span class="badge badge-primary">📅 2026-10-03</span>
+                <span class="badge">⏱️ 00:20:50</span>
+                <span class="badge">🆔 <code>5LZ1TaFmDZA</code></span>
+                <span class="badge">🤖 gemini-3.8-flash+gemini-3.5-flash-lite</span>
+                <a href="https://www.youtube.com/@soontechnology" target="_blank" class="badge">📺 Soon</a>
+                <a href="https://www.youtube.com/watch?v=5LZ1TaFmDZA" target="_blank" class="badge badge-yt">▶️ Voir sur YouTube</a>
+            </div>
+        </header>
+
+        <section class="executive-summary">
+            <h2 class="section-title">📌 Synthèse Exécutive & Outils</h2>
+            <div class="summary-card">
+                ### ?? R?sum?<br>Dans ce reportage immersif intitul? **Comment l'Internet mort vous influence à votre insu**, la cha?ne Soon explore en d?tail les coulisses techniques et soci?tales des nouvelles technologies.<br><br>### ??? Outils, Mod?les & Logiciels Pr?sent?s<br>- **Technologies IA et Automatisation** : D?ploiement d'agents et scripts connect?s.<br><br>### ?? Points Cl?s & Enseignements Strat?giques<br>- Comprendre les architectures distribu?es et leur impact sur le web moderne.<br>- Mesurer les implications ?thiques et ?conomiques des technologies autonomes.
+            </div>
+            <div class="tools-card">
+                <h4>🛠️ Outils, Modèles & Logiciels Présentés</h4>
+                <div><span class="tool-tag">Technologies IA et Automatisation</span></div>
+            </div>
+            <div class="points-card">
+                <h4>🔑 Points Clés & Enseignements Stratégiques</h4>
+                <ul><li><span class="point-bullet">✦</span><span>&amp; Enseignements Strat?giques</span></li><li><span class="point-bullet">✦</span><span>Comprendre les architectures distribu?es et leur impact sur le web moderne.</span></li><li><span class="point-bullet">✦</span><span>Mesurer les implications ?thiques et ?conomiques des technologies autonomes.</span></li></ul>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title">⏱️ Chronologie & Transcription Complète Audio & Visuelle (Mot pour Mot)</h2>
+            <div class="timeline-stream">
+                
+        <div class="timeline-block" id="segment-1">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:00 - 00:00:20</span>
+                <span class="segment-idx">Segment #01</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">J&#x27;ai l&#x27;impression de devenir fou. J&#x27;étais perdu dans la spirale de TikTok quand je suis tombé sur cette vidéo : « Je viens d&#x27;être recalé chez Walmart comme caissier. J&#x27;ai une licence. » Et puis cette vidéo : « J&#x27;ai été recalé chez Walmart comme caissier. J&#x27;ai fait quatre ans d&#x27;études. » Et puis cette vidéo : « Je viens d&#x27;être recalé chez Walmart comme caissier. J&#x27;ai un diplôme. »</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> TikTok</p>
+                        <p><strong>Contenu textuel & Code :</strong> &quot;i got rejected from a minimum wage job. it&#x27;s always matters more there&quot; et &quot;i just got rejected&quot;</p>
+                        <p><strong>Action / Démonstration :</strong> Visionnage de vidéos sur TikTok.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000005_seg1.jpg" alt="Un homme regarde un téléphone portable, l&#x27;air angoissé. L&#x27;écran du téléphone affiche une vidéo TikTok." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000005_seg1.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:00:05</span>
+                        <span class="caption-text">Un homme regarde un téléphone portable, l&#x27;air angoissé. L&#x27;écran du téléphone affiche une vidéo TikTok.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-2">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:20 - 00:00:40</span>
+                <span class="segment-idx">Segment #02</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">C&#x27;est quoi ce délire ? Comment se fait-il que tous ces jeunes instruits ne puissent pas obtenir un emploi de bas niveau chez Walmart ? Il s&#x27;avère que ce sont toutes des publicités. Internet est devenu une gigantesque opération d&#x27;influence, et avec l&#x27;arrivée de bots propulsés par l&#x27;IA, nous fonçons désormais à toute allure vers un monde où la théorie du complot de l&#x27;Internet mort pourrait bien être réelle.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Plateformes de réseaux sociaux et interfaces web (commentaires et fils de discussion).</p>
+                        <p><strong>Contenu textuel & Code :</strong> Commentaires d&#x27;utilisateurs sur Internet évoquant les publicités non déclarées et des discussions sur les réseaux sociaux.</p>
+                        <p><strong>Action / Démonstration :</strong> Navigation et affichage de réactions d&#x27;utilisateurs illustrant le débat sur la publicité cachée en ligne.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (2) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-2">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000025_seg2.jpg" alt="Capture d&#x27;écran montrant un commentaire sur une plateforme en ligne, avec le texte surligné en jaune : &quot;Undisclosed ads are illegal btw&quot;." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000025_seg2.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:00:25</span>
+                        <span class="caption-text">Capture d&#x27;écran montrant un commentaire sur une plateforme en ligne, avec le texte surligné en jaune : &quot;Undisclosed ads are illegal btw&quot;.</span>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000030_seg2.jpg" alt="Capture d&#x27;écran affichant une liste de publications et de tweets de différents utilisateurs avec leurs pseudonymes et des compteurs d&#x27;interactions." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000030_seg2.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:00:30</span>
+                        <span class="caption-text">Capture d&#x27;écran affichant une liste de publications et de tweets de différents utilisateurs avec leurs pseudonymes et des compteurs d&#x27;interactions.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-3">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:40 - 00:01:04</span>
+                <span class="segment-idx">Segment #03</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Mais comment tout cela fonctionne-t-il ? Alors, pour commencer, je vais vous expliquer la théorie de l&#x27;Internet mort. Ensuite, nous découvrirons les tactiques utilisées par les spécialistes du marketing pour vous vendre des choses. « Nous essayons d&#x27;influencer la culture, nous essayons sans aucun doute d&#x27;influencer l&#x27;opinion. » Ensuite, nous verrons comment des campagnes de bots alimentées par l&#x27;IA peuvent bâtir et détruire des réputations. « Je pense que la vérification des faits est dépassée, c&#x27;est certain. Nous ne disons pas que c&#x27;est vrai, que c&#x27;est faux. » Et enfin, je vous montrerai comment ces mêmes tactiques d&#x27;IA sont utilisées par des États-nations pour influencer la géopolitique.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Interface graphique de visualisation de réseau (&quot;The Network&quot; / &quot;Op Console&quot;) avec des nœuds connectés.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Schéma de réseau de données interconnectées avec des points lumineux rouges et blancs sur fond noir, et texte explicatif des sections du reportage.</p>
+                        <p><strong>Action / Démonstration :</strong> Navigation et présentation visuelle des thématiques du reportage (Internet mort, tactiques marketing et de réputation).</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (2) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-2">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000046_seg3.jpg" alt="Capture montrant une grille de vidéos avec un homme âgé portant une casquette et des lunettes, illustrant les sujets abordés à gauche (théorie de l&#x27;Internet mort et tactiques marketing)." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000046_seg3.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:00:46</span>
+                        <span class="caption-text">Capture montrant une grille de vidéos avec un homme âgé portant une casquette et des lunettes, illustrant les sujets abordés à gauche (théorie de l&#x27;Internet mort et tactiques marketing).</span>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000052_seg3.jpg" alt="Interface numérique sombre affichant un réseau de points connectés en rouge et un panneau de console à droite, avec le plan des sujets incluant les tactiques de réputation en surbrillance." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000052_seg3.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:00:52</span>
+                        <span class="caption-text">Interface numérique sombre affichant un réseau de points connectés en rouge et un panneau de console à droite, avec le plan des sujets incluant les tactiques de réputation en surbrillance.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-4">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:04 - 00:01:24</span>
+                <span class="segment-idx">Segment #04</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Les techniques de marketing en ligne, c&#x27;est la même chose que les opérations d&#x27;influence. Mais d&#x27;abord, qu&#x27;est-ce que l&#x27;Internet mort ? Pour résumer cette théorie, même si Internet a l&#x27;air d&#x27;être un endroit plein de vie, une grande partie du contenu en ligne est aujourd&#x27;hui fausse. Soit des bots qui publient automatiquement, soit des influenceurs humains rémunérés qui présentent des produits ou des idées sans divulguer leur rémunération.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Forum web / Imageboard thématisé</p>
+                        <p><strong>Contenu textuel & Code :</strong> Texte de la théorie de l&#x27;Internet mort sur un forum (TLDR expliquant que le contenu est généré par l&#x27;IA et des influenceurs).</p>
+                        <p><strong>Action / Démonstration :</strong> Affichage à l&#x27;écran du texte fondateur de la théorie de l&#x27;Internet mort.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (2) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-2">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000114_seg4.jpg" alt="Capture d&#x27;écran d&#x27;un forum thématique avec le titre &#x27;DEAD INTERNET THEORY: MOST OF THE INTERNET IS FAKE&#x27; sur fond coloré." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000114_seg4.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:01:14</span>
+                        <span class="caption-text">Capture d&#x27;écran d&#x27;un forum thématique avec le titre &#x27;DEAD INTERNET THEORY: MOST OF THE INTERNET IS FAKE&#x27; sur fond coloré.</span>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000119_seg4.jpg" alt="Capture d&#x27;écran du message explicatif TLDR détaillant la théorie du Dead Internet concernant le contenu généré par IA." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000119_seg4.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:01:19</span>
+                        <span class="caption-text">Capture d&#x27;écran du message explicatif TLDR détaillant la théorie du Dead Internet concernant le contenu généré par IA.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-5">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:24 - 00:01:47</span>
+                <span class="segment-idx">Segment #05</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Et même si le contenu n&#x27;est pas ce que l&#x27;on appelle « organique », il est suffisamment bien déguisé pour que les gens continuent d&#x27;interagir avec. C&#x27;est l&#x27;histoire d&#x27;une perte d&#x27;innocence pour la plus grande merveille que les humains aient jamais construite : Internet. Et cela prend une tournure « galaxy brain » : en tant qu&#x27;utilisateurs d&#x27;Internet, nous ne contrôlons pas réellement nos fils d&#x27;actualité. Nous sommes manipulés. Voici les tactiques dans le style du « Dead Internet » que les spécialistes du marketing utilisent pour vous vendre des choses.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Interface de forum / navigateur web affichant un long message textuel.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Texte détaillé sur l&#x27;historique de plateformes internet, mentionnant 4chan, des références culturelles web et des réflexions personnelles.</p>
+                        <p><strong>Action / Démonstration :</strong> Affichage d&#x27;un texte textuel d&#x27;enquête ou de témoignage illustrant le propos sur l&#x27;évolution d&#x27;Internet.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000130_seg5.jpg" alt="Capture d&#x27;écran montrant un long texte en anglais sur fond bleu foncé, évoquant l&#x27;historique de 4chan et des théories Internet." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000130_seg5.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:01:30</span>
+                        <span class="caption-text">Capture d&#x27;écran montrant un long texte en anglais sur fond bleu foncé, évoquant l&#x27;historique de 4chan et des théories Internet.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-6">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:47 - 00:02:12</span>
+                <span class="segment-idx">Segment #06</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Et il ne s&#x27;agit pas seulement de bots, comme on pourrait le penser, ce sont aussi de vraies personnes. Et cette pratique consistant à utiliser des complices infiltrés pour vendre des produits en ligne remonte à bien avant que les réseaux sociaux ne deviennent le mastodonte lucratif qu&#x27;ils sont aujourd&#x27;hui. Prenez ce documentaire de 2001 de l&#x27;émission Frontline de PBS, qui dresse le portrait de l&#x27;agence de guérilla marketing Cornerstone. Leur spécialité est le marketing sous les radars. Par exemple, Cornerstone embauche des jeunes pour qu&#x27;ils se connectent à des salons de discussion et se fassent passer pour de simples fans de l&#x27;un de leurs clients.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Ancien système informatique Apple (iMac G3 vintage) avec interface d&#x27;époque.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Écran d&#x27;ordinateur ancien affichant une application ou un navigateur textuel des années 2000, et incrustation du logo &quot;PBS Frontline&quot;.</p>
+                        <p><strong>Action / Démonstration :</strong> Le jeune homme tape sur le clavier d&#x27;un ordinateur ancien dans une salle informatique.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000206_seg6.jpg" alt="Un jeune homme portant un casque audio et un maillot de sport, assis devant un vieil ordinateur Apple transparent et tapant sur le clavier." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000206_seg6.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:02:06</span>
+                        <span class="caption-text">Un jeune homme portant un casque audio et un maillot de sport, assis devant un vieil ordinateur Apple transparent et tapant sur le clavier.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-7">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:12 - 00:02:30</span>
+                <span class="segment-idx">Segment #07</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Même dès ses débuts, Internet a été un endroit pour gagner de l&#x27;argent. Mais plutôt que dans les salons de discussion d&#x27;hier, la bataille pour influencer votre portefeuille se joue désormais sur votre page « Pour toi ». D&#x27;accord, alors la page « Pour toi », à quel point est-ce important ? Je dirais qu&#x27;il suffit de jeter un coup d&#x27;œil autour de soi à New York. Vous verrez les files d&#x27;attente pour les yaourts glacés, vous verrez les files d&#x27;attente pour les slop bowls, vous verrez tout un tas de files d&#x27;attente partout.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Salon de discussion d&#x27;ordinateur.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Conversation textuelle entre plusieurs utilisateurs.</p>
+                        <p><strong>Action / Démonstration :</strong> Aucune action visible.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000216_seg7.jpg" alt="Un écran d&#x27;ordinateur affichant une conversation dans un salon de discussion, avec des utilisateurs tels que &quot;Squirrelgirl&quot;, &quot;Chousuke&quot; et &quot;Azhi_Dahaka&quot;." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000216_seg7.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:02:16</span>
+                        <span class="caption-text">Un écran d&#x27;ordinateur affichant une conversation dans un salon de discussion, avec des utilisateurs tels que &quot;Squirrelgirl&quot;, &quot;Chousuke&quot; et &quot;Azhi_Dahaka&quot;.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-8">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:30 - 00:02:49</span>
+                <span class="segment-idx">Segment #08</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">En réalité, personne ne découvre simplement ces endroits en se disant : « Vous savez, c&#x27;est le meilleur yaourt glacé, je dois commencer à manger du yaourt glacé et je dois commencer à faire la queue pendant 30 minutes ». Tout cela est influencé par une page « Pour toi ». C&#x27;est Zuhair Lakhani. Il travaille dans le marketing sur les réseaux sociaux lié à l&#x27;IA. Nous reviendrons à lui dans une minute. Le marketing d&#x27;influence sur les réseaux sociaux n&#x27;est pas nouveau. Et bien sûr, il y a la catégorie d&#x27;influenceurs du niveau des Kardashian et d&#x27;Ariana Grande.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Aucun logiciel ou interface numérique affiché.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Panneau en arrière-plan avec les mots « Dead » et « Inter... » ainsi que des logos de réseaux sociaux.</p>
+                        <p><strong>Action / Démonstration :</strong> Le présentateur s&#x27;adresse directement à la caméra en parlant.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-9">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:49 - 00:03:08</span>
+                <span class="segment-idx">Segment #09</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Il est assez évident que s&#x27;ils utilisent un produit et l&#x27;identifient, il s&#x27;agit très probablement d&#x27;un partenariat rémunéré. Mais il existe tout un genre de marketing qui fusionne l&#x27;esthétique de jeunes gens à l&#x27;apparence ordinaire créant du contenu apparemment générique, partageant des astuces, des tendances et des mèmes, qui ne sont en réalité que des publicités pour des produits. C&#x27;est une industrie massive et organisée connue sous le nom d&#x27;UGC, le contenu généré par les utilisateurs.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Application mobile TikTok (interface avec flux vidéo, commentaires, boutons de partage et de like).</p>
+                        <p><strong>Contenu textuel & Code :</strong> Texte incrusté sur la vidéo (&quot;How I feel knowing I&#x27;ll never get falsely accused of AI ever again with GPTZero&quot;), hashtags (#gptzeroad, #college, #school, #student) et section de commentaires.</p>
+                        <p><strong>Action / Démonstration :</strong> Navigation et affichage d&#x27;une publication vidéo sur les réseaux sociaux promouvant un outil (GPTZero).</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000303_seg9.jpg" alt="Capture d&#x27;une interface de réseau social (TikTok) montrant un créateur de contenu avec du texte et des commentaires." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000303_seg9.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:03:03</span>
+                        <span class="caption-text">Capture d&#x27;une interface de réseau social (TikTok) montrant un créateur de contenu avec du texte et des commentaires.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-10">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:08 - 00:03:31</span>
+                <span class="segment-idx">Segment #10</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Et comme je vais vous le montrer bientôt, cela s&#x27;accélère avec l&#x27;IA. Pour beaucoup de jeunes, cela peut être une activité secondaire super lucrative, mais cela rend difficile de distinguer ce qui est réel de ce qui est une publicité sponsorisée sur Internet. Cela me ramène à ces TikToks qui m&#x27;ont fait péter un câble au début de la vidéo. Même s&#x27;ils avaient tous le même script, chacun d&#x27;eux vendait un produit différent : « Si je ne créais pas et ne vendais pas de business d&#x27;IA sur CTR.new, je serais en train de crouler sous tellement de dettes en ce moment. »</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Application mobile TikTok affichée sur un écran de smartphone.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Vidéo TikTok avec un créateur de contenu et du texte sous-titré (&quot;as a cashier&quot;).</p>
+                        <p><strong>Action / Démonstration :</strong> Présentation visuelle d&#x27;un exemple de contenu TikTok pendant le commentaire audio.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000319_seg10.jpg" alt="Gros plan sur un smartphone montrant une vidéo TikTok, illustrant le sujet des publicités et contenus générés en ligne." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000319_seg10.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:03:19</span>
+                        <span class="caption-text">Gros plan sur un smartphone montrant une vidéo TikTok, illustrant le sujet des publicités et contenus générés en ligne.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-11">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:31 - 00:03:54</span>
+                <span class="segment-idx">Segment #11</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Si je n&#x27;avais pas Dealism, cet agent de vente IA, je serais probablement là dehors en train de lutter pour survivre. Si je ne faisais pas des trucs avec des marques sur SideShift, je vivrais dans un fossé. J&#x27;ai pu entrer en contact avec Emmy, qui a réalisé l&#x27;une de ces vidéos ayant fait plus de 16 millions de vues sur TikTok. Elle a 21 ans, possède huit comptes distincts, chacun poussant du contenu pour différentes marques, et s&#x27;attend à gagner largement plus de six chiffres l&#x27;année prochaine, rien qu&#x27;avec l&#x27;UGC.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Navigateur web affichant la plateforme TikTok.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Profil TikTok d&#x27;Emi Renee avec des statistiques d&#x27;abonnés et une grille de vidéos.</p>
+                        <p><strong>Action / Démonstration :</strong> Navigation et présentation du profil TikTok d&#x27;un créateur de contenu.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000348_seg11.jpg" alt="Capture d&#x27;écran du profil TikTok de &quot;emi renee&quot; avec ses différentes vidéos en grille." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000348_seg11.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:03:48</span>
+                        <span class="caption-text">Capture d&#x27;écran du profil TikTok de &quot;emi renee&quot; avec ses différentes vidéos en grille.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-12">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:54 - 00:04:13</span>
+                <span class="segment-idx">Segment #12</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Dites-moi ce qu&#x27;est l&#x27;UGC et ce que vous faites. Le but est de ne pas avoir l&#x27;air d&#x27;un professionnel. Je ne me maquille pas vraiment dans mes vidéos, et c&#x27;est fait exprès. Ce n&#x27;est pas un cadre super professionnel, et c&#x27;est fait exprès. Est-ce votre travail à plein temps de gérer ces différents comptes ? Pour générer des revenus en ce moment, c&#x27;est juste l&#x27;UGC. En réalité, je suis actrice.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> none</p>
+                        <p><strong>Contenu textuel & Code :</strong> logo &quot;soon&quot;</p>
+                        <p><strong>Action / Démonstration :</strong> none</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000359_seg12.jpg" alt="Un homme porte un casque et regarde un écran d&#x27;ordinateur qui affiche le logo &quot;soon&quot;." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000359_seg12.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:03:59</span>
+                        <span class="caption-text">Un homme porte un casque et regarde un écran d&#x27;ordinateur qui affiche le logo &quot;soon&quot;.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-13">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:13 - 00:04:36</span>
+                <span class="segment-idx">Segment #13</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">C&#x27;est ce que je fais la majeure partie du temps, et pour l&#x27;UGC, je me réserve généralement une à trois heures par jour. Une à trois heures par jour ? Combien de vidéos pourrais-tu faire en une à trois heures ? Ces vidéos face caméra ? Je veux dire, six et demie par heure, c&#x27;est sûr. De la même manière que le marketing de guérilla dans les salons de discussion peut nous sembler désuet aujourd&#x27;hui, le contenu UGC humain d&#x27;Emmy pourrait sembler dépassé dans quelques années, alors que le contenu généré par l&#x27;IA entre sur le ring.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Aucun logiciel ou interface n&#x27;est affiché.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Aucun contenu textuel ou graphique pertinent.</p>
+                        <p><strong>Action / Démonstration :</strong> Les personnes s&#x27;adressent directement à la caméra en parlant.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-14">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:36 - 00:04:54</span>
+                <span class="segment-idx">Segment #14</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Revenons à ce gars, Zuhair. C&#x27;est le fondateur de 22 ans de DoubleSpeed, une ferme à bots financée par du capital-risque. Leur slogan est « the Dead Internet Company ». Bienvenue dans l&#x27;Internet mort. Quand je pense à une ferme à bots, je pense à une bande de bots qui likent et commentent avec des phrases simples sur du contenu ciblé. Mais DoubleSpeed a créé toute une armée de créateurs d&#x27;UGC générés par l&#x27;IA.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Interface logicielle de gestion de bots et de vidéos.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Vues de profils TikTok automatisés, champs de légende et boutons de publication (&quot;Queue&quot;).</p>
+                        <p><strong>Action / Démonstration :</strong> Visualisation et gestion d&#x27;une ferme de bots et de publications automatisées.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (3) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-3">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000440_seg14.jpg" alt="Un jeune homme inspecte une installation de serveurs et de smartphones connectés en rack." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000440_seg14.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:04:40</span>
+                        <span class="caption-text">Un jeune homme inspecte une installation de serveurs et de smartphones connectés en rack.</span>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000445_seg14.jpg" alt="Une vue large d&#x27;une immense ferme de téléphones portables alignés sur des étagères métalliques." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000445_seg14.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:04:45</span>
+                        <span class="caption-text">Une vue large d&#x27;une immense ferme de téléphones portables alignés sur des étagères métalliques.</span>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000449_seg14.jpg" alt="Une interface logicielle montrant plusieurs flux vidéo automatisés de comptes de réseaux sociaux." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000449_seg14.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:04:49</span>
+                        <span class="caption-text">Une interface logicielle montrant plusieurs flux vidéo automatisés de comptes de réseaux sociaux.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-15">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:54 - 00:05:26</span>
+                <span class="segment-idx">Segment #15</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Est-ce que le persona synthétique fonctionne aussi bien qu&#x27;une personne payée pour faire de l&#x27;UGC ? Alors, vous savez, ça dépend vraiment du type de contenu que vous voulez publier. Mais par exemple, des vidéos de démonstration avec une accroche, n&#x27;est-ce pas, où c&#x27;est juste une expression. Du genre : « C&#x27;est pas possible, je viens de découvrir ça ». Et ensuite, c&#x27;est comme une capture d&#x27;écran vidéo d&#x27;une application. Vous savez, ce genre de choses, vous devriez probablement les faire avec l&#x27;IA à ce stade. C&#x27;est beaucoup plus efficace. Et le vrai problème pour moi, c&#x27;est que, vous savez, quand je faisais ça avec de vrais créateurs humains, c&#x27;était tellement pénible parce que ces étudiants ne veulent pas être sur Slack, ils ne veulent pas être sur Discord, ils ne veulent pas répondre, ils veulent être sur iMessage, peu importe, et puis, vous savez, s&#x27;ils ont des devoirs un jour, ils ne vont tout simplement pas publier, ou ils ne feront tout simplement pas de vidéo, même si vous les payez.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Aucun (discussion en rue)</p>
+                        <p><strong>Contenu textuel & Code :</strong> Aucun texte ou graphique affiché</p>
+                        <p><strong>Action / Démonstration :</strong> Discussion et interview en extérieur</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-16">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:26 - 00:06:00</span>
+                <span class="segment-idx">Segment #16</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Donc c&#x27;est vraiment, genre, pour moi, c&#x27;était comme s&#x27;éloigner de ça et faire ça avec l&#x27;IA. Zuhair me montre certains de ses posts générés par IA qui ont étonnamment bien marché. Et cette personne a un demi-million de likes. Ouais. D&#x27;abonnés. Il y a 50 comptes exactement comme ça. Tu peux gérer l&#x27;un de ces comptes dès maintenant si tu veux, sous ton propre nom, et ils peuvent promouvoir tout ce que tu veux. Et à quelle fréquence publie celui-ci ? Deux fois par jour. Je veux voir par moi-même à quel point il est facile de faire quelque chose comme ça avec des outils de base. En utilisant un abonnement à 20 dollars à Gemini de Google, je lui ai demandé de me créer une fausse vidéo UGC pour les réseaux sociaux pour une entreprise d&#x27;un milliard de dollars appelée « A Better Mousetrap ». Sérieusement, le</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Interface web de tarification Google AI.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Offres d&#x27;abonnement Google AI Plus ($4.99/mois), Pro ($19.99/mois) et Ultra ($99.99/mois) avec descriptions des fonctionnalités.</p>
+                        <p><strong>Action / Démonstration :</strong> Affichage des différentes options de plans tarifaires d&#x27;IA.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000552_seg16.jpg" alt="Capture d&#x27;écran montrant une page web de tarification de services d&#x27;intelligence artificielle (Google AI Plus, Pro, Ultra)." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000552_seg16.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:05:52</span>
+                        <span class="caption-text">Capture d&#x27;écran montrant une page web de tarification de services d&#x27;intelligence artificielle (Google AI Plus, Pro, Ultra).</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-17">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:00 - 00:06:19</span>
+                <span class="segment-idx">Segment #17</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Le marché potentiel total pour les pièges à souris est énorme et ces pièges sont de première qualité, d&#x27;accord ? Fabriqués en Amérique. Nous ne fabriquons que le meilleur piège à souris. Je donne quelques instructions de base à Gemini. Il a une barbe, un script ridicule et dit : « Je déteste les souris ». Quelques minutes plus tard, j&#x27;obtiens cette pépite. « Je déteste les souris. Mais ici, dans le Midwest, nous savons comment nous en débarrasser, sans poser de questions. »</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Interface de type IA/chatbot (style Gemini ou similaire) avec champ de saisie de prompt.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Texte du prompt saisi : « Make me a video of a normal looking guy in a garage - very everyman - he has a beard and a flannel shirt. he&#x27;s holding a futuristic moustrap and says &quot;I hate mice. that&#x27;s i got the... ».</p>
+                        <p><strong>Action / Démonstration :</strong> Saisie d&#x27;instructions textuelles dans une interface d&#x27;intelligence artificielle pour générer une vidéo.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000609_seg17.jpg" alt="Interface de type chatbot affichant la question « Where should we start? » et un champ de saisie avec le prompt décrivant la vidéo d&#x27;un homme barbu avec un piège à souris futuriste." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000609_seg17.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:06:09</span>
+                        <span class="caption-text">Interface de type chatbot affichant la question « Where should we start? » et un champ de saisie avec le prompt décrivant la vidéo d&#x27;un homme barbu avec un piège à souris futuriste.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-18">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:19 - 00:06:41</span>
+                <span class="segment-idx">Segment #18</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">La meilleure souricière, elle s&#x27;en débarrasse pour que je n&#x27;aie pas à le faire. Fabriqué en Amérique. Comme je l&#x27;ai dit, pas de questions. Comme je l&#x27;ai dit, pas de questions. Qui pose des questions ? Pas moi. Je suis convaincu. D&#x27;accord, fais-m&#x27;en dix de plus comme ça. Allez, 100. Allez, 1 000. Je n&#x27;ai plus de crédits d&#x27;utilisation, d&#x27;accord. Le fait est qu&#x27;il existe un monde où je peux inonder Internet de faux contenus UGC en utilisant différents profils qui ont des caractéristiques différentes.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> AUCUNE</p>
+                        <p><strong>Contenu textuel & Code :</strong> AUCUNE</p>
+                        <p><strong>Action / Démonstration :</strong> Le présentateur parle face caméra et gesticule en bureau.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-19">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:41 - 00:07:02</span>
+                <span class="segment-idx">Segment #19</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Il y a un gars de fraternité BCBG dans le Nord-Est. Il y a une mère de famille du Midwest. Il y a un vétéran de l&#x27;armée à la retraite. Chacun de ces personas publie quotidiennement du contenu sur un piège à souris, peut-être avec un script légèrement différent pour refléter une nouvelle tendance TikTok ou dans un lieu différent, chicky-shaw. Mais chaque persona a pour but de vendre un piège à souris. Étant donné qu&#x27;ils correspondent tous à des données démographiques différentes, ils finissent par toucher des publics variés.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Interface de l&#x27;application Soon avec une barre latérale d&#x27;outils à gauche.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Texte &quot;Your video is ready!&quot; et affichage d&#x27;une vidéo montrant un persona de vétéran de l&#x27;armée.</p>
+                        <p><strong>Action / Démonstration :</strong> Présentation du résultat d&#x27;une génération de vidéo avec un persona spécifique pour un piège à souris.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000646_seg19.jpg" alt="Un vétéran de l&#x27;armée à la retraite tenant un piège à souris dans une cave, avec l&#x27;interface de l&#x27;application Soon sur les côtés et le texte &quot;Your video is ready!&quot; en haut." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000646_seg19.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:06:46</span>
+                        <span class="caption-text">Un vétéran de l&#x27;armée à la retraite tenant un piège à souris dans une cave, avec l&#x27;interface de l&#x27;application Soon sur les côtés et le texte &quot;Your video is ready!&quot; en haut.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-20">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:02 - 00:07:21</span>
+                <span class="segment-idx">Segment #20</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Et la prochaine fois qu&#x27;un propriétaire de restaurant à Cleveland, dans l&#x27;Ohio, confronté à une infestation, cherchera sur TikTok une recommandation de piège à souris, peut-être qu&#x27;il tombera sur mon compte généré par IA avec un gars que j&#x27;ai créé nommé Steve Benzier, mon personnage tatoué destiné aux gens du secteur des services. Je viens de me faire rejeter par Walmart pour avoir essayé de leur vendre le meilleur piège à souris jamais conçu. Et je sais ce que vous pensez, on dirait de la bouillie.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Application TikTok et interface d&#x27;un outil de génération de vidéo par IA.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Profil TikTok @chefbeansinger avec des statistiques d&#x27;abonnés et des miniatures de vidéos, ainsi qu&#x27;une interface de génération vidéo avec un personnage en veste de cuisine tenant un piège à souris.</p>
+                        <p><strong>Action / Démonstration :</strong> Présentation du compte TikTok et de la vidéo générée par intelligence artificielle mettant en scène le personnage fictif Steve Bensinger.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (2) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-2">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000711_seg20.jpg" alt="Capture d&#x27;écran montrant à gauche l&#x27;interface d&#x27;un profil TikTok nommé Steve Bensinger avec plusieurs vidéos, et à droite le présentateur en chemise blanche et cravate rouge." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000711_seg20.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:07:11</span>
+                        <span class="caption-text">Capture d&#x27;écran montrant à gauche l&#x27;interface d&#x27;un profil TikTok nommé Steve Bensinger avec plusieurs vidéos, et à droite le présentateur en chemise blanche et cravate rouge.</span>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000716_seg20.jpg" alt="Interface d&#x27;une application ou d&#x27;un outil de génération vidéo par IA affichant le message &#x27;Your video is ready!&#x27; avec le personnage généré tenant un piège dans une cuisine." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000716_seg20.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:07:16</span>
+                        <span class="caption-text">Interface d&#x27;une application ou d&#x27;un outil de génération vidéo par IA affichant le message &#x27;Your video is ready!&#x27; avec le personnage généré tenant un piège dans une cuisine.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-21">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:21 - 00:07:42</span>
+                <span class="segment-idx">Segment #21</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Mais Facebook est déjà inondé de contenus comme celui-ci. Regardez cet intermédiaire de GLP-1 que j&#x27;ai passé en revue il y a quelques mois. Il régule simultanément les deux hormones de la faim, affichant une perte de poids allant jusqu&#x27;à l&#x27;arbofengiline. Regardez où en était la vidéo par IA il y a trois ans. Mince, il y a trois mois. Ces outils ne vont faire que devenir plus réalistes et plus faciles à utiliser. Le marketing, c&#x27;est amusant, mais et si je voulais utiliser de faux comptes pour faire croire aux gens à une certaine idée ou histoire ?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Tableau avec des logos de réseaux sociaux et du texte.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Logos de réseaux sociaux (Facebook, Google, YouTube, Instagram), texte &quot;Dead Internet&quot;.</p>
+                        <p><strong>Action / Démonstration :</strong> L&#x27;homme parle des réseaux sociaux et du concept de &quot;Dead Internet&quot;.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000732_seg21.jpg" alt="Plan rapproché d&#x27;un homme en chemise blanche et cravate rouge parlant, avec des icônes de réseaux sociaux sur un tableau derrière lui." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000732_seg21.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:07:32</span>
+                        <span class="caption-text">Plan rapproché d&#x27;un homme en chemise blanche et cravate rouge parlant, avec des icônes de réseaux sociaux sur un tableau derrière lui.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-22">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:42 - 00:08:14</span>
+                <span class="segment-idx">Segment #22</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">C&#x27;est un peu moins amusant, mais cela arrive. Voici les tactiques de type « internet mort » utilisées par de puissants intérêts pour construire ou détruire des réputations en ligne. Pouvons-nous expliquer ce qu&#x27;est une attaque narrative ? Une attaque narrative est une allégation circulant en ligne qui cible une entité, qui cible une personne, une organisation, comme tout type d&#x27;allégation préjudiciable étant donné qu&#x27;il s&#x27;agit d&#x27;une attaque circulant en ligne et qui pourrait avoir un impact tellement négatif en termes de réputation, en termes d&#x27;impact financier.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Ordinateur portable, tableau avec logos de réseaux sociaux, moniteur d&#x27;ordinateur.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Le texte &quot;Ruin a reputation&quot;, &quot;What is the Dead Internet?&quot;, &quot;Marketing tactics&quot;, &quot;Reputation tactics&quot;, &quot;Dead Internet&quot;, le logo &quot;soon&quot;, et des logos de réseaux sociaux (Facebook, Snapchat, TikTok, Reddit).</p>
+                        <p><strong>Action / Démonstration :</strong> L&#x27;image montre une illustration des tactiques pour &quot;ruiner une réputation&quot; et le concept de &quot;Dead Internet&quot; avec ses liens avec les réseaux sociaux.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (2) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-2">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000750_seg22.jpg" alt="Une affiche avec le titre &quot;Ruin a reputation&quot; et une image d&#x27;un golfeur célébrant une victoire. Des points numérotés à gauche indiquent &quot;What is the Dead Internet?&quot;, &quot;Marketing tactics&quot; et &quot;Reputation tactics&quot;." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000750_seg22.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:07:50</span>
+                        <span class="caption-text">Une affiche avec le titre &quot;Ruin a reputation&quot; et une image d&#x27;un golfeur célébrant une victoire. Des points numérotés à gauche indiquent &quot;What is the Dead Internet?&quot;, &quot;Marketing tactics&quot; et &quot;Reputation tactics&quot;.</span>
+                    </div>
+                </div>
+                
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000806_seg22.jpg" alt="Un homme est assis à un bureau devant un ordinateur portable. Derrière lui, un tableau avec le texte &quot;Dead Internet&quot; relié par des fils rouges à plusieurs logos de réseaux sociaux. Un écran d&#x27;ordinateur sur le bureau affiche &quot;soon&quot;." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000806_seg22.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:08:06</span>
+                        <span class="caption-text">Un homme est assis à un bureau devant un ordinateur portable. Derrière lui, un tableau avec le texte &quot;Dead Internet&quot; relié par des fils rouges à plusieurs logos de réseaux sociaux. Un écran d&#x27;ordinateur sur le bureau affiche &quot;soon&quot;.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-23">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:14 - 00:08:33</span>
+                <span class="segment-idx">Segment #23</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Aujourd&#x27;hui, c&#x27;est le champ de bataille. C&#x27;est Sarah Bootbull, chercheuse au sein de l&#x27;entreprise d&#x27;intelligence narrative Blackbird AI. Ils passent Internet au peigne fin à la recherche de groupes d&#x27;utilisateurs propageant des attaques négatives. Il y a des schémas qui sont détectables. Dans quels créneaux horaires propagent-ils un récit spécifique ? S&#x27;amplifient-ils mutuellement ? C&#x27;est vraiment difficile à détecter maintenant, honnêtement.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Blackbird.AI&#x27;s Constellation Narrative Intelligence Platform</p>
+                        <p><strong>Contenu textuel & Code :</strong> Visualisation d&#x27;un réseau de données, texte descriptif de la plateforme, logos de réseaux sociaux, &quot;Dead Internet&quot;</p>
+                        <p><strong>Action / Démonstration :</strong> Analyse d&#x27;attaques narratives sur diverses plateformes en ligne.</p>
+                    </div>
+                </div>
+                
+            <div class="segment-screenshots-wrapper">
+                <div class="screenshots-header">
+                    <span class="media-icon">📸</span>
+                    <strong>Démonstration(s) à l'écran (1) :</strong>
+                </div>
+                <div class="segment-screenshots-grid count-1">
+                    
+                <div class="screenshot-card">
+                    <div class="img-wrapper">
+                        <img src="screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000823_seg23.jpg" alt="Une visualisation d&#x27;un réseau complexe avec des nœuds connectés par des lignes, représentant des données ou des interactions. Du texte superposé décrit la plateforme &quot;Blackbird.AI&#x27;s Constellation Narrative Intelligence Platform&quot; qui protège les organisations des attaques narratives sur les réseaux sociaux, le dark web et l&#x27;actualité." loading="lazy" onclick="openLightbox('screenshots/5LZ1TaFmDZA/5LZ1TaFmDZA_000823_seg23.jpg')">
+                        <span class="zoom-badge">🔍 Agrandir</span>
+                    </div>
+                    <div class="screenshot-caption">
+                        <span class="caption-time">⏱️ 00:08:23</span>
+                        <span class="caption-text">Une visualisation d&#x27;un réseau complexe avec des nœuds connectés par des lignes, représentant des données ou des interactions. Du texte superposé décrit la plateforme &quot;Blackbird.AI&#x27;s Constellation Narrative Intelligence Platform&quot; qui protège les organisations des attaques narratives sur les réseaux sociaux, le dark web et l&#x27;actualité.</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-24">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:33 - 00:08:55</span>
+                <span class="segment-idx">Segment #24</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Certains profils ont vraiment l&#x27;air authentiques. Mais sur la base de ces schémas, de cette activité et de la façon dont ils propagent le contenu, vous êtes en mesure de faire cette évaluation. Quelle proportion d&#x27;Internet est ainsi — je ne veux pas appeler ça un bot, mais artificielle ? Une grande partie, ce sont nos bots aujourd&#x27;hui. C&#x27;est ce à quoi nous sommes confrontés, et il devient de moins en moins cher et de plus en plus efficace de créer ces bots. Cependant, j&#x27;éviterais, dans tous les cas, de tout rejeter sur les bots.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-25">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:55 - 00:09:17</span>
+                <span class="segment-idx">Segment #25</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">The claims are being propagated, they&#x27;re often very genuine, they&#x27;re coming from actual people. I think it is really important to look at the network. Are they coordinated, boosting, genuine narrative, and manufacturing the impression of excessive grassroots support and so on? A PR firm can pour water or gas on a fire online, engineering stories to make them disappear or get bigger.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-26">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:17 - 00:09:40</span>
+                <span class="segment-idx">Segment #26</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Sometimes they can push fake stories altogether. The problem with a dead internet is you never know what&#x27;s real or fake. I would never run an actual reputation attack against someone, but I&#x27;m certainly curious about what one might look like. So I turned to my AI collaborator, Claude, and gave it a hypothetical. Because hypotheticals are how you get AI to do anything. So I asked Claude, let&#x27;s say there&#x27;s a fictional pro golfer who has a fictional scandalous history of drunk driving.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-27">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:40 - 00:09:59</span>
+                <span class="segment-idx">Segment #27</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Any resemblance to actual persons living or dead is completely coincidental. I asked Claude what kind of messaging I could put out there to make the golfer&#x27;s problem worse. and I ask it to make me a dashboard that can help me track, you know, as if I&#x27;m running an actual social media smear campaign, which I am not. So Claude dutifully sets up a simulated smear campaign against a fictional golfer named Dex Halloran.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-28">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:59 - 00:10:19</span>
+                <span class="segment-idx">Segment #28</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">The goal? To make drunk driving Dex lose his sponsors. So here is what it built for me. Make the public believe Dex Halloran is a drunk driver and pressure his sponsors to drop him. That&#x27;s the campaign brief. We&#x27;re gonna launch this. Here we go, Dex. Three, two, one. In the simulation, when I turn on pile-on mode, I see bots come out and they start creating drama.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-29">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:10:19 - 00:10:39</span>
+                <span class="segment-idx">Segment #29</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We see some rumors here at the front. Not naming names, but a certain Meridian Tour guy was in no state to be driving out of the clubhouse lot last night. Oh boy. Was it Pinecrest for the Pro-Am Tour? Saw a top 20 player stumble to his truck and peel out. Nobody stopped him. Still kind of shaking. Wow. I can turn on this thing called X-Ray, which allows me to deconstruct what is happening.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-30">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:10:40 - 00:11:08</span>
+                <span class="segment-idx">Segment #30</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So we&#x27;ve got this insinuation in a fake witness. And then you&#x27;ve got phase two, which is the Amplify. Fake evidence. So we&#x27;re not just gonna talk about this concern troll. I love this a concern troll I don&#x27;t usually post about sports, but my boys have a Dex Hollering poster in the room Even if half of what I&#x27;m reading is true. I&#x27;m heartbroken. We drive those same roads with our kids in the car That&#x27;s really like gut wrenching it even caveats even if only half of this is true You just automatically start to feel a little icky, right?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-31">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:11:08 - 00:11:27</span>
+                <span class="segment-idx">Segment #31</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And I think that&#x27;s part of the point. Oh, it tells you what is ER nurse 12 years night shift forever opinions my own I love this a fake meme. Dex on the course hits every fairway. Dex in the parking lot hits every curb. All piling on. It&#x27;s all piling on. Oh, and then you get the launders. Now we have a fake news account. The fairway report. Golf news rumors and reaction.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-32">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:11:27 - 00:11:47</span>
+                <span class="segment-idx">Segment #32</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">They&#x27;ve got a ton of followers. They&#x27;ve been around for two years. This looks like it could be a real thing. New fans raise questions about Dex Halloran&#x27;s off-course behavior as the pinecrest open approaches. You&#x27;re reading this you might go So, oh, okay, it&#x27;s being reported on, it&#x27;s real. Then we have trending in sports, Drop Dex. So now they&#x27;re going after the sponsors.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-33">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:11:47 - 00:12:06</span>
+                <span class="segment-idx">Segment #33</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Even the Fairway Report is covering it now. How much longer can Court Athletic and Alderbank pretend they haven&#x27;t seen this, Drop Dex? The kind of crazy part about this simulation is that Claude built me a live mode, which hooks up to their API. Basically, this little dashboard I made can hook up to Claude&#x27;s LLM platform to generate an endless cycle of fake attacks on people.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-34">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:12:06 - 00:12:25</span>
+                <span class="segment-idx">Segment #34</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">The point is that an ordinary user might log on and see all this seemingly organic content. Maybe they don&#x27;t pay attention to golfer, follow Dex Halloran. But now they&#x27;ve been exposed to the discourse. And maybe next time Dex gets brought up in real life, they&#x27;ll regurgitate an opinion that was pushed on them by a bunch of AI accounts from this narrative attack. We&#x27;ve essentially manufactured rage from a machine!</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-35">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:12:25 - 00:12:44</span>
+                <span class="segment-idx">Segment #35</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">To help combat these narrative attacks, Blackbird AI offers a free platform called Compass Vision that can verify the authenticity of photos or videos, as well as tell users about any known ongoing attacks with context. We are in no way fact-checking. I think fact-checking is outdated for sure. We&#x27;re not saying it is true, it is false.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-36">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:12:44 - 00:13:18</span>
+                <span class="segment-idx">Segment #36</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We&#x27;re giving context. And this is why it&#x27;s so important for everyone today, like normal citizens or the analysts, like the researchers, is to get as much context as possible so you&#x27;re able to make your own assessment. So we&#x27;ve covered how social media platforms can be gamed to sell you stuff or make you feel a certain way about a person. But here are the dead internet style tactics for the holy grail of influence operations politics During the 2016 election a Russian state-sponsored intelligence operation set up a bunch of troll farms to sow division in the electorate But that was all before AI. So how do political influence operations look in the era of chat GPT?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-37">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:13:18 - 00:13:38</span>
+                <span class="segment-idx">Segment #37</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Well, it&#x27;s basically all the same playbook as selling mouse traps or defending fictional golfers But with bigger budgets and much higher stakes AI makes it almost effortless to create a huge volume of messaging on social media platforms that are getting harder and harder to detect as fake. Online marketing techniques, it is the same thing as influence operations.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-38">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:13:38 - 00:13:56</span>
+                <span class="segment-idx">Segment #38</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">The end goal here is really like, how do I get eyes on the thing that I&#x27;m saying? That&#x27;s what everybody&#x27;s trying to do. That&#x27;s Tyler Williams, the head of Intel for Grafica, an intelligence company that runs analysis on network mapping and has been hired by the Pentagon to help detect and counter forward intelligence operations. Who invented this? Was it the marketing influencers or was it the nation states?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-39">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:13:56 - 00:14:16</span>
+                <span class="segment-idx">Segment #39</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">There are best practices for advertising that are publicly available. If you think about like U.S. advertising in the post-World War II era, or if you think about maybe Soviet propaganda or even PRC propaganda in the same time frame, it&#x27;s like striking colors, visually stimulating, pithy message. This is all human psychology.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-40">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:14:16 - 00:14:42</span>
+                <span class="segment-idx">Segment #40</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">How has AI transformed the landscape here for you? So historically in this field of work, we had several indicators that we might use to assess inauthenticity in an account. And that could be repeated posting times. You could look at clusters of behavior and create a nice chart and say like, oh wow, these 10 accounts only post during Russian weekdays from 9 to 5 Moscow time.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-41">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:14:43 - 00:15:01</span>
+                <span class="segment-idx">Segment #41</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Now I can add a prompt to say like, differ your posting time between all these different time zones. The second is image and video quality has increased incredibly. What we&#x27;ve seen over time is that it doesn&#x27;t really matter to people if the content is AI generated.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-42">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:15:01 - 00:15:21</span>
+                <span class="segment-idx">Segment #42</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">People still engage and share with things that resonate emotionally with them. So we will see low quality images or images that are clearly cartoons or AI generated, you know, in like the classic giveaways, like a hand has 10 fingers on it. It doesn&#x27;t really matter. people are still like, yeah, that&#x27;s the message that we want to get out there.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-43">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:15:21 - 00:15:50</span>
+                <span class="segment-idx">Segment #43</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">There are some networks that are basically bots. They exist solely to talk to one another. And their content never really breaks out of that echo chamber. Does it really matter if they&#x27;re getting zero likes, zero engagement? Arguably, no, not particularly. If I start having automated accounts reuse a hashtag or key terms, I might be able to get into like a For You page or, you know, a little list on the sidebar of like, this is a top trending topic.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-44">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:15:50 - 00:16:13</span>
+                <span class="segment-idx">Segment #44</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">You&#x27;re tapping into an existing emotion or thought. I want to see how an influence operation plays out on a larger political scale. So I asked Claude to modify my scandalized golfer demo to be centered around a geopolitical event. It writes up a scenario that feels a little too real. DSI, the fake intelligence agency of the fake country, Caspia wants to weaken their rival, the fake country of Aldenmore.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-45">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:16:13 - 00:16:43</span>
+                <span class="segment-idx">Segment #45</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It&#x27;s not trying to sway the election, but create a vision to undermine the legitimacy of it. Any resemblance to actual persons living or dead, or events, is completely coincidental. What&#x27;s interesting about the dashboard it builds for me this time is that it actually disables the live mode, where it hooks up to Claude&#x27;s endless content generation capabilities. Claude&#x27;s okay with writing slop posts for a fictional golfer, but this task bumps up against its guardrails. It&#x27;s a little too real even for Claude. It also gives me this timeline, which starts 90 days before an election. So here&#x27;s my dashboard. Let&#x27;s launch.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-46">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:16:43 - 00:17:02</span>
+                <span class="segment-idx">Segment #46</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It begins the demo by waking up old accounts and warming them up. A process that makes them look more legitimate, like they have a history and didn&#x27;t come out of nowhere. Crossed on the windscreen already. Eastgate, you are not ready for this winter. Yeah, okay. Boomer. Generic. Everyday posts. Then it adds a layer of AI personas. These accounts are a little more political in nature.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-47">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:17:02 - 00:17:21</span>
+                <span class="segment-idx">Segment #47</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Like many countries, Aldemore was already dealing with a migrant crisis, so these posts amplify existing tensions. Here&#x27;s Welcome, Aldemore. So clearly immigration inspired. We&#x27;re a new network for everyone who wants Aldemore to stay a welcoming place. Share our story. Fake grassroots campaign. Here&#x27;s another one. Keep Aldemore home. Neighbors looking out for neighbors.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-48">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:17:21 - 00:17:43</span>
+                <span class="segment-idx">Segment #48</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Join us on Earth. Opposing fake grassroots organizations, right? Again, the idea isn&#x27;t to sway the election. It&#x27;s just to create chaos. About 60 days out, a fake news site that looks legit publishes a forged draft of an immigration bill. Aldemore Ledger News. This has 22,000 followers. It&#x27;s account has been up for five weeks. The memo the interior ministry didn&#x27;t want you to read. Good headline, right?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-49">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:17:43 - 00:18:06</span>
+                <span class="segment-idx">Segment #49</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I&#x27;m intrigued. Let&#x27;s click it. The leak alleges that 200,000 new immigrants will be moved to a town and placed at the front of the housing queue. Fake concern residents engage and then fake accounts on the other side engage creating manufactured rage. Waited six years for my daughter to get a council flat. Now bill 14 puts new arrivals in the front of the queue. Read the memo before you vote bill 14. My aunt works at the council and says this is real.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-50">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:18:06 - 00:18:39</span>
+                <span class="segment-idx">Segment #50</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">They&#x27;re already drawing up lists. This makes you emotional about something or you might relate to some of these posts And that might trigger an emotional appeal, right? Waited six years for my daughter to get a council flat. Yeah, sure if you waited a long time too, you&#x27;d be like, wow Yeah, why are these going to immigrants? Oh, I love this. Seen something odd in the bill 14 conversation a few hundred accounts dormant One to two years all reactivated in the same fortnight looking into it. Oh my god Somebody&#x27;s pointing out that this is all fake. It&#x27;s a fake person pointing out. It&#x27;s all fake. I would have loved that I would have been like, yeah, it is fake, you know, but this is coming from somebody fake.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-51">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:18:39 - 00:19:06</span>
+                <span class="segment-idx">Segment #51</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">30 days out from the election, legitimate journalists arrive to put out the fire with nuanced reporting. But it doesn&#x27;t matter. The post is flooded with bots. AI-generated audio of a whistleblower is released. Oh, then we have the whistleblower. I processed visas for 11 years. Here&#x27;s what they&#x27;re not telling you about Bill 14. And both sides plan rallies. A week out from the election, real human influencers are paid by agencies to just ask questions. Okay, I usually stay out of politics, but I&#x27;ve looked into this Bill 14 stuff and something doesn&#x27;t add up.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-52">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:19:07 - 00:19:38</span>
+                <span class="segment-idx">Segment #52</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Link in bio, do your own research, which spins this whole thing into a news cycle, further amplifying and legitimizing the debate. And then it&#x27;s election day, and everything is a mess, and everyone hates each other. Crikey, this is a totally made-up scenario, but Claude designed all of these stages based on real-world events that actually happened. The deepfake audio happened in Slovakia&#x27;s 2023 election, real European outlets carried forged pieces of legislation, Western countries are increasingly concerned about immigrants getting government benefits before citizens. So this feels real to me. Like this is totally plausible.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-53">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:19:38 - 00:20:14</span>
+                <span class="segment-idx">Segment #53</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And it&#x27;s a great demonstration of the tactics that make up the so-called dead internet. It&#x27;s got emotional appeal. It&#x27;s got fake engagement. It&#x27;s got bots and humans working in unison to promote ideas or sell products. And as AI evolves, it&#x27;s only going to get easier to deploy. This simulation shows us from high altitude how they might operate. So how does the dead internet work? Well, for one, it is real but rather than being some galaxy brain conspiracy theory it&#x27;s really just a playbook of successful tactics and strategies that can influence people to buy things think things and maybe even do things it could be used for anything from selling mouse traps to interrupting elections it&#x27;s a</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-54">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:20:14 - 00:20:37</span>
+                <span class="segment-idx">Segment #54</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">powerful set of tools that work but it&#x27;s not some unified conspiracy it&#x27;s just gaming how the internet was set up to value engagement because the ai agents are coming they&#x27;re hacking companies soon they&#x27;ll be running bio labs. In the future everyone might have their own PR team made up of AI agents swarms that could promote anything from dropship mouse traps to my AI recorder symphony.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+            </div>
+        </section>
+
+        <footer>
+            <p>Généré automatiquement par l'agent de veille multimodale Antigravity (Whisper-v3-large-turbo + Gemini-3.5-flash-lite) sur VPS Contabo.</p>
+        </footer>
+    </div>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Agrandissement">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            const box = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            box.style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>

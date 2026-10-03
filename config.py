@@ -3,6 +3,7 @@ from pathlib import Path
 # Paths
 BASE_DIR = Path("/root/YT_SoonTechnologie")
 REPO_DIR = BASE_DIR
+TRANSCRIPTS_DIR = BASE_DIR / "YT_SoonTechnologie_Transcript"
 CATALOG_FILE = BASE_DIR / "catalog.json"
 STATE_FILE = BASE_DIR / "state.json"
 WORK_DIR = Path("/tmp/yt_soontechnologie_work")
@@ -18,13 +19,10 @@ RSS_FEED_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID
 CHANNEL_DOMAIN = "Technologies ?mergentes, Intelligence Artificielle, Robotique, Bot Farms, Culture Tech, Hackathons, Enqu?tes et Reportages Terrain"
 
 # Models
-# Audio processing & executive synthesis: Gemini 3.8 Flash (with automatic fallback to 3.5-flash / 2.5-flash-lite)
-# Faster-Whisper large-v3-turbo provides the base raw verbatim French transcription
 AUDIO_GEMINI_MODEL = "gemini-3.8-flash"
 AUDIO_FALLBACK_MODELS = ["gemini-3.5-flash", "gemini-2.5-flash-lite"]
 WHISPER_MODEL = "large-v3-turbo"
 
-# Visual analysis: Gemini 3.5 Flash-Lite (with automatic fallback to 2.5-flash-lite)
 VISUAL_GEMINI_MODEL = "gemini-3.5-flash-lite"
 VISUAL_FALLBACK_MODELS = ["gemini-2.5-flash-lite"]
 
@@ -45,5 +43,6 @@ FRAME_MAX_WIDTH = 1280
 
 # Ensure directories exist
 BASE_DIR.mkdir(parents=True, exist_ok=True)
+TRANSCRIPTS_DIR.mkdir(parents=True, exist_ok=True)
 SCREENSHOTS_DIR.mkdir(parents=True, exist_ok=True)
 WORK_DIR.mkdir(parents=True, exist_ok=True)

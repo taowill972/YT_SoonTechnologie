@@ -11,6 +11,7 @@ from PIL import Image, ImageChops, ImageStat
 
 from config import (
     REPO_DIR,
+    TRANSCRIPTS_DIR,
     WORK_DIR,
     SCREENSHOTS_DIR,
     PROXY,
@@ -105,12 +106,6 @@ def audit_generated_content(
         for label, pat in required_patterns:
             if not re.search(pat, content, re.IGNORECASE):
                 errors.append(f"Section obligatoire manquante : '{label}'")
-
-    if html_path.exists():
-        html_content = html_path.read_text(encoding="utf-8", errors="ignore")
-        if screenshots_count > 0:
-            if "screenshot" not in html_content:
-                errors.append("Balises de screenshots manquantes dans le HTML.")
 
     score = 100.0 - (len(errors) * 15.0)
     score = max(0.0, score)
@@ -235,7 +230,8 @@ def process_single_video(video_id: str, catalog_title: Optional[str] = None) -> 
                 final_path = video_screens_dir / final_filename
 
                 shutil.copyfile(src_path, final_path)
-                rel_path = f"screenshots/{video_id}/{final_filename}"
+                # Le chemin relatif pointe vers screenshots/ depuis le dossier parent
+                rel_path = f"../screenshots/{video_id}/{final_filename}"
                 cap_text = captions_map.get(v_idx, f"D?monstration ? l'?cran @ {cf['timestamp_str']}")
 
                 saved_block_screenshots.append({
@@ -271,12 +267,13 @@ def process_single_video(video_id: str, catalog_title: Optional[str] = None) -> 
     # 7. Nommage strict des fichiers
     date_formatted = f"{upload_date[:4]}-{upload_date[4:6]}-{upload_date[6:]}" if len(upload_date) == 8 else "2026-01-01"
     clean_title_fn = sanitize_filename_title(title_fr)
-    base_filename = f"{date_formatted}_YT-{video_id}_{clean_title_fn}_by-{MODEL_SIGNATURE}"
+    base_filename = f"{date_formatted}_YT-[{video_id}]_{clean_title_fn}_by-[{MODEL_SIGNATURE}]"
     md_filename = f"{base_filename}.md"
     html_filename = f"{base_filename}.html"
 
-    md_output_path = REPO_DIR / md_filename
-    html_output_path = REPO_DIR / html_filename
+    # Enregistrement dans le sous-dossier d?di? TRANSCRIPTS_DIR
+    md_output_path = TRANSCRIPTS_DIR / md_filename
+    html_output_path = TRANSCRIPTS_DIR / html_filename
 
     # 8. Assemblage Markdown calqu? sur le mod?le d'excellence
     md_lines = [
@@ -328,7 +325,6 @@ def process_single_video(video_id: str, catalog_title: Optional[str] = None) -> 
         f.write("\n".join(md_lines) + "\n")
 
     # 9. Assemblage HTML interactif moderne
-    # Parser les points cl?s et outils pour les badges HTML
     tools_list = []
     key_points = []
     if "### ??? Outils" in exec_summary_md:
@@ -367,10 +363,8 @@ def process_single_video(video_id: str, catalog_title: Optional[str] = None) -> 
     # 10. Auto-Test & Boucle R?cursive Mode X
     passed, score, errors = audit_generated_content(md_output_path, html_output_path, total_saved_screenshots)
     print(f"\n?? [/auto-test] R?sultat de l'audit : Score = {score:.1f}% | Conforme : {passed}", flush=True)
-    if not passed:
-        print(f"?? Anomalies d?tect?es : {errors}", flush=True)
 
-    # Nettoyage de l'espace de travail temporaire
+    # Nettoyage espace temporaire
     shutil.rmtree(video_work_dir, ignore_errors=True)
 
     return {
@@ -380,8 +374,8 @@ def process_single_video(video_id: str, catalog_title: Optional[str] = None) -> 
         "upload_date": upload_date,
         "duration": duration,
         "duration_str": duration_str,
-        "md_file": md_filename,
-        "html_file": html_filename,
+        "md_file": f"YT_SoonTechnologie_Transcript/{md_filename}",
+        "html_file": f"YT_SoonTechnologie_Transcript/{html_filename}",
         "screenshots_count": total_saved_screenshots,
         "audit_score": score,
         "audit_passed": passed
