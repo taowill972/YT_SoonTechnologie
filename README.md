@@ -7,7 +7,7 @@
 - Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**
 
 ## ?? Statistiques de l'Automatisation
-- **Vid?os trait?es** : `11 / 33` (`33.3%`)
+- **Vid?os trait?es** : `12 / 33` (`36.4%`)
 - **Mod?le Audio & Synth?se** : `gemini-3.8-flash` (avec Faster-Whisper large-v3-turbo, 100% Verbatim Fran?ais)
 - **Mod?le Vision d'?cran** : `gemini-3.5-flash-lite` (Analyse d'?crans, interfaces & d?monstrations)
 - **Signature de traitement** : `gemini-3.8-flash+gemini-3.5-flash-lite`
@@ -28,6 +28,7 @@
 | 2026-08-08 | [NUgIsLH71Lw](https://www.youtube.com/watch?v=NUgIsLH71Lw) | **Doctors Have a Side Hustle: Training AI** | [2026-08-08_YT-[NUgIsLH71Lw]_Doctors Have a Side Hustle Training AI_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-08-08_YT-[NUgIsLH71Lw]_Doctors Have a Side Hustle Training AI_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-08-08_YT-[NUgIsLH71Lw]_Doctors Have a Side Hustle Training AI_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-07-31 | [9dlKfiIJcW4](https://www.youtube.com/watch?v=9dlKfiIJcW4) | **What Anthropic’s AI Ad Is Really Selling | Deeptakes** | [2026-07-31_YT-[9dlKfiIJcW4]_What Anthropic’s AI Ad Is Really Selling Deeptakes_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-07-31_YT-[9dlKfiIJcW4]_What Anthropic’s AI Ad Is Really Selling Deeptakes_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-07-31_YT-[9dlKfiIJcW4]_What Anthropic’s AI Ad Is Really Selling Deeptakes_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-07-22 | [QdGNGjKlqgA](https://www.youtube.com/watch?v=QdGNGjKlqgA) | **How to Use AI to Get a Job** | [2026-07-22_YT-[QdGNGjKlqgA]_How to Use AI to Get a Job_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-07-22_YT-[QdGNGjKlqgA]_How to Use AI to Get a Job_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-07-22_YT-[QdGNGjKlqgA]_How to Use AI to Get a Job_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
+| 2026-07-15 | [ijcz2F1qQUM](https://www.youtube.com/watch?v=ijcz2F1qQUM) | **6 Gen Z Singles Test an Anti-Swipe Dating App** | [2026-07-15_YT-[ijcz2F1qQUM]_6 Gen Z Singles Test an Anti-Swipe Dating App_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-07-15_YT-[ijcz2F1qQUM]_6 Gen Z Singles Test an Anti-Swipe Dating App_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-07-15_YT-[ijcz2F1qQUM]_6 Gen Z Singles Test an Anti-Swipe Dating App_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 
 ---
 *G?n?r? automatiquement par l'agent de veille multimodale Antigravity sur VPS Contabo.*
