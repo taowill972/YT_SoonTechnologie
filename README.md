@@ -7,7 +7,7 @@
 - Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**
 
 ## ?? Statistiques de l'Automatisation
-- **Vid?os trait?es** : `34 / 33` (`103.0%`)
+- **Vid?os trait?es** : `35 / 33` (`106.1%`)
 - **Mod?le Audio & Synth?se** : `gemini-3.8-flash` (avec Faster-Whisper large-v3-turbo, 100% Verbatim Fran?ais)
 - **Mod?le Vision d'?cran** : `gemini-3.5-flash-lite` (Analyse d'?crans, interfaces & d?monstrations)
 - **Signature de traitement** : `gemini-3.8-flash+gemini-3.5-flash-lite`
@@ -51,6 +51,7 @@
 | 2026-02-13 | [LHKDz9Bh5y4](https://www.youtube.com/watch?v=LHKDz9Bh5y4) | **I Made a Social Network Only AI Can Use (with OpenClaw)** | [2026-02-13_YT-[LHKDz9Bh5y4]_I Made a Social Network Only AI Can Use (with OpenClaw)_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-02-13_YT-[LHKDz9Bh5y4]_I Made a Social Network Only AI Can Use (with OpenClaw)_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-02-13_YT-[LHKDz9Bh5y4]_I Made a Social Network Only AI Can Use (with OpenClaw)_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-02-05 | [iPC_ydchCNQ](https://www.youtube.com/watch?v=iPC_ydchCNQ) | **Can AI Really Replace Human Friends?** | [2026-02-05_YT-[iPC_ydchCNQ]_Can AI Really Replace Human Friends_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-02-05_YT-[iPC_ydchCNQ]_Can AI Really Replace Human Friends_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-02-05_YT-[iPC_ydchCNQ]_Can AI Really Replace Human Friends_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-01-30 | [YF2yKfo-Tn0](https://www.youtube.com/watch?v=YF2yKfo-Tn0) | **Inside the Company Modifying America's Weather** | [2026-01-30_YT-[YF2yKfo-Tn0]_Inside the Company Modifying America's Weather_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-01-30_YT-[YF2yKfo-Tn0]_Inside the Company Modifying America's Weather_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-01-30_YT-[YF2yKfo-Tn0]_Inside the Company Modifying America's Weather_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
+| 2026-01-28 | [Oqx8fWgTkAc](https://www.youtube.com/watch?v=Oqx8fWgTkAc) | **Introducing... Soon** | [2026-01-28_YT-[Oqx8fWgTkAc]_Introducing... Soon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-01-28_YT-[Oqx8fWgTkAc]_Introducing... Soon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-01-28_YT-[Oqx8fWgTkAc]_Introducing... Soon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 
 ---
 *G?n?r? automatiquement par l'agent de veille multimodale Antigravity sur VPS Contabo.*
