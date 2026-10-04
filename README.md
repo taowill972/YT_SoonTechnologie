@@ -7,7 +7,7 @@
 - Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**
 
 ## ?? Statistiques de l'Automatisation
-- **Vid?os trait?es** : `27 / 33` (`81.8%`)
+- **Vid?os trait?es** : `28 / 33` (`84.8%`)
 - **Mod?le Audio & Synth?se** : `gemini-3.8-flash` (avec Faster-Whisper large-v3-turbo, 100% Verbatim Fran?ais)
 - **Mod?le Vision d'?cran** : `gemini-3.5-flash-lite` (Analyse d'?crans, interfaces & d?monstrations)
 - **Signature de traitement** : `gemini-3.8-flash+gemini-3.5-flash-lite`
@@ -44,6 +44,7 @@
 | 2026-03-28 | [qlxvmN2lpR0](https://www.youtube.com/watch?v=qlxvmN2lpR0) | **Inside the Race to Build Nuclear Reactors for Data Centers** | [2026-03-28_YT-[qlxvmN2lpR0]_Inside the Race to Build Nuclear Reactors for Data Centers_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-03-28_YT-[qlxvmN2lpR0]_Inside the Race to Build Nuclear Reactors for Data Centers_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-03-28_YT-[qlxvmN2lpR0]_Inside the Race to Build Nuclear Reactors for Data Centers_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-03-20 | [ICTlfQJpS0g](https://www.youtube.com/watch?v=ICTlfQJpS0g) | **When Will AI Video Be Undetectable?** | [2026-03-20_YT-[ICTlfQJpS0g]_When Will AI Video Be Undetectable_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-03-20_YT-[ICTlfQJpS0g]_When Will AI Video Be Undetectable_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-03-20_YT-[ICTlfQJpS0g]_When Will AI Video Be Undetectable_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-03-14 | [FKRQfl86b1E](https://www.youtube.com/watch?v=FKRQfl86b1E) | **Trying to Find the Robot of My Dreams** | [2026-03-14_YT-[FKRQfl86b1E]_Trying to Find the Robot of My Dreams_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-03-14_YT-[FKRQfl86b1E]_Trying to Find the Robot of My Dreams_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-03-14_YT-[FKRQfl86b1E]_Trying to Find the Robot of My Dreams_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
+| 2026-03-07 | [ZMLncJgmuR0](https://www.youtube.com/watch?v=ZMLncJgmuR0) | **Inside the World of Elite Prediction Market Traders** | [2026-03-07_YT-[ZMLncJgmuR0]_Inside the World of Elite Prediction Market Traders_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-03-07_YT-[ZMLncJgmuR0]_Inside the World of Elite Prediction Market Traders_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-03-07_YT-[ZMLncJgmuR0]_Inside the World of Elite Prediction Market Traders_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 
 ---
 *G?n?r? automatiquement par l'agent de veille multimodale Antigravity sur VPS Contabo.*
