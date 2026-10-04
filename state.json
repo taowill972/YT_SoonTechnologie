@@ -9,7 +9,8 @@
     "dRbNILhpb8o",
     "NUgIsLH71Lw",
     "sZTN3xmKjqA",
-    "9dlKfiIJcW4"
+    "9dlKfiIJcW4",
+    "QdGNGjKlqgA"
   ],
   "processed_videos": [
     {
@@ -141,6 +142,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "QdGNGjKlqgA",
+      "title": "How to Use AI to Get a Job",
+      "title_fr": "How to Use AI to Get a Job",
+      "upload_date": "20260722",
+      "duration": 444,
+      "duration_str": "00:07:24",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-07-22_YT-[QdGNGjKlqgA]_How to Use AI to Get a Job_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-07-22_YT-[QdGNGjKlqgA]_How to Use AI to Get a Job_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -192,7 +206,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-03T23:54:36Z",
-  "completed_count": 10,
+  "completed_count": 11,
   "total_catalog_count": 33,
   "status": "ready"
 }
