@@ -31,7 +31,8 @@
     "pabjPMpKIW8",
     "Q2L4gp_YANY",
     "RBZLQwQ9w10",
-    "LHKDz9Bh5y4"
+    "LHKDz9Bh5y4",
+    "iPC_ydchCNQ"
   ],
   "processed_videos": [
     {
@@ -449,6 +450,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "iPC_ydchCNQ",
+      "title": "Can AI Really Replace Human Friends?",
+      "title_fr": "Can AI Really Replace Human Friends?",
+      "upload_date": "20260205",
+      "duration": 1066,
+      "duration_str": "00:17:46",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-02-05_YT-[iPC_ydchCNQ]_Can AI Really Replace Human Friends_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-02-05_YT-[iPC_ydchCNQ]_Can AI Really Replace Human Friends_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -501,7 +515,7 @@
     "RBZLQwQ9w10"
   ],
   "last_run_timestamp": "2026-10-04T17:42:23Z",
-  "completed_count": 32,
+  "completed_count": 33,
   "total_catalog_count": 33,
   "status": "ready"
 }
