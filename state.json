@@ -22,7 +22,8 @@
     "wyKP_IuXx-o",
     "MTOEVlIXO_w",
     "BxEP1InygzE",
-    "LrYpEWr6D-s"
+    "LrYpEWr6D-s",
+    "2XZaHsqzBPc"
   ],
   "processed_videos": [
     {
@@ -323,6 +324,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "2XZaHsqzBPc",
+      "title": "Inside the Town Where OpenAI Is Building Its Biggest Data Center",
+      "title_fr": "Inside the Town Where OpenAI Is Building Its Biggest Data Center",
+      "upload_date": "20260407",
+      "duration": 1054,
+      "duration_str": "00:17:34",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-04-07_YT-[2XZaHsqzBPc]_Inside the Town Where OpenAI Is Building Its Biggest Data Center_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-04-07_YT-[2XZaHsqzBPc]_Inside the Town Where OpenAI Is Building Its Biggest Data Center_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -373,8 +387,8 @@
     "xlzZu8R3cSU",
     "sZTN3xmKjqA"
   ],
-  "last_run_timestamp": "2026-10-04T05:34:15Z",
-  "completed_count": 23,
+  "last_run_timestamp": "2026-10-04T12:00:25Z",
+  "completed_count": 24,
   "total_catalog_count": 33,
   "status": "ready"
 }
