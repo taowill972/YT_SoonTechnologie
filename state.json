@@ -19,7 +19,8 @@
     "aB5h_NCmk8c",
     "P-JBmoKSA_0",
     "Ord_UF-mqGY",
-    "wyKP_IuXx-o"
+    "wyKP_IuXx-o",
+    "MTOEVlIXO_w"
   ],
   "processed_videos": [
     {
@@ -281,6 +282,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "MTOEVlIXO_w",
+      "title": "Did This Startup Prove Cloud Seeding Works?",
+      "title_fr": "Did This Startup Prove Cloud Seeding Works?",
+      "upload_date": "20260502",
+      "duration": 878,
+      "duration_str": "00:14:38",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-05-02_YT-[MTOEVlIXO_w]_Did This Startup Prove Cloud Seeding Works_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-05-02_YT-[MTOEVlIXO_w]_Did This Startup Prove Cloud Seeding Works_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -332,7 +346,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-04T05:34:15Z",
-  "completed_count": 20,
+  "completed_count": 21,
   "total_catalog_count": 33,
   "status": "ready"
 }
