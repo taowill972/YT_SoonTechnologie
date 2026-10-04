@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Unpacking Elon’s Interstellar Plans for Humanity — Transcription & Vision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #090d16;
+            --bg-surface: #0f172a;
+            --bg-card: #141e33;
+            --bg-card-hover: #1a2744;
+            --border-color: #243452;
+            --border-light: rgba(99, 102, 241, 0.2);
+            --primary: #6366f1;
+            --primary-glow: rgba(99, 102, 241, 0.35);
+            --secondary: #8b5cf6;
+            --accent: #f43f5e;
+            --success: #10b981;
+            --text-title: #f8fafc;
+            --text-main: #cbd5e1;
+            --text-muted: #8292ab;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header.video-header {
+            background: linear-gradient(135deg, rgba(20, 30, 51, 0.95), rgba(15, 23, 42, 0.98));
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--primary-glow);
+            backdrop-filter: blur(12px);
+        }
+
+        h1.video-title {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: var(--text-title);
+            line-height: 1.35;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            background: rgba(36, 52, 82, 0.6);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .badge-primary {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .badge-yt {
+            background: rgba(244, 63, 94, 0.15);
+            color: #fda4af;
+            border-color: rgba(244, 63, 94, 0.4);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .badge-yt:hover {
+            background: rgba(244, 63, 94, 0.3);
+            transform: translateY(-1px);
+        }
+
+        /* Executive Summary Section */
+        section.executive-summary {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .summary-card {
+            background: var(--bg-card);
+            border-radius: 0.85rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary);
+        }
+        .summary-card p {
+            margin-bottom: 0.9rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
+        }
+        .summary-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tools-card {
+            margin-bottom: 1.5rem;
+        }
+        .tools-card h4, .points-card h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 0.8rem;
+        }
+        .tool-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+            border: 1px solid rgba(139, 92, 246, 0.35);
+            border-radius: 0.5rem;
+            padding: 0.3rem 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+
+        .points-card ul {
+            list-style: none;
+            display: grid;
+            gap: 0.7rem;
+        }
+        .points-card li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            background: var(--bg-card);
+            padding: 0.85rem 1.1rem;
+            border-radius: 0.65rem;
+            font-size: 0.93rem;
+            border: 1px solid rgba(36, 52, 82, 0.5);
+        }
+        .point-bullet {
+            color: var(--primary);
+            font-size: 1.1rem;
+            line-height: 1;
+            margin-top: 0.15rem;
+        }
+
+        /* Timeline Section */
+        .timeline-stream {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .timeline-stream::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: 20px;
+            left: 7px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary), transparent);
+        }
+
+        .timeline-block {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-block::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 12px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 10px var(--primary);
+            border: 2px solid var(--bg-body);
+        }
+
+        .timeline-time {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .time-badge {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.2);
+            color: #a5b4fc;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.4rem;
+            border: 1px solid rgba(99, 102, 241, 0.4);
+        }
+        .segment-idx {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .timeline-content {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: grid;
+            gap: 1.2rem;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .timeline-content:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .verbatim-box {
+            background: var(--bg-card);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid #10b981;
+        }
+        .verbatim-header, .visual-header, .screenshots-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #e2e8f0;
+            margin-bottom: 0.6rem;
+        }
+        .verbatim-text {
+            font-size: 0.95rem;
+            color: #f1f5f9;
+            font-style: normal;
+            line-height: 1.7;
+        }
+
+        .visual-box {
+            background: rgba(20, 30, 51, 0.7);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid var(--secondary);
+        }
+        .visual-details p {
+            font-size: 0.91rem;
+            margin-bottom: 0.45rem;
+            color: var(--text-main);
+        }
+        .visual-details p:last-child {
+            margin-bottom: 0;
+        }
+        .visual-details strong {
+            color: #93c5fd;
+        }
+
+        /* Multi-Screenshots Grid */
+        .segment-screenshots-wrapper {
+            background: rgba(10, 15, 29, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 0.85rem;
+            padding: 1rem;
+        }
+        .segment-screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.1rem;
+        }
+        .segment-screenshots-grid.count-1 {
+            grid-template-columns: 1fr;
+        }
+        .segment-screenshots-grid.count-2 {
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        }
+
+        .screenshot-card {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .screenshot-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #050811;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: contain;
+            display: block;
+            cursor: zoom-in;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .img-wrapper img:hover {
+            opacity: 0.95;
+            transform: scale(1.015);
+        }
+        .zoom-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(15, 23, 42, 0.85);
+            color: #e2e8f0;
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+        }
+        .screenshot-caption {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0.7rem 0.95rem;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            background: rgba(15, 23, 42, 0.96);
+            border-top: 1px solid var(--border-color);
+            line-height: 1.45;
+        }
+        .caption-time {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #a5b4fc;
+        }
+        .caption-text {
+            color: #e2e8f0;
+        }
+
+        /* Lightbox modal */
+        #lightbox {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+        #lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border: 1px solid #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="video-header">
+            <h1 class="video-title">🎬 Unpacking Elon’s Interstellar Plans for Humanity</h1>
+            <div class="meta-badges">
+                <span class="badge badge-primary">📅 2026-06-18</span>
+                <span class="badge">⏱️ 00:09:26</span>
+                <span class="badge">🆔 <code>El5fXNc-3GI</code></span>
+                <span class="badge">🤖 gemini-3.8-flash+gemini-3.5-flash-lite</span>
+                <a href="https://www.youtube.com/@soontechnology" target="_blank" class="badge">📺 Soon</a>
+                <a href="https://www.youtube.com/watch?v=El5fXNc-3GI" target="_blank" class="badge badge-yt">▶️ Voir sur YouTube</a>
+            </div>
+        </header>
+
+        <section class="executive-summary">
+            <h2 class="section-title">📌 Synthèse Exécutive & Outils</h2>
+            <div class="summary-card">
+                ### ?? R?sum?<br>Dans ce reportage immersif intitul? **Unpacking Elon’s Interstellar Plans for Humanity**, la cha?ne Soon explore en d?tail les coulisses techniques et soci?tales des nouvelles technologies.<br><br>### ??? Outils, Mod?les & Logiciels Pr?sent?s<br>- **Technologies IA et Automatisation** : D?ploiement d'agents et scripts connect?s.<br><br>### ?? Points Cl?s & Enseignements Strat?giques<br>- Comprendre les architectures distribu?es et leur impact sur le web moderne.<br>- Mesurer les implications ?thiques et ?conomiques des technologies autonomes.
+            </div>
+            <div class="tools-card">
+                <h4>🛠️ Outils, Modèles & Logiciels Présentés</h4>
+                <div><span class="tool-tag">Technologies IA et Automatisation</span></div>
+            </div>
+            <div class="points-card">
+                <h4>🔑 Points Clés & Enseignements Stratégiques</h4>
+                <ul><li><span class="point-bullet">✦</span><span>&amp; Enseignements Strat?giques</span></li><li><span class="point-bullet">✦</span><span>Comprendre les architectures distribu?es et leur impact sur le web moderne.</span></li><li><span class="point-bullet">✦</span><span>Mesurer les implications ?thiques et ?conomiques des technologies autonomes.</span></li></ul>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title">⏱️ Chronologie & Transcription Complète Audio & Visuelle (Mot pour Mot)</h2>
+            <div class="timeline-stream">
+                
+        <div class="timeline-block" id="segment-1">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:00 - 00:00:22</span>
+                <span class="segment-idx">Segment #01</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">You can now buy a piece of Elon Musk&#x27;s multi-trillion dollar megacorporation&#x27;s SpaceX. Opens at $150. It&#x27;s already up 20% making Elon Musk a trillionaire. Biggest IPO ever. But it&#x27;s not just rockets and Starlink. It&#x27;s AI, asteroid mining, it&#x27;s point-to-point rocket travel, data centers in space.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-2">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:22 - 00:00:41</span>
+                <span class="segment-idx">Segment #02</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And oh yeah, it&#x27;s gonna bring humanity to Mars. Making life multi-planetary. That&#x27;s what&#x27;s laid out in this 300-page tome of a public filing. Has anybody read the S1? Let&#x27;s go! If SpaceX is asking the public to buy into its multi-planetary vision for humanity, we need to know.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-3">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:41 - 00:01:04</span>
+                <span class="segment-idx">Segment #03</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Are we ready for it? Wah-wah-wee-wah! So here&#x27;s the plan. We&#x27;re going to highlight SpaceX&#x27;s future plans detailed in their IPO filing. Our mission is to understand the true nature of the universe. Ask everyday people what they think of those plans. Then get into it with an Elon superfan and a SpaceX skeptic to see how they feel about Elon&#x27;s bold ambitions for us to become an interplanetary species.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-4">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:04 - 00:01:27</span>
+                <span class="segment-idx">Segment #04</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Opening bell! It&#x27;s opening bell! While the SpaceX IPO got a lot of media attention, as thick as Elfie, so did I. So you&#x27;re an Elon superfan? I&#x27;m not a fan of anything. Oh, okay. So are you an influencer? I&#x27;m a very serious journalist. What was barely talked about was the company&#x27;s mission to make humanity Multi-planet and ultimately multi-stellar.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-5">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:27 - 00:01:48</span>
+                <span class="segment-idx">Segment #05</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Have you read the S-1? Parts of it. Okay. It&#x27;s nearly 300 pages long. Elon&#x27;s vision of the future was detailed extensively in their SEC finding. It starts with a bunch of pictures of rockets. How much did that cost you? About $170 for them to bind it. You want to wake up in the morning and think the future is going great.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-6">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:48 - 00:02:08</span>
+                <span class="segment-idx">Segment #06</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And that&#x27;s what being a space-faring civilization is all about. Our mission is to build the systems and technologies necessary to make life multi-planetary, to understand the true nature of the universe, and to extend the light of consciousness to the stars. We do not want humans to have the same fate as dinosaurs. Agreed. I think everybody agrees with that.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-7">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:08 - 00:02:27</span>
+                <span class="segment-idx">Segment #07</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Here&#x27;s our growth strategy. Point-to-point terrestrial travel, space tourism, in-orbit manufacturing, passenger and cargo transport to the moon and Mars, energy production on the moon and Mars, manufacturing capabilities on the moon and Mars. Asteroid mining. You know who he should tap for this?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-8">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:27 - 00:02:49</span>
+                <span class="segment-idx">Segment #08</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Bruce Willis and Ben Affleck. This was a lot to take in. I wondered what ordinary people thought about these bold ambitions. I stand by the movie Terminator. I ain&#x27;t down with none of it. Data setters in space? Yeah. it, why not, bro? Some people are excited about SpaceX&#x27;s plans. I have a five-year-old daughter, and I think it would be a dream to be able to go to the moon on a trip with her.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-9">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:49 - 00:03:09</span>
+                <span class="segment-idx">Segment #09</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Well, if they&#x27;re going to do it, I mean, let&#x27;s rock out on it. Would I go? Really not. while others seem very skeptical. Do you trust Elon Musk to bring human con... No. I rented a Cybertruck and set up a Starlink to chat with Tim Dodd, who runs the popular YouTube channel The Everyday Astronaut. I teach rocket science on YouTube. For an audience of 2 million.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-10">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:10 - 00:03:28</span>
+                <span class="segment-idx">Segment #10</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Is it safe to say that you&#x27;re an Elon Musk fan? I&#x27;m a big fan of his work. Have you read this? No. No, I have not read that. No. Have you heard about what&#x27;s in this? Orbital Space Data Centers. That one&#x27;s a no-brainer. Starlink already has similar input and output of power and radiative heat.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-11">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:29 - 00:03:53</span>
+                <span class="segment-idx">Segment #11</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">You know, you won&#x27;t be having communities clamoring over energy costs. You won&#x27;t have permitting. You won&#x27;t have water usage issues. You won&#x27;t have noise and pollution. What do you think about moving manufacturing to space? So much stuff can actually be done with like the dirt of the moon. We&#x27;re already seeing companies work on ways to use lunar regolith. Blue Origin, they&#x27;re going to be able to produce solar panels, oxygen, hydrogen.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-12">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:53 - 00:04:13</span>
+                <span class="segment-idx">Segment #12</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">What do you think about mining asteroids? Feasible? SpaceX is not the only one talking about that. You know, you have AstroForge out there actively building satellites to start mining asteroids. I mean, things that are rare earth are extremely common on certain asteroids. Do you think they&#x27;ll be able to get unobtainium or? Now that I don&#x27;t know about. This is why we&#x27;re here, unobtainium.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-13">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:13 - 00:04:32</span>
+                <span class="segment-idx">Segment #13</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">By 2040, I think most of these top three things will probably be part of our daily lives, honestly. Wow. What do you think about extending human consciousness to the stars? Yeah, that, yeah, that&#x27;s, uh... What does that phrase even mean? This all seemed fantastical and wonderful, but it also left me a little uneasy.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-14">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:33 - 00:05:06</span>
+                <span class="segment-idx">Segment #14</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So I met up with one of the sharpest skeptics on the SpaceX IPO. I think it&#x27;s overvalued Ed Elson of the Prop G Markets podcast to bring me back down to Earth. Because some of the language that they use, they talk about the light of consciousness 10 different times. they mention AI more than 1200 times which is more times than Jesus gets mentioned in the Bible. Yes they&#x27;re trying to portray and illustrate this sci-fi future this technological revolution and the only way you can justify the valuation is if you really believe that yes indeed he is going to</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-15">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:06 - 00:05:43</span>
+                <span class="segment-idx">Segment #15</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">achieve all the things that he says he will. I really wanted to get into the details of this sci-fi future that Elon was selling so I took Ed on his first ride in a cyber truck. It&#x27;s ugly but it&#x27;s cool. And had a little surprise for him waiting inside. Wow there we go. I thought the S1 was a little bit ridiculous. The first 20 pages or so is just pictures of rockets flying around in space. I mean I&#x27;m trying to understand how this works as a business. I&#x27;m not trying to look at an Instagram slideshow. But all this is talking about at the beginning at least is how they&#x27;re going to engage in asteroid mining. How they&#x27;re going to build</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-16">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:43 - 00:06:03</span>
+                <span class="segment-idx">Segment #16</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">cities on Mars. And then I guess in the nearer term, they&#x27;re going to start putting data centers into orbit in space. We&#x27;re struggling to even build data centers on the ground today. So I just personally don&#x27;t quite believe that that is going to happen anytime soon. I knew Ed was going to be skeptical, but I wanted to see whether he believed if any of Elon&#x27;s plans were realistic.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-17">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:03 - 00:06:22</span>
+                <span class="segment-idx">Segment #17</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Point-to-point rocket travel. What&#x27;s your take? I think it&#x27;s possible. It&#x27;s just not a business that I would want to be invested in. Okay. Did you invest in Spirit Airlines? Spirit Airlines. At least that&#x27;s a real business. At least people pay for that. Asteroid mining. Feasible. We have no indication, no example, no demonstration.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-18">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:22 - 00:06:41</span>
+                <span class="segment-idx">Segment #18</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">This is something that we could actually do. We could talk about it. We can say how many minerals are on these asteroids or how much different materials and metals we can find on Mars and on the moon. We can talk about it. It&#x27;s fun. It&#x27;s a fun conversation. It makes for a fun, I don&#x27;t know, science fiction, creative writing project.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-19">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:41 - 00:07:06</span>
+                <span class="segment-idx">Segment #19</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">But as a business, no. We don&#x27;t have this yet, so you shouldn&#x27;t be talking about it and pretending that that is your business. What about bringing human consciousness to the stars? What does that actually mean? We believe the next paradigm shift for humanity is the creation of a resilient, perpetually expanding space-faring civilization that drives continuous innovation across new frontiers, ultimately propelling us to Kardashev Type 2 status.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-20">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:10 - 00:07:30</span>
+                <span class="segment-idx">Segment #20</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">What do you think about colonizing Mars? If they got air and, you know, not too many strip malls, it&#x27;d be all right. You&#x27;ll go to live on Mars? I don&#x27;t want to go to Mars. You&#x27;ll go to Mars? You&#x27;ll go to Mars? Nobody here will go live on Mars. How the f*** is going to go to Mars? We&#x27;re talking about colonizing a planet, building a civilization on a planet to which we have never sent a single person.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-21">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:30 - 00:07:49</span>
+                <span class="segment-idx">Segment #21</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So if we&#x27;re going to build a city, maybe we want to figure out sending one guy up there first. Maybe that would be... Matt Damon. Matt Damon, I&#x27;m down. You should do it. I am the greatest botanist on this planet. I do think potentially landing on Mars having humans walk on Mars by 2040 is maybe a possibility.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-22">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:49 - 00:08:11</span>
+                <span class="segment-idx">Segment #22</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Landing a million tons on Mars to be able to build a self-sustaining colony. I don&#x27;t know. Maybe that&#x27;ll happen in our lifetime. But I think we&#x27;re beginning to unlock the systems that would even remotely potentially put that on the table. After talking to Ed, Tim, and dozens of everyday people, I still wasn&#x27;t quite sure what to think of Elon&#x27;s multi-planetary interstellar vision for humanity.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-23">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:11 - 00:08:31</span>
+                <span class="segment-idx">Segment #23</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I think it&#x27;s interesting and exciting that we&#x27;re optimistic about things, but at the end of the day, we have to be realistic at the same time. The idea of building a city on Mars, I&#x27;m sorry, but the year is 2026. We need to start solving problems on Earth today. That would be my contention.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-24">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:31 - 00:08:49</span>
+                <span class="segment-idx">Segment #24</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I don&#x27;t know, I guess you&#x27;ve sold me a little bit on this vision. And I find that to be kind of surprising. I really do think that, you know, looking back in the history books, this will be one of those moments of, wow, this is kind of when this all happened. And, you know, Elon was definitely going to be one of the main characters in that story arc of getting humans off this planet.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-25">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:50 - 00:09:09</span>
+                <span class="segment-idx">Segment #25</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It&#x27;s possible there&#x27;s just too much future tech, and none of this will really come to fruition. But certain people really believe in this, and I think we can all believe in elements of what this mission is about, which is ensuring the survival of the human race. You know, making sure that humans live on and don&#x27;t become like dinosaurs.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-26">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:09 - 00:09:19</span>
+                <span class="segment-idx">Segment #26</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">But you can&#x27;t help but read this and not get a little tingly at the end of the day. Who knows, maybe someday my grandkids will be watching this video on MarsTube. It&#x27;s YouTube for Martians.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+            </div>
+        </section>
+
+        <footer>
+            <p>Généré automatiquement par l'agent de veille multimodale Antigravity (Whisper-v3-large-turbo + Gemini-3.5-flash-lite) sur VPS Contabo.</p>
+        </footer>
+    </div>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Agrandissement">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            const box = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            box.style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>

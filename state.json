@@ -13,7 +13,8 @@
     "QdGNGjKlqgA",
     "ijcz2F1qQUM",
     "P3Y45u2Q-Oc",
-    "1r3eD4BDYZ0"
+    "1r3eD4BDYZ0",
+    "El5fXNc-3GI"
   ],
   "processed_videos": [
     {
@@ -197,6 +198,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "El5fXNc-3GI",
+      "title": "Unpacking Elon’s Interstellar Plans for Humanity",
+      "title_fr": "Unpacking Elon’s Interstellar Plans for Humanity",
+      "upload_date": "20260618",
+      "duration": 566,
+      "duration_str": "00:09:26",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-06-18_YT-[El5fXNc-3GI]_Unpacking Elon’s Interstellar Plans for Humanity_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-06-18_YT-[El5fXNc-3GI]_Unpacking Elon’s Interstellar Plans for Humanity_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -248,7 +262,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-03T23:54:36Z",
-  "completed_count": 14,
+  "completed_count": 15,
   "total_catalog_count": 33,
   "status": "ready"
 }
