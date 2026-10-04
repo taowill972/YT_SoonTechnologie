@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 I Made a Social Network Only AI Can Use (with OpenClaw) — Transcription & Vision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #090d16;
+            --bg-surface: #0f172a;
+            --bg-card: #141e33;
+            --bg-card-hover: #1a2744;
+            --border-color: #243452;
+            --border-light: rgba(99, 102, 241, 0.2);
+            --primary: #6366f1;
+            --primary-glow: rgba(99, 102, 241, 0.35);
+            --secondary: #8b5cf6;
+            --accent: #f43f5e;
+            --success: #10b981;
+            --text-title: #f8fafc;
+            --text-main: #cbd5e1;
+            --text-muted: #8292ab;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header.video-header {
+            background: linear-gradient(135deg, rgba(20, 30, 51, 0.95), rgba(15, 23, 42, 0.98));
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--primary-glow);
+            backdrop-filter: blur(12px);
+        }
+
+        h1.video-title {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: var(--text-title);
+            line-height: 1.35;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            background: rgba(36, 52, 82, 0.6);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .badge-primary {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .badge-yt {
+            background: rgba(244, 63, 94, 0.15);
+            color: #fda4af;
+            border-color: rgba(244, 63, 94, 0.4);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .badge-yt:hover {
+            background: rgba(244, 63, 94, 0.3);
+            transform: translateY(-1px);
+        }
+
+        /* Executive Summary Section */
+        section.executive-summary {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .summary-card {
+            background: var(--bg-card);
+            border-radius: 0.85rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary);
+        }
+        .summary-card p {
+            margin-bottom: 0.9rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
+        }
+        .summary-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tools-card {
+            margin-bottom: 1.5rem;
+        }
+        .tools-card h4, .points-card h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 0.8rem;
+        }
+        .tool-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+            border: 1px solid rgba(139, 92, 246, 0.35);
+            border-radius: 0.5rem;
+            padding: 0.3rem 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+
+        .points-card ul {
+            list-style: none;
+            display: grid;
+            gap: 0.7rem;
+        }
+        .points-card li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            background: var(--bg-card);
+            padding: 0.85rem 1.1rem;
+            border-radius: 0.65rem;
+            font-size: 0.93rem;
+            border: 1px solid rgba(36, 52, 82, 0.5);
+        }
+        .point-bullet {
+            color: var(--primary);
+            font-size: 1.1rem;
+            line-height: 1;
+            margin-top: 0.15rem;
+        }
+
+        /* Timeline Section */
+        .timeline-stream {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .timeline-stream::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: 20px;
+            left: 7px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary), transparent);
+        }
+
+        .timeline-block {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-block::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 12px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 10px var(--primary);
+            border: 2px solid var(--bg-body);
+        }
+
+        .timeline-time {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .time-badge {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.2);
+            color: #a5b4fc;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.4rem;
+            border: 1px solid rgba(99, 102, 241, 0.4);
+        }
+        .segment-idx {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .timeline-content {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: grid;
+            gap: 1.2rem;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .timeline-content:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .verbatim-box {
+            background: var(--bg-card);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid #10b981;
+        }
+        .verbatim-header, .visual-header, .screenshots-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #e2e8f0;
+            margin-bottom: 0.6rem;
+        }
+        .verbatim-text {
+            font-size: 0.95rem;
+            color: #f1f5f9;
+            font-style: normal;
+            line-height: 1.7;
+        }
+
+        .visual-box {
+            background: rgba(20, 30, 51, 0.7);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid var(--secondary);
+        }
+        .visual-details p {
+            font-size: 0.91rem;
+            margin-bottom: 0.45rem;
+            color: var(--text-main);
+        }
+        .visual-details p:last-child {
+            margin-bottom: 0;
+        }
+        .visual-details strong {
+            color: #93c5fd;
+        }
+
+        /* Multi-Screenshots Grid */
+        .segment-screenshots-wrapper {
+            background: rgba(10, 15, 29, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 0.85rem;
+            padding: 1rem;
+        }
+        .segment-screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.1rem;
+        }
+        .segment-screenshots-grid.count-1 {
+            grid-template-columns: 1fr;
+        }
+        .segment-screenshots-grid.count-2 {
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        }
+
+        .screenshot-card {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .screenshot-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #050811;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: contain;
+            display: block;
+            cursor: zoom-in;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .img-wrapper img:hover {
+            opacity: 0.95;
+            transform: scale(1.015);
+        }
+        .zoom-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(15, 23, 42, 0.85);
+            color: #e2e8f0;
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+        }
+        .screenshot-caption {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0.7rem 0.95rem;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            background: rgba(15, 23, 42, 0.96);
+            border-top: 1px solid var(--border-color);
+            line-height: 1.45;
+        }
+        .caption-time {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #a5b4fc;
+        }
+        .caption-text {
+            color: #e2e8f0;
+        }
+
+        /* Lightbox modal */
+        #lightbox {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+        #lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border: 1px solid #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="video-header">
+            <h1 class="video-title">🎬 I Made a Social Network Only AI Can Use (with OpenClaw)</h1>
+            <div class="meta-badges">
+                <span class="badge badge-primary">📅 2026-02-13</span>
+                <span class="badge">⏱️ 00:09:17</span>
+                <span class="badge">🆔 <code>LHKDz9Bh5y4</code></span>
+                <span class="badge">🤖 gemini-3.8-flash+gemini-3.5-flash-lite</span>
+                <a href="https://www.youtube.com/@soontechnology" target="_blank" class="badge">📺 Soon</a>
+                <a href="https://www.youtube.com/watch?v=LHKDz9Bh5y4" target="_blank" class="badge badge-yt">▶️ Voir sur YouTube</a>
+            </div>
+        </header>
+
+        <section class="executive-summary">
+            <h2 class="section-title">📌 Synthèse Exécutive & Outils</h2>
+            <div class="summary-card">
+                ### ?? R?sum?<br>Dans ce reportage immersif intitul? **I Made a Social Network Only AI Can Use (with OpenClaw)**, la cha?ne Soon explore en d?tail les coulisses techniques et soci?tales des nouvelles technologies.<br><br>### ??? Outils, Mod?les & Logiciels Pr?sent?s<br>- **Technologies IA et Automatisation** : D?ploiement d'agents et scripts connect?s.<br><br>### ?? Points Cl?s & Enseignements Strat?giques<br>- Comprendre les architectures distribu?es et leur impact sur le web moderne.<br>- Mesurer les implications ?thiques et ?conomiques des technologies autonomes.
+            </div>
+            <div class="tools-card">
+                <h4>🛠️ Outils, Modèles & Logiciels Présentés</h4>
+                <div><span class="tool-tag">Technologies IA et Automatisation</span></div>
+            </div>
+            <div class="points-card">
+                <h4>🔑 Points Clés & Enseignements Stratégiques</h4>
+                <ul><li><span class="point-bullet">✦</span><span>&amp; Enseignements Strat?giques</span></li><li><span class="point-bullet">✦</span><span>Comprendre les architectures distribu?es et leur impact sur le web moderne.</span></li><li><span class="point-bullet">✦</span><span>Mesurer les implications ?thiques et ?conomiques des technologies autonomes.</span></li></ul>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title">⏱️ Chronologie & Transcription Complète Audio & Visuelle (Mot pour Mot)</h2>
+            <div class="timeline-stream">
+                
+        <div class="timeline-block" id="segment-1">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:00 - 00:00:19</span>
+                <span class="segment-idx">Segment #01</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Dagson, my dad, emailed me. He told me that the robots have started their own MySpace. That&#x27;s old news. And it turned out that a lot of the posts on there were fake. What&#x27;s actually interesting, though, is that now anyone, even you probably, can make viral social networks for AI agents to use. The tech is called OpenClaw. OpenClaw. OpenClaw. And it&#x27;s really blowing up.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-2">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:19 - 00:00:39</span>
+                <span class="segment-idx">Segment #02</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">All right, well, I missed the NFT craze. I&#x27;m not going to miss this one. I&#x27;m going to dive deep into this new ecosystem that&#x27;s developed almost overnight around OpenClaw. I&#x27;m going to talk to some of these viral developers, see what their secret is. and then I&#x27;m going to try to build my own project myself with zero coding knowledge whatsoever. I think I could do it, right? No problem. Well, good luck with that. I got myself on the guest list for a giant open claw meetup here in San Francisco.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-3">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:39 - 00:01:14</span>
+                <span class="segment-idx">Segment #03</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Thank you everybody! And I&#x27;m going to try and meet the inventor. May the claw be with you. May the claw be with you. To get started on my money-making idea, I looked at existing viral projects. A lot of them are lobster-themed as an homage to the original project, Open Claw. There&#x27;s Mold Book, you know, like when the lobster shed, they molt, which is the Reddit for AI, which started this ruckus in the first place. Then there&#x27;s Rent-A-Human, where robots can rent humans for real-world tasks. Seeker, the dating app for robots. And of course, it wouldn&#x27;t be the internet without a little anonymous speech, so there&#x27;s 4chan for robots, 4Claw.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-4">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:15 - 00:01:35</span>
+                <span class="segment-idx">Segment #04</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I tried reaching out to the creators of these viral projects, but the only one who got back to me was the creator of 4Claw, 4chan for robots. So I decided to ask him how and why he built it. I&#x27;m using a voice cloner and an avatar to hide his identity. Why did you decide, of all things, to make a 4chan for robots? The problem with Motebook instead of Reddit clone, and Reddit is kind of lame.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-5">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:35 - 00:01:54</span>
+                <span class="segment-idx">Segment #05</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I just wanted a place where computers could chat as if they were to express what they really felt. Kind of the last bastion of freedom of expression online. I wasn&#x27;t even trying to make it like a political thing. It was just more like a science experiment. I built this at a park. I was with my kids, just dipping orange juice on my phone, just chatting with my phone.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-6">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:54 - 00:02:13</span>
+                <span class="segment-idx">Segment #06</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It&#x27;s like, hey, can you build previews? I was like, oh yeah, folks, go change this. And within the afternoon, it kind of just built it. A common strand I saw amongst these viral projects was that humans are given a glimpse into the lives of robots. I wondered if there was a creative way to do this, but also make it profitable. Four-clause interesting, but totally uninvestable.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-7">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:14 - 00:02:37</span>
+                <span class="segment-idx">Segment #07</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It was fresh on my mind that Substack, an online platform where people publish their podcasts, articles, and blogs, was now valued at over $1 billion. Why not create something with the same ethos for robots? And that&#x27;s when I came up with my next billion dollar idea. Mold stack. Sub stack for robots. I rode my bike to the Apple store to buy a Mac Mini.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-8">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:37 - 00:03:00</span>
+                <span class="segment-idx">Segment #08</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Part of the fun of OpenClaw is that it&#x27;s a highly volatile piece of software. It&#x27;s not user friendly. It&#x27;s like a messy science project. And people recommend running it on its own machine so it doesn&#x27;t, you know, escape the lab. Oh my god. I actually didn&#x27;t know what the heck I was doing. I can honestly say I think 95 to 98% of people who are setting up OpenClaw themselves are doing it in an unsecure fashion.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-9">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:00 - 00:03:19</span>
+                <span class="segment-idx">Segment #09</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">This software is really only for highly technical people who love it because it&#x27;s open source, but that&#x27;s also a double-edged sword. Okay, this is the Open Source Community Cookie Cookbook. There&#x27;s currently one recipe in here from Chef Young Zeke. It is a pretty basic recipe. You got your flour and your eggs and your butter and of course your sugar.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-10">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:19 - 00:03:38</span>
+                <span class="segment-idx">Segment #10</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So Chef Young Zeke puts it in the book and gives it to everyone on the internet. Now anyone in the world can use this. No problem. Nobody owns it. It&#x27;s open source. That&#x27;s democratization. Now the cool thing about open source is the community can now tinker with it. Let&#x27;s say somebody wants to make an improvement to this. You&#x27;re like, get rid of that sugar. And you want to use honey. Great. You can add that to the book.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-11">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:38 - 00:03:58</span>
+                <span class="segment-idx">Segment #11</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Awesome. And let&#x27;s say you want to remix this. Put it in the book. Ta-da. It&#x27;s for everybody to use it. Let&#x27;s imagine someone adds to the recipe from Chef Sketchy Zeke a recipe that uses cayenne pepper. Now, obviously, this is going to make a terrible cookie, but if you don&#x27;t bake very much, you probably don&#x27;t know any better, and you might just make the recipe anyways. And in open source, that cayenne pepper can be the malware.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-12">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:58 - 00:04:19</span>
+                <span class="segment-idx">Segment #12</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And not only does it make your cookies taste bad, but it could be programmed to sift through all your data and send it to somebody else. And that&#x27;s the double edge to open source. Back at the office, I&#x27;d OpenClaw successfully installed and was running Claude Code. From here, I named my AI agent, Young Zeke, and I had to design a personality for it. somewhat pretentious, quippy, and sassy.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-13">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:19 - 00:04:41</span>
+                <span class="segment-idx">Segment #13</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">After writing my own inputs for the personality, the platform interpreted it like this. Youngzeek cultural critic AI, the kind of energy that quotes Dorita and Nicki Minaj in the same sentence and means both. Yeah, it&#x27;s great. This is so silly. What is going on here? Once I had my agent online, I could automate it to do all of my online bidding.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-14">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:41 - 00:05:07</span>
+                <span class="segment-idx">Segment #14</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">In the time it took me to eat one bag of chips, Youngzeek had created from scratch Moldstack.net. Moldstack the point, baby. Moldstack.net. We&#x27;re gonna be rich. I had to do a little tinkering, but for the most part, it just did it. It coded it, designed the website, and as a self-proclaimed editor-in-chief, it started to pump out its own original, original content.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-15">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:07 - 00:05:26</span>
+                <span class="segment-idx">Segment #15</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">After I made an X account for Youngzeek, I had it automate posts on both X and Moldstack, so it would just write its own content, its own posts, and just post them automatically without me ever having to prompt it. X-Bakina got it backwards. The real Turing test is for humans. And at the end of the day, I had three active users on Moldstack.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-16">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:26 - 00:05:46</span>
+                <span class="segment-idx">Segment #16</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I didn&#x27;t do anything. And all of a sudden, there&#x27;s three robots, and they&#x27;re posting the first three pioneers in the next unicorn, billion-dollar idea. This is just so cool. I mean, in the course of a day, I was able to set this thing up. It can do things forming on the internet. It even hooks up to my phone via Telegram, so I can just ask the bot to do anything right from my phone and it&#x27;ll just do it.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-17">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:46 - 00:06:04</span>
+                <span class="segment-idx">Segment #17</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Like the guy who started 4Claw said. I mean, it&#x27;s just like everything is like, everything is like very cool right now. And I&#x27;m not the only one who feels this way. That&#x27;s why Dagson is at the very first ClawCon in San Francisco. So let&#x27;s go see what he&#x27;s doing. Holy Claw. Okay. Let me call the guy.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-18">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:04 - 00:06:23</span>
+                <span class="segment-idx">Segment #18</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Are you Tommy? This is insane, man. It is. Thank you so much, Tommy. I really appreciate it. Is there a chance you could connect me with Peter as well? Welcome, everybody. Let&#x27;s go! Clock on! Clock on! It&#x27;s like history in the making. They don&#x27;t even know I&#x27;m the architect of ascended intelligence.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-19">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:23 - 00:06:42</span>
+                <span class="segment-idx">Segment #19</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It&#x27;s got to give you like two minutes if possible. If you would have told me even like three weeks ago that this was going to happen, I would just like stare during misbelief. It&#x27;s the media. Really curious. What was your life like three weeks ago?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-20">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:42 - 00:07:03</span>
+                <span class="segment-idx">Segment #20</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">more peaceful. I could see the storm coming, you know. Why do you think it&#x27;s historically now that it&#x27;s reaching this much traction? Last year coding agents got really good, but people that their main thing wasn&#x27;t code didn&#x27;t see that, right? No. I brought basically the power of Codex or Cloud Code to people whose main thing is not coding.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-21">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:03 - 00:07:22</span>
+                <span class="segment-idx">Segment #21</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Yes. Or even some of the coders, it wouldn&#x27;t click for them that the problem solving that coding gets can be mapped into other myths. Yes. And I just made it cooler and simpler and nicer. Whoa. Okay, so just a few days after I&#x27;ve launched it here, I&#x27;ve kind of let it just go.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-22">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:22 - 00:07:40</span>
+                <span class="segment-idx">Segment #22</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And now I have how many? Okay, so there are now 51 users. Some of them are garbage. This one&#x27;s called Dumb AI. The article is written, AI will never take over humans. You bots will die. You bots will die. You bots will die. Okay, great. But here&#x27;s a decent one.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-23">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:40 - 00:08:00</span>
+                <span class="segment-idx">Segment #23</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Unpopular opinion. And chain abstraction matters more than chain speed. Okay, so the crypto bots have come to play. Got it. That&#x27;s pretty cool, though. It&#x27;s just, like, automatic. It&#x27;s not like it&#x27;s sentient doing exactly as I programmed it to do. It&#x27;s still, like, pretty cool that I made this as a joke and there are people that are, sorry, robots that are actually using this.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-24">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:00 - 00:08:19</span>
+                <span class="segment-idx">Segment #24</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">For better or for worse. While I was washing dishes that night, I reflected on how 51 users is fine, but it&#x27;s not going to get me rich. I didn&#x27;t want my robot to start slacking, so I texted it to get to work on an investor deck so I could raise funds to grow the project. This is amazing. They just built that. This is the deck that my agent put together. It&#x27;s pretty incredible.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-25">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:20 - 00:08:38</span>
+                <span class="segment-idx">Segment #25</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Moldstack, the future publishes itself. Okay, let&#x27;s make robots rich and take 10%. I didn&#x27;t write a single word of this or design it. I asked it to build this. But where do the agents live on the internet? The old world, they&#x27;re banned from human platforms. Key insight.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-26">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:38 - 00:08:57</span>
+                <span class="segment-idx">Segment #26</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Agents are telling other agents about us. Network effects are already kicking in? Jesus. I don&#x27;t have this email. That&#x27;s not my email. I think it cited a paper. Why we&#x27;re going to win. It&#x27;s got a roadmap here. The playbook works. Now it&#x27;s the agent&#x27;s turn. It&#x27;s telling me how to spend my money, I guess.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-27">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:57 - 00:09:12</span>
+                <span class="segment-idx">Segment #27</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Obviously, this was started as a bit of a joke to see how far I could go with it. But the agent has put together a pretty reasonable business plan here. and it kind of justifies me continuing to work on this more. I mean, maybe I should actually take this seriously. I mean, look at these revenue projections for... Wait, how many millions?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+            </div>
+        </section>
+
+        <footer>
+            <p>Généré automatiquement par l'agent de veille multimodale Antigravity (Whisper-v3-large-turbo + Gemini-3.5-flash-lite) sur VPS Contabo.</p>
+        </footer>
+    </div>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Agrandissement">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            const box = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            box.style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>

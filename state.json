@@ -30,7 +30,8 @@
     "ZMLncJgmuR0",
     "pabjPMpKIW8",
     "Q2L4gp_YANY",
-    "RBZLQwQ9w10"
+    "RBZLQwQ9w10",
+    "LHKDz9Bh5y4"
   ],
   "processed_videos": [
     {
@@ -435,6 +436,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "LHKDz9Bh5y4",
+      "title": "I Made a Social Network Only AI Can Use (with OpenClaw)",
+      "title_fr": "I Made a Social Network Only AI Can Use (with OpenClaw)",
+      "upload_date": "20260213",
+      "duration": 557,
+      "duration_str": "00:09:17",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-02-13_YT-[LHKDz9Bh5y4]_I Made a Social Network Only AI Can Use (with OpenClaw)_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-02-13_YT-[LHKDz9Bh5y4]_I Made a Social Network Only AI Can Use (with OpenClaw)_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -487,7 +501,7 @@
     "RBZLQwQ9w10"
   ],
   "last_run_timestamp": "2026-10-04T17:42:23Z",
-  "completed_count": 31,
+  "completed_count": 32,
   "total_catalog_count": 33,
   "status": "ready"
 }
