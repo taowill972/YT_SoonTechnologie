@@ -32,7 +32,8 @@
     "Q2L4gp_YANY",
     "RBZLQwQ9w10",
     "LHKDz9Bh5y4",
-    "iPC_ydchCNQ"
+    "iPC_ydchCNQ",
+    "YF2yKfo-Tn0"
   ],
   "processed_videos": [
     {
@@ -463,6 +464,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "YF2yKfo-Tn0",
+      "title": "Inside the Company Modifying America's Weather",
+      "title_fr": "Inside the Company Modifying America's Weather",
+      "upload_date": "20260130",
+      "duration": 873,
+      "duration_str": "00:14:33",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-01-30_YT-[YF2yKfo-Tn0]_Inside the Company Modifying America's Weather_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-01-30_YT-[YF2yKfo-Tn0]_Inside the Company Modifying America's Weather_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -515,7 +529,7 @@
     "RBZLQwQ9w10"
   ],
   "last_run_timestamp": "2026-10-04T17:42:23Z",
-  "completed_count": 33,
+  "completed_count": 34,
   "total_catalog_count": 33,
   "status": "ready"
 }
