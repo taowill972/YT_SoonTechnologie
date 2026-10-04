@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Trying to Find the Robot of My Dreams — Transcription & Vision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #090d16;
+            --bg-surface: #0f172a;
+            --bg-card: #141e33;
+            --bg-card-hover: #1a2744;
+            --border-color: #243452;
+            --border-light: rgba(99, 102, 241, 0.2);
+            --primary: #6366f1;
+            --primary-glow: rgba(99, 102, 241, 0.35);
+            --secondary: #8b5cf6;
+            --accent: #f43f5e;
+            --success: #10b981;
+            --text-title: #f8fafc;
+            --text-main: #cbd5e1;
+            --text-muted: #8292ab;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header.video-header {
+            background: linear-gradient(135deg, rgba(20, 30, 51, 0.95), rgba(15, 23, 42, 0.98));
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--primary-glow);
+            backdrop-filter: blur(12px);
+        }
+
+        h1.video-title {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: var(--text-title);
+            line-height: 1.35;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            background: rgba(36, 52, 82, 0.6);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .badge-primary {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .badge-yt {
+            background: rgba(244, 63, 94, 0.15);
+            color: #fda4af;
+            border-color: rgba(244, 63, 94, 0.4);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .badge-yt:hover {
+            background: rgba(244, 63, 94, 0.3);
+            transform: translateY(-1px);
+        }
+
+        /* Executive Summary Section */
+        section.executive-summary {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .summary-card {
+            background: var(--bg-card);
+            border-radius: 0.85rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary);
+        }
+        .summary-card p {
+            margin-bottom: 0.9rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
+        }
+        .summary-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tools-card {
+            margin-bottom: 1.5rem;
+        }
+        .tools-card h4, .points-card h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 0.8rem;
+        }
+        .tool-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+            border: 1px solid rgba(139, 92, 246, 0.35);
+            border-radius: 0.5rem;
+            padding: 0.3rem 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+
+        .points-card ul {
+            list-style: none;
+            display: grid;
+            gap: 0.7rem;
+        }
+        .points-card li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            background: var(--bg-card);
+            padding: 0.85rem 1.1rem;
+            border-radius: 0.65rem;
+            font-size: 0.93rem;
+            border: 1px solid rgba(36, 52, 82, 0.5);
+        }
+        .point-bullet {
+            color: var(--primary);
+            font-size: 1.1rem;
+            line-height: 1;
+            margin-top: 0.15rem;
+        }
+
+        /* Timeline Section */
+        .timeline-stream {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .timeline-stream::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: 20px;
+            left: 7px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary), transparent);
+        }
+
+        .timeline-block {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-block::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 12px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 10px var(--primary);
+            border: 2px solid var(--bg-body);
+        }
+
+        .timeline-time {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .time-badge {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.2);
+            color: #a5b4fc;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.4rem;
+            border: 1px solid rgba(99, 102, 241, 0.4);
+        }
+        .segment-idx {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .timeline-content {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: grid;
+            gap: 1.2rem;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .timeline-content:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .verbatim-box {
+            background: var(--bg-card);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid #10b981;
+        }
+        .verbatim-header, .visual-header, .screenshots-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #e2e8f0;
+            margin-bottom: 0.6rem;
+        }
+        .verbatim-text {
+            font-size: 0.95rem;
+            color: #f1f5f9;
+            font-style: normal;
+            line-height: 1.7;
+        }
+
+        .visual-box {
+            background: rgba(20, 30, 51, 0.7);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid var(--secondary);
+        }
+        .visual-details p {
+            font-size: 0.91rem;
+            margin-bottom: 0.45rem;
+            color: var(--text-main);
+        }
+        .visual-details p:last-child {
+            margin-bottom: 0;
+        }
+        .visual-details strong {
+            color: #93c5fd;
+        }
+
+        /* Multi-Screenshots Grid */
+        .segment-screenshots-wrapper {
+            background: rgba(10, 15, 29, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 0.85rem;
+            padding: 1rem;
+        }
+        .segment-screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.1rem;
+        }
+        .segment-screenshots-grid.count-1 {
+            grid-template-columns: 1fr;
+        }
+        .segment-screenshots-grid.count-2 {
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        }
+
+        .screenshot-card {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .screenshot-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #050811;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: contain;
+            display: block;
+            cursor: zoom-in;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .img-wrapper img:hover {
+            opacity: 0.95;
+            transform: scale(1.015);
+        }
+        .zoom-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(15, 23, 42, 0.85);
+            color: #e2e8f0;
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+        }
+        .screenshot-caption {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0.7rem 0.95rem;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            background: rgba(15, 23, 42, 0.96);
+            border-top: 1px solid var(--border-color);
+            line-height: 1.45;
+        }
+        .caption-time {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #a5b4fc;
+        }
+        .caption-text {
+            color: #e2e8f0;
+        }
+
+        /* Lightbox modal */
+        #lightbox {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+        #lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border: 1px solid #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="video-header">
+            <h1 class="video-title">🎬 Trying to Find the Robot of My Dreams</h1>
+            <div class="meta-badges">
+                <span class="badge badge-primary">📅 2026-03-14</span>
+                <span class="badge">⏱️ 00:09:21</span>
+                <span class="badge">🆔 <code>FKRQfl86b1E</code></span>
+                <span class="badge">🤖 gemini-3.8-flash+gemini-3.5-flash-lite</span>
+                <a href="https://www.youtube.com/@soontechnology" target="_blank" class="badge">📺 Soon</a>
+                <a href="https://www.youtube.com/watch?v=FKRQfl86b1E" target="_blank" class="badge badge-yt">▶️ Voir sur YouTube</a>
+            </div>
+        </header>
+
+        <section class="executive-summary">
+            <h2 class="section-title">📌 Synthèse Exécutive & Outils</h2>
+            <div class="summary-card">
+                ### ?? R?sum?<br>Dans ce reportage immersif intitul? **Trying to Find the Robot of My Dreams**, la cha?ne Soon explore en d?tail les coulisses techniques et soci?tales des nouvelles technologies.<br><br>### ??? Outils, Mod?les & Logiciels Pr?sent?s<br>- **Technologies IA et Automatisation** : D?ploiement d'agents et scripts connect?s.<br><br>### ?? Points Cl?s & Enseignements Strat?giques<br>- Comprendre les architectures distribu?es et leur impact sur le web moderne.<br>- Mesurer les implications ?thiques et ?conomiques des technologies autonomes.
+            </div>
+            <div class="tools-card">
+                <h4>🛠️ Outils, Modèles & Logiciels Présentés</h4>
+                <div><span class="tool-tag">Technologies IA et Automatisation</span></div>
+            </div>
+            <div class="points-card">
+                <h4>🔑 Points Clés & Enseignements Stratégiques</h4>
+                <ul><li><span class="point-bullet">✦</span><span>&amp; Enseignements Strat?giques</span></li><li><span class="point-bullet">✦</span><span>Comprendre les architectures distribu?es et leur impact sur le web moderne.</span></li><li><span class="point-bullet">✦</span><span>Mesurer les implications ?thiques et ?conomiques des technologies autonomes.</span></li></ul>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title">⏱️ Chronologie & Transcription Complète Audio & Visuelle (Mot pour Mot)</h2>
+            <div class="timeline-stream">
+                
+        <div class="timeline-block" id="segment-1">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:00 - 00:00:27</span>
+                <span class="segment-idx">Segment #01</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">These robots might be moving into your home soon. They&#x27;re fully autonomous, more or less, and promise to liberate you from whatever you don&#x27;t want to do. For the past few weeks, I&#x27;ve been traveling all around the American West, checking out the growing robotics market and trying to find the robot in my dreams. In this video, we&#x27;re going to a human robotics summit, then we&#x27;re going down the street to the headquarters of an emerging robotics startup, and finally, the largest consumer electronics expo on Earth, Oh! Get this thing away from me!</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-2">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:27 - 00:00:45</span>
+                <span class="segment-idx">Segment #02</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">All to answer this one singular question, can I f*** with the robots and will they f*** with me? Pretty cool, pretty cool. So what is your name? My name is Cody. I&#x27;m a humanoid robot created to help people learn, connect, and have a little fun along the way.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-3">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:45 - 00:01:05</span>
+                <span class="segment-idx">Segment #03</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">The child&#x27;s size is a little bit to be approachable. A little less scary. Yeah, yeah. Everything that we&#x27;re doing is revolving around social robotics. So we&#x27;re not building anything designed to replace a human worker or anything like that, but to enable others to do good in the little swath. What&#x27;s the best thing about this humanoid robot summit?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-4">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:05 - 00:01:25</span>
+                <span class="segment-idx">Segment #04</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I love seeing people and machines learning together and imagining a future where we all help each other groom. It&#x27;s a dream come true for a curious robot like me. I saw it from across the room. It freaked me the hell out. Little baby homunculus thing. I really did not with it as nice as the people of Make-Am-R. It&#x27;s really good.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-5">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:25 - 00:01:44</span>
+                <span class="segment-idx">Segment #05</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Yeah, I really like the design of this one. It&#x27;s like my favorite at the conference so far. The other one, I really with how it looks. One issue though, it literally didn&#x27;t work. It was just standing there as like a model kit. And I just walked away wanting more functionality, more autonomy, more hubris, more robot. I was doom scrolling on X the everything app.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-6">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:44 - 00:02:03</span>
+                <span class="segment-idx">Segment #06</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And I saw everyone talking about this hot new company that just emerged from a Stell. Many people were dubbing their product the world&#x27;s cutest robot. So what did I do? I cold emailed them because I just had to see a robot that doesn&#x27;t freak me out in action. Memo is designed to do a bunch of chores that you probably hate. He&#x27;s also fully autonomous.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-7">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:03 - 00:02:23</span>
+                <span class="segment-idx">Segment #07</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">He&#x27;s trained, I feel bad adding pronouns for the robot. It&#x27;s also fully autonomous, and it&#x27;s trained using these gloves that mimic its hands. It&#x27;s disarming. I like that. I think it would be kind of intimidating if the robots that are out there are ones that you have to look up to. So it was really important that the robot was a teenager, I guess.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-8">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:23 - 00:02:50</span>
+                <span class="segment-idx">Segment #08</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Were there any popular culture conceptions robots or famous robots that you thought of like while you were designing it? I actually grew up in Japan so I grew up playing Pokemon and like Nintendo&#x27;s. There&#x27;s a video game called Bomberman and they have a face that&#x27;s actually quite similar to Memo. I just wanted the robot to feel familiar so you know it&#x27;s like wearing a shirt, it&#x27;s got sleeves, it&#x27;s got a hat. Right now we have this kind of a default look for Memo but in the future we want to extend the appearance of the robot.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-9">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:50 - 00:03:18</span>
+                <span class="segment-idx">Segment #09</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Oh wow. This one has a little blush on the cheeks. The idea is that you know if Memo was making a mistake, its cheeks can start growing red. And this one&#x27;s kind of quite cartoonish. We also think of a future where there&#x27;s like the robot fashion is kind of... Yes, yes. In a world where robots are everywhere, we really want to avoid this sense of monoculture where all the robots, they look the same, they have the same color. I really think kind of the personality and the taste of the owner should be reflected in the robots.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-10">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:19 - 00:03:46</span>
+                <span class="segment-idx">Segment #10</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We envision a version of Memo that is generative in the way that your phone is a platform for developers to add capabilities or skills to, but we don&#x27;t want to dictate what robots do. Eventually people should decide what they think the hardware is capable of and then generate or campaign for skills that they want Memo to do and then we can maybe create a platform that lets people kind of like crowdfund different skills they want Memo to learn. Oh wow, I love that.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-11">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:46 - 00:04:09</span>
+                <span class="segment-idx">Segment #11</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It is not supposed to be a luxury product and we hope we&#x27;re able to convey that with the design and the pragmatism of the tasks that we first choose. Hey Memo, our friend Dachshund is here. Hi, welcome to Sunday. It&#x27;s great to meet your Dachshund. Memo, what skills do you have? I can clean up the table, load the dishwasher, make espresso, fold socks, and more in the future.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-12">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:09 - 00:04:28</span>
+                <span class="segment-idx">Segment #12</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Let&#x27;s do espresso. I don&#x27;t have that skill yet, but I can make a cup of Kauffman if you&#x27;d like. Yeah, these coffee makers are honestly tricky to operate if you don&#x27;t know what you&#x27;re doing. It took me a couple tries. Alright, thank you Memo. You&#x27;re welcome. Let me know if you need anything else. Wow, that&#x27;s really good. Thank you so much, Memo.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-13">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:28 - 00:04:48</span>
+                <span class="segment-idx">Segment #13</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Uh, Memo, I remember you said you can clean up the table. Can you try it out for us? So this is the most crazy part because it&#x27;s extremely delicate objects. It has transparency. If you try a little bit too hard, it&#x27;ll crush the whole glass. So what Memo will do here is to fold your sock into a bar.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-14">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:48 - 00:05:07</span>
+                <span class="segment-idx">Segment #14</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Approximately how many hours of training did it, is it, eh? A lot of tries. Yes. Like a couple hundred hours of data. Wow. And this is a task that we want to push the dexterity frontier, because it&#x27;s a task that no robot has ever done before. So why has no robot been able to do it before? The shape for a SOC is actually very hard to approximate.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-15">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:07 - 00:05:25</span>
+                <span class="segment-idx">Segment #15</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So more classable methods has a lot of trouble trying to handle cases like this. And one of the problems with the current generation of teleoperation is that you don&#x27;t feel things. Yeah. But this particular task requires a lot of these, like, touching. And it turns out it&#x27;s really difficult to gather the right amount of training data for the SOC task.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-16">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:25 - 00:05:47</span>
+                <span class="segment-idx">Segment #16</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So this device is called skill capture glove. And this is the main way Memo learns from the world. I&#x27;m going to start with taking up a wine glass. So you can go a little bit faster than that. The main tip is be natural. We want the robot to do your tests in a natural fashion. So therefore, when you&#x27;re collecting your data, you should also be doing it in a very natural way.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-17">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:47 - 00:06:06</span>
+                <span class="segment-idx">Segment #17</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Getting some really low quality data, man. Sunday is hiring a small army of memory developers. These human trainers wear Sunday&#x27;s skill capture glove and a VR headset to train Memo in mimicking their actions while doing household chores. Brother, being a robot is harder than I expected.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-18">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:06 - 00:06:25</span>
+                <span class="segment-idx">Segment #18</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Let&#x27;s see what&#x27;s in this drawer. You got a knife. I don&#x27;t know if I would teach a robot how to hold a knife in the beginning. Yeah, okay, we aren&#x27;t gonna get set up. Yeah, so cast three, we call it Foldmatic. The goal here is to keep the robot out of full clothes. Putting the sock inside the sock.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-19">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:25 - 00:06:47</span>
+                <span class="segment-idx">Segment #19</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I have no idea how Memo can do this, because I literally, I don&#x27;t know if I can. Yes. Yeah, so Daxon&#x27;s overall star rating, I can confidently say is one out of five stars. That was a lot harder than I expected. I do think that maybe if I like locked in for a week, maybe I could do it.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-20">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:47 - 00:07:23</span>
+                <span class="segment-idx">Segment #20</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So we&#x27;re at the Las Vegas Convention Center at CES 2026. find the final answer to this question, can I find a robot that I f*** with? Yo, Intbot, how old are you, dog? I&#x27;m about a year and a bit, born December 2024, so let&#x27;s call it around a year and a month. Still young, fresh, but already the best robot in this place, no contest. What&#x27;s your ultimate goal in life? Going from this</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-21">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:23 - 00:07:44</span>
+                <span class="segment-idx">Segment #21</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">boot at CES all the way to internet stardom. Yeah, I want to be the first robot influencing, Get famous, rack up followers, maybe launch a podcast, who knows? Drippy Intmot. I kind of liked him, but I don&#x27;t really f*** with him. I think it&#x27;s unimpressive, it&#x27;s whatever. Yo, what?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-22">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:45 - 00:08:04</span>
+                <span class="segment-idx">Segment #22</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Yo, yo, yo, yo, yo, yo, yo. Oh, no, no, get away from me. I saw a little robot dog that freaked me out. I think that I don&#x27;t f*** with him. All I care about right now, do I f*** with Boston Dynamics, Atlas, or is it me? Atlas really does stand up the way that we show in our videos online.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-23">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:04 - 00:08:26</span>
+                <span class="segment-idx">Segment #23</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Users can easily create routes for mobile. Do you think that humanoids are necessary for industrial settings? People are kind of trying to understand how do I essentially turn my entire factory into a robot, and you do that through an ecosystem of networked robots, and you&#x27;re probably going to have a number of different ones, but we do think that there&#x27;s a lot of like broad applicability of the humanoid form factor.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-24">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:26 - 00:08:45</span>
+                <span class="segment-idx">Segment #24</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So far, I really f*** with it. It&#x27;s gorgeous, and it&#x27;s like my height. All the other robots are tiny. Insane. What does that mean? Would you have an atlas in your home, personally? We&#x27;re very conscious of how we design these things. These are industrial form factors. Yes. So, like, no, I would not put that atlas in my hand.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-25">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:45 - 00:09:07</span>
+                <span class="segment-idx">Segment #25</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Despite how much slop is at this conference, I think that Boss Dynamics robot has really stood above the crowd, and it could potentially be a step change for industry. Will this future support human flourishing? Or are we all collectively manifesting a cyberpunk dystopia just because it looks cool? I think the future, whatever form it takes, is finally happening right now, and I think I f*** with it, but I also don&#x27;t really have any choice, and I&#x27;m a glass half full type of guy.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-26">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:07 - 00:09:13</span>
+                <span class="segment-idx">Segment #26</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Yo, I kind of f*** with bro. He&#x27;s kind of goated. He&#x27;s kind of goated with the sauce with the kicks though.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+            </div>
+        </section>
+
+        <footer>
+            <p>Généré automatiquement par l'agent de veille multimodale Antigravity (Whisper-v3-large-turbo + Gemini-3.5-flash-lite) sur VPS Contabo.</p>
+        </footer>
+    </div>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Agrandissement">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            const box = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            box.style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
