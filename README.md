@@ -7,7 +7,7 @@
 - Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**
 
 ## ?? Statistiques de l'Automatisation
-- **Vid?os trait?es** : `16 / 33` (`48.5%`)
+- **Vid?os trait?es** : `17 / 33` (`51.5%`)
 - **Mod?le Audio & Synth?se** : `gemini-3.8-flash` (avec Faster-Whisper large-v3-turbo, 100% Verbatim Fran?ais)
 - **Mod?le Vision d'?cran** : `gemini-3.5-flash-lite` (Analyse d'?crans, interfaces & d?monstrations)
 - **Signature de traitement** : `gemini-3.8-flash+gemini-3.5-flash-lite`
@@ -33,6 +33,7 @@
 | 2026-06-25 | [1r3eD4BDYZ0](https://www.youtube.com/watch?v=1r3eD4BDYZ0) | **Inside the Startup Building Drones for the Ocean Floor** | [2026-06-25_YT-[1r3eD4BDYZ0]_Inside the Startup Building Drones for the Ocean Floor_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-06-25_YT-[1r3eD4BDYZ0]_Inside the Startup Building Drones for the Ocean Floor_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-06-25_YT-[1r3eD4BDYZ0]_Inside the Startup Building Drones for the Ocean Floor_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-06-18 | [El5fXNc-3GI](https://www.youtube.com/watch?v=El5fXNc-3GI) | **Unpacking Elon’s Interstellar Plans for Humanity** | [2026-06-18_YT-[El5fXNc-3GI]_Unpacking Elon’s Interstellar Plans for Humanity_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-06-18_YT-[El5fXNc-3GI]_Unpacking Elon’s Interstellar Plans for Humanity_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-06-18_YT-[El5fXNc-3GI]_Unpacking Elon’s Interstellar Plans for Humanity_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-06-10 | [WeqiEChfgzc](https://www.youtube.com/watch?v=WeqiEChfgzc) | **How to Make Money Clipping Videos** | [2026-06-10_YT-[WeqiEChfgzc]_How to Make Money Clipping Videos_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-06-10_YT-[WeqiEChfgzc]_How to Make Money Clipping Videos_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-06-10_YT-[WeqiEChfgzc]_How to Make Money Clipping Videos_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
+| 2026-06-01 | [aB5h_NCmk8c](https://www.youtube.com/watch?v=aB5h_NCmk8c) | **How to Train a Humanoid Robot** | [2026-06-01_YT-[aB5h_NCmk8c]_How to Train a Humanoid Robot_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-06-01_YT-[aB5h_NCmk8c]_How to Train a Humanoid Robot_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-06-01_YT-[aB5h_NCmk8c]_How to Train a Humanoid Robot_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 
 ---
 *G?n?r? automatiquement par l'agent de veille multimodale Antigravity sur VPS Contabo.*
