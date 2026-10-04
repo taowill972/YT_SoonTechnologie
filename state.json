@@ -28,7 +28,8 @@
     "ICTlfQJpS0g",
     "FKRQfl86b1E",
     "ZMLncJgmuR0",
-    "pabjPMpKIW8"
+    "pabjPMpKIW8",
+    "Q2L4gp_YANY"
   ],
   "processed_videos": [
     {
@@ -407,6 +408,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "Q2L4gp_YANY",
+      "title": "Meet the People Getting Rich off AI Music",
+      "title_fr": "Meet the People Getting Rich off AI Music",
+      "upload_date": "20260219",
+      "duration": 953,
+      "duration_str": "00:15:53",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-02-19_YT-[Q2L4gp_YANY]_Meet the People Getting Rich off AI Music_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-02-19_YT-[Q2L4gp_YANY]_Meet the People Getting Rich off AI Music_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -458,7 +472,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-04T12:00:25Z",
-  "completed_count": 29,
+  "completed_count": 30,
   "total_catalog_count": 33,
   "status": "ready"
 }
