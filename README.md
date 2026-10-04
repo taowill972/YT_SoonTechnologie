@@ -7,7 +7,7 @@
 - Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**
 
 ## ?? Statistiques de l'Automatisation
-- **Vid?os trait?es** : `30 / 33` (`90.9%`)
+- **Vid?os trait?es** : `31 / 33` (`93.9%`)
 - **Mod?le Audio & Synth?se** : `gemini-3.8-flash` (avec Faster-Whisper large-v3-turbo, 100% Verbatim Fran?ais)
 - **Mod?le Vision d'?cran** : `gemini-3.5-flash-lite` (Analyse d'?crans, interfaces & d?monstrations)
 - **Signature de traitement** : `gemini-3.8-flash+gemini-3.5-flash-lite`
@@ -17,6 +17,7 @@
 
 | Date | R?f. Vid?o | Titre Fran?ais / Sujet | Fiche Markdown | Fiche Interactive HTML | Captures |
 | :--- | :--- | :--- | :--- | :--- | :---: |
+| 2026-10-04 | [RBZLQwQ9w10](https://www.youtube.com/watch?v=RBZLQwQ9w10) | **People Don't Care About #ai #deadinternettheory** | [2026-10-04_YT-[RBZLQwQ9w10]_People Don't Care About #ai #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-10-04_YT-[RBZLQwQ9w10]_People Don't Care About #ai #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-10-04_YT-[RBZLQwQ9w10]_People Don't Care About #ai #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-10-03 | [5LZ1TaFmDZA](https://www.youtube.com/watch?v=5LZ1TaFmDZA) | **Comment l'Internet mort vous influence à votre insu** | [2026-10-03_YT-5LZ1TaFmDZA_Comment l'Internet mort vous influence à votre insu_by-gemini-3.8-flash+gemini-3.5-flash-lite.md](YT_SoonTechnologie_Transcript/2026-10-03_YT-5LZ1TaFmDZA_Comment l'Internet mort vous influence à votre insu_by-gemini-3.8-flash+gemini-3.5-flash-lite.md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-10-03_YT-5LZ1TaFmDZA_Comment l'Internet mort vous influence à votre insu_by-gemini-3.8-flash+gemini-3.5-flash-lite.html) | `26` |
 | 2026-10-03 | [sZTN3xmKjqA](https://www.youtube.com/watch?v=sZTN3xmKjqA) | **The #deadinternettheory** | [2026-10-03_YT-[sZTN3xmKjqA]_The #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-10-03_YT-[sZTN3xmKjqA]_The #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-10-03_YT-[sZTN3xmKjqA]_The #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-09-26 | [uMWo0IkeSeg](https://www.youtube.com/watch?v=uMWo0IkeSeg) | **The AI Extinction Iceberg, Explained** | [2026-09-26_YT-[uMWo0IkeSeg]_The AI Extinction Iceberg, Explained_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-09-26_YT-[uMWo0IkeSeg]_The AI Extinction Iceberg, Explained_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-09-26_YT-[uMWo0IkeSeg]_The AI Extinction Iceberg, Explained_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |

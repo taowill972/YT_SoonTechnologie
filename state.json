@@ -29,7 +29,8 @@
     "FKRQfl86b1E",
     "ZMLncJgmuR0",
     "pabjPMpKIW8",
-    "Q2L4gp_YANY"
+    "Q2L4gp_YANY",
+    "RBZLQwQ9w10"
   ],
   "processed_videos": [
     {
@@ -421,6 +422,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "RBZLQwQ9w10",
+      "title": "People Don't Care About #ai #deadinternettheory",
+      "title_fr": "People Don't Care About #ai #deadinternettheory",
+      "upload_date": "20261004",
+      "duration": 27,
+      "duration_str": "00:00:27",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-10-04_YT-[RBZLQwQ9w10]_People Don't Care About #ai #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-10-04_YT-[RBZLQwQ9w10]_People Don't Care About #ai #deadinternettheory_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -469,10 +483,11 @@
     "uMWo0IkeSeg",
     "wyKP_IuXx-o",
     "xlzZu8R3cSU",
-    "sZTN3xmKjqA"
+    "sZTN3xmKjqA",
+    "RBZLQwQ9w10"
   ],
-  "last_run_timestamp": "2026-10-04T12:00:25Z",
-  "completed_count": 30,
+  "last_run_timestamp": "2026-10-04T17:42:23Z",
+  "completed_count": 31,
   "total_catalog_count": 33,
   "status": "ready"
 }
