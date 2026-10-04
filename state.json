@@ -20,7 +20,8 @@
     "P-JBmoKSA_0",
     "Ord_UF-mqGY",
     "wyKP_IuXx-o",
-    "MTOEVlIXO_w"
+    "MTOEVlIXO_w",
+    "BxEP1InygzE"
   ],
   "processed_videos": [
     {
@@ -295,6 +296,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "BxEP1InygzE",
+      "title": "Anti-Algorithmic Social Media Apps Are Growing",
+      "title_fr": "Anti-Algorithmic Social Media Apps Are Growing",
+      "upload_date": "20260423",
+      "duration": 573,
+      "duration_str": "00:09:33",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-04-23_YT-[BxEP1InygzE]_Anti-Algorithmic Social Media Apps Are Growing_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-04-23_YT-[BxEP1InygzE]_Anti-Algorithmic Social Media Apps Are Growing_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -346,7 +360,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-04T05:34:15Z",
-  "completed_count": 21,
+  "completed_count": 22,
   "total_catalog_count": 33,
   "status": "ready"
 }

@@ -7,7 +7,7 @@
 - Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**
 
 ## ?? Statistiques de l'Automatisation
-- **Vid?os trait?es** : `21 / 33` (`63.6%`)
+- **Vid?os trait?es** : `22 / 33` (`66.7%`)
 - **Mod?le Audio & Synth?se** : `gemini-3.8-flash` (avec Faster-Whisper large-v3-turbo, 100% Verbatim Fran?ais)
 - **Mod?le Vision d'?cran** : `gemini-3.5-flash-lite` (Analyse d'?crans, interfaces & d?monstrations)
 - **Signature de traitement** : `gemini-3.8-flash+gemini-3.5-flash-lite`
@@ -38,6 +38,7 @@
 | 2026-05-18 | [Ord_UF-mqGY](https://www.youtube.com/watch?v=Ord_UF-mqGY) | **I Tried to Decipher Every AI Billboard in San Francisco** | [2026-05-18_YT-[Ord_UF-mqGY]_I Tried to Decipher Every AI Billboard in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-05-18_YT-[Ord_UF-mqGY]_I Tried to Decipher Every AI Billboard in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-05-18_YT-[Ord_UF-mqGY]_I Tried to Decipher Every AI Billboard in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-05-10 | [wyKP_IuXx-o](https://www.youtube.com/watch?v=wyKP_IuXx-o) | **Inside LA's Largest Hackathon** | [2026-05-10_YT-[wyKP_IuXx-o]_Inside LA's Largest Hackathon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-05-10_YT-[wyKP_IuXx-o]_Inside LA's Largest Hackathon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-05-10_YT-[wyKP_IuXx-o]_Inside LA's Largest Hackathon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-05-02 | [MTOEVlIXO_w](https://www.youtube.com/watch?v=MTOEVlIXO_w) | **Did This Startup Prove Cloud Seeding Works?** | [2026-05-02_YT-[MTOEVlIXO_w]_Did This Startup Prove Cloud Seeding Works_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-05-02_YT-[MTOEVlIXO_w]_Did This Startup Prove Cloud Seeding Works_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-05-02_YT-[MTOEVlIXO_w]_Did This Startup Prove Cloud Seeding Works_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
+| 2026-04-23 | [BxEP1InygzE](https://www.youtube.com/watch?v=BxEP1InygzE) | **Anti-Algorithmic Social Media Apps Are Growing** | [2026-04-23_YT-[BxEP1InygzE]_Anti-Algorithmic Social Media Apps Are Growing_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-04-23_YT-[BxEP1InygzE]_Anti-Algorithmic Social Media Apps Are Growing_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-04-23_YT-[BxEP1InygzE]_Anti-Algorithmic Social Media Apps Are Growing_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 
 ---
 *G?n?r? automatiquement par l'agent de veille multimodale Antigravity sur VPS Contabo.*
