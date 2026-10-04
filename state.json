@@ -8,7 +8,8 @@
     "suRs4wQFczw",
     "dRbNILhpb8o",
     "NUgIsLH71Lw",
-    "sZTN3xmKjqA"
+    "sZTN3xmKjqA",
+    "9dlKfiIJcW4"
   ],
   "processed_videos": [
     {
@@ -127,6 +128,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "9dlKfiIJcW4",
+      "title": "What Anthropic’s AI Ad Is Really Selling | Deeptakes",
+      "title_fr": "What Anthropic’s AI Ad Is Really Selling | Deeptakes",
+      "upload_date": "20260731",
+      "duration": 1481,
+      "duration_str": "00:24:41",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-07-31_YT-[9dlKfiIJcW4]_What Anthropic’s AI Ad Is Really Selling Deeptakes_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-07-31_YT-[9dlKfiIJcW4]_What Anthropic’s AI Ad Is Really Selling Deeptakes_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -178,7 +192,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-03T23:54:36Z",
-  "completed_count": 9,
+  "completed_count": 10,
   "total_catalog_count": 33,
   "status": "ready"
 }
