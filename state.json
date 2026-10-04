@@ -24,7 +24,8 @@
     "BxEP1InygzE",
     "LrYpEWr6D-s",
     "2XZaHsqzBPc",
-    "qlxvmN2lpR0"
+    "qlxvmN2lpR0",
+    "ICTlfQJpS0g"
   ],
   "processed_videos": [
     {
@@ -351,6 +352,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "ICTlfQJpS0g",
+      "title": "When Will AI Video Be Undetectable?",
+      "title_fr": "When Will AI Video Be Undetectable?",
+      "upload_date": "20260320",
+      "duration": 590,
+      "duration_str": "00:09:50",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-03-20_YT-[ICTlfQJpS0g]_When Will AI Video Be Undetectable_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-03-20_YT-[ICTlfQJpS0g]_When Will AI Video Be Undetectable_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -402,7 +416,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-04T12:00:25Z",
-  "completed_count": 25,
+  "completed_count": 26,
   "total_catalog_count": 33,
   "status": "ready"
 }
