@@ -18,7 +18,8 @@
     "WeqiEChfgzc",
     "aB5h_NCmk8c",
     "P-JBmoKSA_0",
-    "Ord_UF-mqGY"
+    "Ord_UF-mqGY",
+    "wyKP_IuXx-o"
   ],
   "processed_videos": [
     {
@@ -267,6 +268,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "wyKP_IuXx-o",
+      "title": "Inside LA's Largest Hackathon",
+      "title_fr": "Inside LA's Largest Hackathon",
+      "upload_date": "20260510",
+      "duration": 665,
+      "duration_str": "00:11:05",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-05-10_YT-[wyKP_IuXx-o]_Inside LA's Largest Hackathon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-05-10_YT-[wyKP_IuXx-o]_Inside LA's Largest Hackathon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -318,7 +332,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-04T05:34:15Z",
-  "completed_count": 19,
+  "completed_count": 20,
   "total_catalog_count": 33,
   "status": "ready"
 }

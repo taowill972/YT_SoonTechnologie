@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Inside LA&#x27;s Largest Hackathon — Transcription & Vision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #090d16;
+            --bg-surface: #0f172a;
+            --bg-card: #141e33;
+            --bg-card-hover: #1a2744;
+            --border-color: #243452;
+            --border-light: rgba(99, 102, 241, 0.2);
+            --primary: #6366f1;
+            --primary-glow: rgba(99, 102, 241, 0.35);
+            --secondary: #8b5cf6;
+            --accent: #f43f5e;
+            --success: #10b981;
+            --text-title: #f8fafc;
+            --text-main: #cbd5e1;
+            --text-muted: #8292ab;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header.video-header {
+            background: linear-gradient(135deg, rgba(20, 30, 51, 0.95), rgba(15, 23, 42, 0.98));
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--primary-glow);
+            backdrop-filter: blur(12px);
+        }
+
+        h1.video-title {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: var(--text-title);
+            line-height: 1.35;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            background: rgba(36, 52, 82, 0.6);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .badge-primary {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .badge-yt {
+            background: rgba(244, 63, 94, 0.15);
+            color: #fda4af;
+            border-color: rgba(244, 63, 94, 0.4);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .badge-yt:hover {
+            background: rgba(244, 63, 94, 0.3);
+            transform: translateY(-1px);
+        }
+
+        /* Executive Summary Section */
+        section.executive-summary {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1.25rem;
+            padding: 2.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .summary-card {
+            background: var(--bg-card);
+            border-radius: 0.85rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary);
+        }
+        .summary-card p {
+            margin-bottom: 0.9rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
+        }
+        .summary-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tools-card {
+            margin-bottom: 1.5rem;
+        }
+        .tools-card h4, .points-card h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 0.8rem;
+        }
+        .tool-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+            border: 1px solid rgba(139, 92, 246, 0.35);
+            border-radius: 0.5rem;
+            padding: 0.3rem 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+
+        .points-card ul {
+            list-style: none;
+            display: grid;
+            gap: 0.7rem;
+        }
+        .points-card li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            background: var(--bg-card);
+            padding: 0.85rem 1.1rem;
+            border-radius: 0.65rem;
+            font-size: 0.93rem;
+            border: 1px solid rgba(36, 52, 82, 0.5);
+        }
+        .point-bullet {
+            color: var(--primary);
+            font-size: 1.1rem;
+            line-height: 1;
+            margin-top: 0.15rem;
+        }
+
+        /* Timeline Section */
+        .timeline-stream {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .timeline-stream::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: 20px;
+            left: 7px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary), transparent);
+        }
+
+        .timeline-block {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-block::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 12px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 10px var(--primary);
+            border: 2px solid var(--bg-body);
+        }
+
+        .timeline-time {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .time-badge {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.2);
+            color: #a5b4fc;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.4rem;
+            border: 1px solid rgba(99, 102, 241, 0.4);
+        }
+        .segment-idx {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .timeline-content {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: grid;
+            gap: 1.2rem;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .timeline-content:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .verbatim-box {
+            background: var(--bg-card);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid #10b981;
+        }
+        .verbatim-header, .visual-header, .screenshots-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #e2e8f0;
+            margin-bottom: 0.6rem;
+        }
+        .verbatim-text {
+            font-size: 0.95rem;
+            color: #f1f5f9;
+            font-style: normal;
+            line-height: 1.7;
+        }
+
+        .visual-box {
+            background: rgba(20, 30, 51, 0.7);
+            border-radius: 0.75rem;
+            padding: 1.1rem;
+            border-left: 3px solid var(--secondary);
+        }
+        .visual-details p {
+            font-size: 0.91rem;
+            margin-bottom: 0.45rem;
+            color: var(--text-main);
+        }
+        .visual-details p:last-child {
+            margin-bottom: 0;
+        }
+        .visual-details strong {
+            color: #93c5fd;
+        }
+
+        /* Multi-Screenshots Grid */
+        .segment-screenshots-wrapper {
+            background: rgba(10, 15, 29, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 0.85rem;
+            padding: 1rem;
+        }
+        .segment-screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.1rem;
+        }
+        .segment-screenshots-grid.count-1 {
+            grid-template-columns: 1fr;
+        }
+        .segment-screenshots-grid.count-2 {
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        }
+
+        .screenshot-card {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .screenshot-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #050811;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: contain;
+            display: block;
+            cursor: zoom-in;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .img-wrapper img:hover {
+            opacity: 0.95;
+            transform: scale(1.015);
+        }
+        .zoom-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(15, 23, 42, 0.85);
+            color: #e2e8f0;
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+        }
+        .screenshot-caption {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0.7rem 0.95rem;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            background: rgba(15, 23, 42, 0.96);
+            border-top: 1px solid var(--border-color);
+            line-height: 1.45;
+        }
+        .caption-time {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #a5b4fc;
+        }
+        .caption-text {
+            color: #e2e8f0;
+        }
+
+        /* Lightbox modal */
+        #lightbox {
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+        #lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border: 1px solid #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="video-header">
+            <h1 class="video-title">🎬 Inside LA&#x27;s Largest Hackathon</h1>
+            <div class="meta-badges">
+                <span class="badge badge-primary">📅 2026-05-10</span>
+                <span class="badge">⏱️ 00:11:05</span>
+                <span class="badge">🆔 <code>wyKP_IuXx-o</code></span>
+                <span class="badge">🤖 gemini-3.8-flash+gemini-3.5-flash-lite</span>
+                <a href="https://www.youtube.com/@soontechnology" target="_blank" class="badge">📺 Soon</a>
+                <a href="https://www.youtube.com/watch?v=wyKP_IuXx-o" target="_blank" class="badge badge-yt">▶️ Voir sur YouTube</a>
+            </div>
+        </header>
+
+        <section class="executive-summary">
+            <h2 class="section-title">📌 Synthèse Exécutive & Outils</h2>
+            <div class="summary-card">
+                ### ?? R?sum?<br>Dans ce reportage immersif intitul? **Inside LA's Largest Hackathon**, la cha?ne Soon explore en d?tail les coulisses techniques et soci?tales des nouvelles technologies.<br><br>### ??? Outils, Mod?les & Logiciels Pr?sent?s<br>- **Technologies IA et Automatisation** : D?ploiement d'agents et scripts connect?s.<br><br>### ?? Points Cl?s & Enseignements Strat?giques<br>- Comprendre les architectures distribu?es et leur impact sur le web moderne.<br>- Mesurer les implications ?thiques et ?conomiques des technologies autonomes.
+            </div>
+            <div class="tools-card">
+                <h4>🛠️ Outils, Modèles & Logiciels Présentés</h4>
+                <div><span class="tool-tag">Technologies IA et Automatisation</span></div>
+            </div>
+            <div class="points-card">
+                <h4>🔑 Points Clés & Enseignements Stratégiques</h4>
+                <ul><li><span class="point-bullet">✦</span><span>&amp; Enseignements Strat?giques</span></li><li><span class="point-bullet">✦</span><span>Comprendre les architectures distribu?es et leur impact sur le web moderne.</span></li><li><span class="point-bullet">✦</span><span>Mesurer les implications ?thiques et ?conomiques des technologies autonomes.</span></li></ul>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title">⏱️ Chronologie & Transcription Complète Audio & Visuelle (Mot pour Mot)</h2>
+            <div class="timeline-stream">
+                
+        <div class="timeline-block" id="segment-1">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:00 - 00:00:19</span>
+                <span class="segment-idx">Segment #01</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I&#x27;m here at SoCal&#x27;s largest hackathon. There&#x27;s a thousand hackers here building over 200 one-of-a-kind projects, with just 36 hours to get it done. And, once again, I&#x27;m gonna try to predict the grand prize winner. What do you think the probability I accurately guessed the winner? Maybe like a 1 out of 50 chance, I&#x27;d say. For first place, congratulations to...</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-2">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:21 - 00:00:40</span>
+                <span class="segment-idx">Segment #02</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Now, the stakes are even higher than before, because I really can&#x27;t take another L. I think I&#x27;m really excited to have. Last hackathon, I didn&#x27;t find the grand prize winner. So this time I&#x27;m changing things up a little bit. Everyone&#x27;s sleep deprived, so no need to ask that question. This time I&#x27;m asking, what are you building?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-3">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:40 - 00:00:58</span>
+                <span class="segment-idx">Segment #03</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Why are you doing this? And three, do you have that dog in you? Let&#x27;s go find our winner. What is your project? We probably build the worst possible keyboard ever because you can&#x27;t touch it, you can&#x27;t see it, you can&#x27;t feel it because you&#x27;re the keyboard. Your eyes are the keyboard. He&#x27;s not touching it. I just want to say I want help.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-4">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:00:58 - 00:01:19</span>
+                <span class="segment-idx">Segment #04</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Help me, please. Help me, please. What inspired this idea? Why are you guys doing this? We basically build this for patients who are in the later stages of their lives. All they have left is their random eye movement and we decide to capitalize on that. People who have ALS, cerebral palsy. How do we help them communicate with their loved ones? May I try a demo? Yeah, sure, you do.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-5">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:19 - 00:01:37</span>
+                <span class="segment-idx">Segment #05</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Oh, yes. You can thank everything. Help me, please. My eyes are just shifty, that&#x27;s my problem. I need to use the bathroom. I love it, man. Do you have that dog in you? Yes, we do. Yes, you guys do. We&#x27;re gonna win this. It&#x27;s so amazing. It&#x27;s a good vibe. I wonder what&#x27;s going on with these routers over here though. I mean, you know a lot of good things about the routers.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-6">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:01:37 - 00:02:02</span>
+                <span class="segment-idx">Segment #06</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Excuse me, sir. Ah, yeah, he&#x27;s locked in. Oh, these guys have a good vibe. Excuse me. What are you building? I love your energy, man. Sorry, we got a little excited. No, I love it. I love it, dude. Currently, we&#x27;re building an application that helps students lock in more. So what we do is we allow students to track their studying by not only time, but also by their facial expressions, the kind of music and the sounds that are around them.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-7">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:02 - 00:02:25</span>
+                <span class="segment-idx">Segment #07</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">This can then generate a score of like, how well you&#x27;re studying in a certain area, and can also tailor acoustic feedback. Yes. You know, you work best in this certain situation. And so it&#x27;ll try to mimic that situation. I love that. And so why are you building this? We currently struggle with ADHD, especially in our current world right now. It&#x27;s a very big problem among college students, right? And so we wanted to kind of combat that and be at the forefront of this big problem, because there&#x27;s no real tools that really help us fix that currently.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-8">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:25 - 00:02:48</span>
+                <span class="segment-idx">Segment #08</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Yeah, one final question. Do you have that dog in you? It&#x27;s there. It&#x27;s there. I can see. What are you guys building? Right now, every time the user generates a prompt with AI, you&#x27;re wasting water. We want to make it to where every time you use AI, you&#x27;re generating water. Now, the problem with this is that it&#x27;s not just using any type of water. It&#x27;s using fresh water. So the process that we&#x27;re doing for desalination is called membrane distillation.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-9">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:02:48 - 00:03:08</span>
+                <span class="segment-idx">Segment #09</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It&#x27;s this crazy looking thing right here. So how it works is there&#x27;s going to be a hot side and a cold side. The AI servers are producing low-grade heat. It&#x27;s never going to reach like stovetop temperatures where it&#x27;s going to boil the water. So we have to make sure we use this and introduce a cold stimulus, which we made with like kind of like a mini fridge. So with that, it&#x27;s going to create water just using the memory distillation.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-10">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:08 - 00:03:28</span>
+                <span class="segment-idx">Segment #10</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So why are you guys doing this? How do you come to the idea? We&#x27;re from Florida. Right now, Florida&#x27;s like facing one of the most severe droughts. It&#x27;s seen like the last 15 years. We definitely want to like raise awareness of like, you know, how inefficient we are sometimes when it comes to technical practices. Do you guys feel like you have that dog in you? Of course. We got to stay awake like 10 more hours. So I hope we do.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-11">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:28 - 00:03:48</span>
+                <span class="segment-idx">Segment #11</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Wait, what are you guys building? Our project is aimed to help earthquake disaster relief. Oftentimes when it comes to earthquakes, it&#x27;s not about the impossibility of the treatment. It&#x27;s just about getting there as quickly as possible. Here&#x27;s our robot and essentially what it does is it navigates hard to go through areas essentially. And the end goal is to find a survivor.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-12">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:03:48 - 00:04:07</span>
+                <span class="segment-idx">Segment #12</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We&#x27;re actively capturing live footage from this pie camera and sending it over to our dashboard. So the same path that this rover went through, it&#x27;s actually reconstructed in virtual reality right here. Yeah, I&#x27;m seeing exactly what the video, the robot talk. But reconstructing 3D and VR, it&#x27;s so cool. And what inspired the idea? All of us come from India, and obviously there&#x27;s a lot of infrastructure concerns there.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-13">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:07 - 00:04:30</span>
+                <span class="segment-idx">Segment #13</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Do you guys have a dog in here? We all have a dog in here. We pull multiple all-nighters for this. What are you building? We&#x27;re building an app that connects people to resources for natural disasters. We have a routing system that avoids the natural disaster. How are you getting live info on the fires yet? Yeah, we&#x27;re using Google Gemini&#x27;s API, which gets current news and information.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-14">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:30 - 00:04:50</span>
+                <span class="segment-idx">Segment #14</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Wow, that is incredible. And what inspired this idea? This guy, actually, he lived in LA. He went through the whole Palisade Fire crisis. Apparently, he drove for like 30 minutes looking for shelters. Do you have that dog in you? Yeah. We have a dog. I love the UX. It&#x27;s beautiful. So what are you guys building right now?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-15">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:04:50 - 00:05:12</span>
+                <span class="segment-idx">Segment #15</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">We basically created this Roblox game to encourage kids to do more mindful activity to stop from burnout. And then you can spin the wheel right here. We wore an incentive to encourage kids to- Yes, we love gambling. And what inspired this idea? We wanted to encourage kids to participate in more mindful activity, journaling, coloring.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-16">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:12 - 00:05:36</span>
+                <span class="segment-idx">Segment #16</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">One final question, do you have that dog in you? Yeah. Do you think that all of the advancement in AI is demand for the hackathon in Kese? Previously, you had to be significantly well-versed with like CS stuff, with like coding, coding languages. Now, someone with only design experience and no back-end experience can go in and design the app of their dreams in very little time.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-17">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:36 - 00:05:55</span>
+                <span class="segment-idx">Segment #17</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I&#x27;m a fourth-year bioengineer. I&#x27;m a third-year business economist. People from all sorts of backgrounds are just able to bring their ideas to life, and that&#x27;s kind of the beauty and the power of the AI age and revolution, I guess. What are you guys building? So we completely open source AWS. Our goal is that we are replacing the cloud with our own hardware.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-18">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:05:55 - 00:06:16</span>
+                <span class="segment-idx">Segment #18</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It might be a bit of a fire hazard, but I think we have it all covered. So what inspired this idea? So I was the director of development for ACM and we were spending $3,600 a year on AWS costs. If you&#x27;re controlling your own data, it never leaves your own network, your data will be safe. Do you have that dog in you? Ooh, after all that we did last night, I think we got it.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-19">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:16 - 00:06:35</span>
+                <span class="segment-idx">Segment #19</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I personally am a builder. I love making all things and I think hackathon is one of those things where you give yourself excuse to really push yourself and build something where, you know, normally it might take two months to get to this stage, but you know, you do this in two nights and you look back in two weeks and you&#x27;re like, wow, I really created that. Yo, tree hacks guy.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-20">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:35 - 00:06:53</span>
+                <span class="segment-idx">Segment #20</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Yo, what&#x27;s up bro? So we have 30 minutes left on the clock. The hackathon is heating up. What are you guys building? This is essentially a study tool that analyzes your body language such as your eye movement. If you&#x27;re, let&#x27;s say, looking away from the screen, and it gives the user a comprehensive report of the times they study best.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-21">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:06:53 - 00:07:15</span>
+                <span class="segment-idx">Segment #21</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">So we use a gamified interface because we want to have an overreaching audience of the younger generation. It monitors our actions, so if I yawn, it&#x27;ll take some points away, and that&#x27;s based on the scale of my mouth. We have a coin system, so based on his focus score, if he&#x27;s less focused, he doesn&#x27;t get as many coins.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-22">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:15 - 00:07:35</span>
+                <span class="segment-idx">Segment #22</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Dude, you need your coin. So what inspired this idea? Let&#x27;s say doom scrolling, checking your phone, and just realizing, oh, like, where has the time gone? And this kind of points that out. I have one final question for you guys. Do you have that dog in you? Yeah, of course you got that dog in us. Let&#x27;s go, let&#x27;s go. So what are you guys building? Yeah, so we&#x27;re building SkinPin. This is a skin disease protection using AI.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-23">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:36 - 00:07:55</span>
+                <span class="segment-idx">Segment #23</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">And it&#x27;s all done locally, through the cloud. So there&#x27;s no sort of data storage or anything. Dude. One of the main problems in healthcare is like HIPAA violations. And so we want users&#x27; data to be at a premium. And if the user closes out of the app or anything else, then the image gets deleted and no one else sees it. So no one actually sees the user&#x27;s skin besides that. It&#x27;s like my mom would love this. Exactly. But what inspired this for you guys?</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-24">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:07:55 - 00:08:16</span>
+                <span class="segment-idx">Segment #24</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">For me, I used to run into pollen a lot when I played on grass. And as a result, I&#x27;d get rashes and stuff. So I feel like something like this would be very unique. Because this way, no one&#x27;s seeing your data. And you can also just click of a button to see what you have, essentially. That&#x27;s so cool. One final question for you guys. Do you guys have that dog in you? We do. We do. Of course we do. So I checked out a dozen projects. I have no idea how to pick which one&#x27;s a winner, because all of these kids are smart.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-25">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:16 - 00:08:35</span>
+                <span class="segment-idx">Segment #25</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Well, that wraps up 36 hours of hacking. Congratulations. We have a lot of different events come up and three of the most hackers we have ever had. Right now in the United States, if you&#x27;re a business owner, you can expect that more likely than not, your business will be affected by a software supply chain attack. That&#x27;s why our project is Codebreaker.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-26">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:08:35 - 00:09:00</span>
+                <span class="segment-idx">Segment #26</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">It&#x27;s a agentic harness dedicated for cybersecurity, so we can find these vulnerabilities before they&#x27;re exploited. Remember this guy from Treehacks. What are you guys building? The short and sweet is we&#x27;re building an AI chemistry lab. Okay. In fact, one example of where our harness was actually able to be very effective, our model was able to identify a vulnerability in the judging platform that would allow creation of judge accounts without authorization.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-27">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:00 - 00:09:26</span>
+                <span class="segment-idx">Segment #27</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">All of the judges that we spoke to at the start were very... So for the next five seconds... Can you hear him say wow? Our plugin is so good. It takes state-of-the-art agentic tools and decreases the inference time by 200%. We take the agent, we take the issue that it had, that it failed on, the symptoms from that issue, and then a suggested fix for that issue, and we graph that all in this big graph here.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-28">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:26 - 00:09:58</span>
+                <span class="segment-idx">Segment #28</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">I don&#x27;t want to speak too soon, but I think I made it in my mind. One is RIS. Our project is aimed to help earthquake disaster relief. Two is Codebreaker. It&#x27;s a agentec harness dedicated for cybersecurity. Three is autopsy. What if there was a map of every single wrong turn it made to make sure it never makes that wrong turn again. That&#x27;s my head. Now for our best overall winners. Congratulations to Autopsy by Ryan Velaski, Alan Roiglott, Anar Shonora, and Kayla Faye. You got one pick, right? Fuel</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-29">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:09:58 - 00:10:21</span>
+                <span class="segment-idx">Segment #29</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">mistakes are higher than ever. Congratulations, Rise by Peru, Sydney, Aditya, and Chris. Okay, so I got it wrong. I just lost. For first place, winning Frontier Airlines, all you can fly, It might go well, I&#x27;ll pass until April 2027. Congratulations to Codebreaker, Jay Blue and Kevin Blue for winning LA Hacks 2026.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-30">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:10:21 - 00:10:40</span>
+                <span class="segment-idx">Segment #30</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">Bro, this is my first. I was able to identify all three top winners of LA Hacks, but yet again, I was wrong about the first place grand prize winner. I overthought it. I overthought it. Maybe next time. It&#x27;s good to see you as well, man. Oh my god, congratulations.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-31">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:10:40 - 00:10:58</span>
+                <span class="segment-idx">Segment #31</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">To you guys, just won LA Hacks. What&#x27;s next for you guys? We&#x27;re excited to see where this space goes. We really believe in open source, we believe in open source models, and making sure that access to security and access to the frontier is democratized. There&#x27;s like a sign right there that says, please shower. I really like the therapy dogs though.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="timeline-block" id="segment-32">
+            <div class="timeline-time">
+                <span class="time-badge">⏱️ 00:10:58 - 00:10:59</span>
+                <span class="segment-idx">Segment #32</span>
+            </div>
+            <div class="timeline-content">
+                <div class="verbatim-box">
+                    <div class="verbatim-header">
+                        <span class="speaker-icon">🔊</span>
+                        <strong>Audio Verbatim (Mot pour Mot en Français) :</strong>
+                    </div>
+                    <blockquote class="verbatim-text">They are really nice.</blockquote>
+                </div>
+                <div class="visual-box">
+                    <div class="visual-header">
+                        <span class="eye-icon">👁️</span>
+                        <strong>Analyse Visuelle d'Écran (gemini-3.5-flash-lite) :</strong>
+                    </div>
+                    <div class="visual-details">
+                        <p><strong>Interface & Outils :</strong> Pr?sentation ou reportage sans interface informatique partag?e.</p>
+                        <p><strong>Contenu textuel & Code :</strong> Explications orales des faits et investigations.</p>
+                        <p><strong>Action / Démonstration :</strong> Narration documentaire et mise en contexte du sujet.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+            </div>
+        </section>
+
+        <footer>
+            <p>Généré automatiquement par l'agent de veille multimodale Antigravity (Whisper-v3-large-turbo + Gemini-3.5-flash-lite) sur VPS Contabo.</p>
+        </footer>
+    </div>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Agrandissement">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            const box = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            box.style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>

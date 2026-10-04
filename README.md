@@ -7,7 +7,7 @@
 - Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**
 
 ## ?? Statistiques de l'Automatisation
-- **Vid?os trait?es** : `19 / 33` (`57.6%`)
+- **Vid?os trait?es** : `20 / 33` (`60.6%`)
 - **Mod?le Audio & Synth?se** : `gemini-3.8-flash` (avec Faster-Whisper large-v3-turbo, 100% Verbatim Fran?ais)
 - **Mod?le Vision d'?cran** : `gemini-3.5-flash-lite` (Analyse d'?crans, interfaces & d?monstrations)
 - **Signature de traitement** : `gemini-3.8-flash+gemini-3.5-flash-lite`
@@ -36,6 +36,7 @@
 | 2026-06-01 | [aB5h_NCmk8c](https://www.youtube.com/watch?v=aB5h_NCmk8c) | **How to Train a Humanoid Robot** | [2026-06-01_YT-[aB5h_NCmk8c]_How to Train a Humanoid Robot_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-06-01_YT-[aB5h_NCmk8c]_How to Train a Humanoid Robot_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-06-01_YT-[aB5h_NCmk8c]_How to Train a Humanoid Robot_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-05-22 | [P-JBmoKSA_0](https://www.youtube.com/watch?v=P-JBmoKSA_0) | **I Bet $1,000 on Every Kalshi for 24 Hours** | [2026-05-22_YT-[P-JBmoKSA_0]_I Bet $1,000 on Every Kalshi for 24 Hours_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-05-22_YT-[P-JBmoKSA_0]_I Bet $1,000 on Every Kalshi for 24 Hours_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-05-22_YT-[P-JBmoKSA_0]_I Bet $1,000 on Every Kalshi for 24 Hours_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-05-18 | [Ord_UF-mqGY](https://www.youtube.com/watch?v=Ord_UF-mqGY) | **I Tried to Decipher Every AI Billboard in San Francisco** | [2026-05-18_YT-[Ord_UF-mqGY]_I Tried to Decipher Every AI Billboard in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-05-18_YT-[Ord_UF-mqGY]_I Tried to Decipher Every AI Billboard in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-05-18_YT-[Ord_UF-mqGY]_I Tried to Decipher Every AI Billboard in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
+| 2026-05-10 | [wyKP_IuXx-o](https://www.youtube.com/watch?v=wyKP_IuXx-o) | **Inside LA's Largest Hackathon** | [2026-05-10_YT-[wyKP_IuXx-o]_Inside LA's Largest Hackathon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-05-10_YT-[wyKP_IuXx-o]_Inside LA's Largest Hackathon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-05-10_YT-[wyKP_IuXx-o]_Inside LA's Largest Hackathon_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 
 ---
 *G?n?r? automatiquement par l'agent de veille multimodale Antigravity sur VPS Contabo.*
