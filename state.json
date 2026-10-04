@@ -17,7 +17,8 @@
     "El5fXNc-3GI",
     "WeqiEChfgzc",
     "aB5h_NCmk8c",
-    "P-JBmoKSA_0"
+    "P-JBmoKSA_0",
+    "Ord_UF-mqGY"
   ],
   "processed_videos": [
     {
@@ -253,6 +254,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "Ord_UF-mqGY",
+      "title": "I Tried to Decipher Every AI Billboard in San Francisco",
+      "title_fr": "I Tried to Decipher Every AI Billboard in San Francisco",
+      "upload_date": "20260518",
+      "duration": 681,
+      "duration_str": "00:11:21",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-05-18_YT-[Ord_UF-mqGY]_I Tried to Decipher Every AI Billboard in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-05-18_YT-[Ord_UF-mqGY]_I Tried to Decipher Every AI Billboard in San Francisco_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -304,7 +318,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-04T05:34:15Z",
-  "completed_count": 18,
+  "completed_count": 19,
   "total_catalog_count": 33,
   "status": "ready"
 }
