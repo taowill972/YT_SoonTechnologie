@@ -11,7 +11,8 @@
     "sZTN3xmKjqA",
     "9dlKfiIJcW4",
     "QdGNGjKlqgA",
-    "ijcz2F1qQUM"
+    "ijcz2F1qQUM",
+    "P3Y45u2Q-Oc"
   ],
   "processed_videos": [
     {
@@ -169,6 +170,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "P3Y45u2Q-Oc",
+      "title": "The War Between AI Detectors and Students",
+      "title_fr": "The War Between AI Detectors and Students",
+      "upload_date": "20260702",
+      "duration": 653,
+      "duration_str": "00:10:53",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-07-02_YT-[P3Y45u2Q-Oc]_The War Between AI Detectors and Students_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-07-02_YT-[P3Y45u2Q-Oc]_The War Between AI Detectors and Students_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -220,7 +234,7 @@
     "sZTN3xmKjqA"
   ],
   "last_run_timestamp": "2026-10-03T23:54:36Z",
-  "completed_count": 12,
+  "completed_count": 13,
   "total_catalog_count": 33,
   "status": "ready"
 }
