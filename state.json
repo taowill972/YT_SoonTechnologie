@@ -35,7 +35,8 @@
     "iPC_ydchCNQ",
     "YF2yKfo-Tn0",
     "Oqx8fWgTkAc",
-    "lMdnQY7Qy0Q"
+    "lMdnQY7Qy0Q",
+    "m35Hd2_zmNI"
   ],
   "processed_videos": [
     {
@@ -505,6 +506,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "m35Hd2_zmNI",
+      "title": "What is the #deadinternet?",
+      "title_fr": "What is the #deadinternet?",
+      "upload_date": "20261006",
+      "duration": 29,
+      "duration_str": "00:00:29",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-10-06_YT-[m35Hd2_zmNI]_What is the #deadinternet_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-10-06_YT-[m35Hd2_zmNI]_What is the #deadinternet_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -555,10 +569,11 @@
     "xlzZu8R3cSU",
     "sZTN3xmKjqA",
     "RBZLQwQ9w10",
-    "lMdnQY7Qy0Q"
+    "lMdnQY7Qy0Q",
+    "m35Hd2_zmNI"
   ],
   "last_run_timestamp": "2026-10-04T22:52:49Z",
-  "completed_count": 36,
+  "completed_count": 37,
   "total_catalog_count": 33,
   "status": "ALL_VIDEOS_PROCESSED_AUTOMATION_COMPLETED"
 }
