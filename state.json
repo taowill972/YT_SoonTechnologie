@@ -34,7 +34,8 @@
     "LHKDz9Bh5y4",
     "iPC_ydchCNQ",
     "YF2yKfo-Tn0",
-    "Oqx8fWgTkAc"
+    "Oqx8fWgTkAc",
+    "lMdnQY7Qy0Q"
   ],
   "processed_videos": [
     {
@@ -491,6 +492,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "lMdnQY7Qy0Q",
+      "title": "Trying #ugc #influencer",
+      "title_fr": "Trying #ugc #influencer",
+      "upload_date": "20261006",
+      "duration": 39,
+      "duration_str": "00:00:39",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-10-06_YT-[lMdnQY7Qy0Q]_Trying #ugc #influencer_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-10-06_YT-[lMdnQY7Qy0Q]_Trying #ugc #influencer_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -540,10 +554,11 @@
     "wyKP_IuXx-o",
     "xlzZu8R3cSU",
     "sZTN3xmKjqA",
-    "RBZLQwQ9w10"
+    "RBZLQwQ9w10",
+    "lMdnQY7Qy0Q"
   ],
-  "last_run_timestamp": "2026-10-04T17:42:23Z",
-  "completed_count": 35,
+  "last_run_timestamp": "2026-10-04T22:52:49Z",
+  "completed_count": 36,
   "total_catalog_count": 33,
-  "status": "ready"
+  "status": "ALL_VIDEOS_PROCESSED_AUTOMATION_COMPLETED"
 }
