@@ -37,7 +37,8 @@
     "Oqx8fWgTkAc",
     "lMdnQY7Qy0Q",
     "m35Hd2_zmNI",
-    "Zey-uVDTv60"
+    "Zey-uVDTv60",
+    "8NY45LXveWM"
   ],
   "processed_videos": [
     {
@@ -533,6 +534,19 @@
       "screenshots_count": 0,
       "audit_score": 100.0,
       "audit_passed": true
+    },
+    {
+      "id": "8NY45LXveWM",
+      "title": "The Billion Dollar #business of #ugc",
+      "title_fr": "The Billion Dollar #business of #ugc",
+      "upload_date": "20261009",
+      "duration": 35,
+      "duration_str": "00:00:35",
+      "md_file": "YT_SoonTechnologie_Transcript/2026-10-09_YT-[8NY45LXveWM]_The Billion Dollar #business of #ugc_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md",
+      "html_file": "YT_SoonTechnologie_Transcript/2026-10-09_YT-[8NY45LXveWM]_The Billion Dollar #business of #ugc_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html",
+      "screenshots_count": 0,
+      "audit_score": 100.0,
+      "audit_passed": true
     }
   ],
   "known_baseline_ids": [
@@ -585,10 +599,11 @@
     "RBZLQwQ9w10",
     "lMdnQY7Qy0Q",
     "m35Hd2_zmNI",
-    "Zey-uVDTv60"
+    "Zey-uVDTv60",
+    "8NY45LXveWM"
   ],
   "last_run_timestamp": "2026-10-04T22:52:49Z",
-  "completed_count": 38,
+  "completed_count": 39,
   "total_catalog_count": 33,
   "status": "ALL_VIDEOS_PROCESSED_AUTOMATION_COMPLETED"
 }

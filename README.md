@@ -7,7 +7,7 @@
 - Les captures d'?cran par timeline sont archiv?es dans : **`screenshots/<video_id>/`**
 
 ## ?? Statistiques de l'Automatisation
-- **Vid?os trait?es** : `38 / 33` (`115.2%`)
+- **Vid?os trait?es** : `39 / 33` (`118.2%`)
 - **Mod?le Audio & Synth?se** : `gemini-3.8-flash` (avec Faster-Whisper large-v3-turbo, 100% Verbatim Fran?ais)
 - **Mod?le Vision d'?cran** : `gemini-3.5-flash-lite` (Analyse d'?crans, interfaces & d?monstrations)
 - **Signature de traitement** : `gemini-3.8-flash+gemini-3.5-flash-lite`
@@ -17,6 +17,7 @@
 
 | Date | R?f. Vid?o | Titre Fran?ais / Sujet | Fiche Markdown | Fiche Interactive HTML | Captures |
 | :--- | :--- | :--- | :--- | :--- | :---: |
+| 2026-10-09 | [8NY45LXveWM](https://www.youtube.com/watch?v=8NY45LXveWM) | **The Billion Dollar #business of #ugc** | [2026-10-09_YT-[8NY45LXveWM]_The Billion Dollar #business of #ugc_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-10-09_YT-[8NY45LXveWM]_The Billion Dollar #business of #ugc_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-10-09_YT-[8NY45LXveWM]_The Billion Dollar #business of #ugc_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-10-07 | [Zey-uVDTv60](https://www.youtube.com/watch?v=Zey-uVDTv60) | **Using #ai to Influence #politics** | [2026-10-07_YT-[Zey-uVDTv60]_Using #ai to Influence #politics_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-10-07_YT-[Zey-uVDTv60]_Using #ai to Influence #politics_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-10-07_YT-[Zey-uVDTv60]_Using #ai to Influence #politics_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-10-06 | [lMdnQY7Qy0Q](https://www.youtube.com/watch?v=lMdnQY7Qy0Q) | **Trying #ugc #influencer** | [2026-10-06_YT-[lMdnQY7Qy0Q]_Trying #ugc #influencer_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-10-06_YT-[lMdnQY7Qy0Q]_Trying #ugc #influencer_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-10-06_YT-[lMdnQY7Qy0Q]_Trying #ugc #influencer_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
 | 2026-10-06 | [m35Hd2_zmNI](https://www.youtube.com/watch?v=m35Hd2_zmNI) | **What is the #deadinternet?** | [2026-10-06_YT-[m35Hd2_zmNI]_What is the #deadinternet_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md](YT_SoonTechnologie_Transcript/2026-10-06_YT-[m35Hd2_zmNI]_What is the #deadinternet_by-[gemini-3.8-flash+gemini-3.5-flash-lite].md) | [Voir Rapport HTML](YT_SoonTechnologie_Transcript/2026-10-06_YT-[m35Hd2_zmNI]_What is the #deadinternet_by-[gemini-3.8-flash+gemini-3.5-flash-lite].html) | `0` |
